@@ -1,4 +1,6 @@
-﻿
+﻿========================
+TRADUÇÃO
+========================
 
 
 APP > template> message> [ conversation.html ]
