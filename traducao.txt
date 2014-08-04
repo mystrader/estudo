@@ -1,0 +1,54 @@
+﻿
+
+
+APP > template> message> [ conversation.html ]
+==============================================
+
+- Nova mensagem
+pt.newmessage = Nova Mensagem
+en.newmessage = New Message
+es.newmessage = Nuevo Mensaje
+es_AR.newmessage = Nuevo mensaje
+
+
+- Voltar
+pt.aff_voltar = Voltar
+en.aff_voltar = Back
+es.aff_voltar = Volver
+es_AR.aff_voltar = Volver
+
+
+- Conversa com
+- Excluir conversa
+- O ParPerfeito nunca pede informa&ccedil;&otilde;es como senhas, dados banc&aacute;rios ou cart&atilde;o de cr&eacute;dito por e-mail.<a href="#">Denuncie!</a>
+
+
+APP > template> message> [ conversationMessage.html ]
+====================================================
+- Sua mensagem foi respondida por
+- ASSINE E LEIA AGORA &gt;
+
+
+APP > template> message> [ conversationProfileBox.html ]
+=========================================================
+- Bloquear
+pt.block = bloquear
+en.block = block
+es.block = bloquear
+es_AR.block = bloquear
+
+
+
+- Desbloquear
+pt.unblock = Desbloquear
+en.unblock = Unblock
+es.unblock = Desbloquear
+es_AR.unblock = Desbloquear
+
+- Denunciar ==>  reportAbuse : 'Denunciar', ////////////////////////////////////// outro!!!
+
+
+APP > template> message> [ startNewConversation.html ]
+======================================================
+- Nova mensagem  =>  newMessageMail : 'Nova mensagem', ////////////////////////////////////// outro!!!
+- Digite o apelido de quem deseja enviar uma mensagem:
