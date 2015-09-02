@@ -7,12 +7,13 @@
 
 
 <body>
-    <div ng-controller="aula06Controller">
-        {{ nome }}
-    
-<button type="button" ng-click="olaMundo('marcus')">Clique me</button>
-        
-        
+    <div ng-controller="aula07Controller">
+       
+        <ul>
+            <li ng-repeat="nome in nomes">{{ nome }}</li>
+        </ul>
+         
+           
     </div>
 </body>
 
@@ -22,7 +23,7 @@
 <script src="js/app.module.js"></script>
 
 <!-- controllers -->
-<script src="js/app06Controller.js"></script>
+<script src="js/app07Controller.js"></script>
 
 
 </html>

@@ -3,7 +3,7 @@
  * https://github.com/equiet/recognizer
  */
 
-var __recognizer100826672 = (function () {
+var __recognizer145335111 = (function () {
     'use strict';
 
     var global = this;
@@ -158,12 +158,12 @@ var __recognizer100826672 = (function () {
  */
 
 var app = function () {
-        var obj = __recognizer100826672.logProbe([
+        var obj = __recognizer145335111.logProbe([
                 1,
                 10,
                 1,
                 17
-            ], angular), fn = __recognizer100826672.logProbe([
+            ], angular), fn = __recognizer145335111.logProbe([
                 1,
                 18,
                 1,
