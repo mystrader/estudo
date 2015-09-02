@@ -3,7 +3,7 @@
  * https://github.com/equiet/recognizer
  */
 
-var __recognizer914390410 = (function () {
+var __recognizer903246013 = (function () {
     'use strict';
 
     var global = this;
@@ -158,12 +158,12 @@ var __recognizer914390410 = (function () {
  */
 
 (function () {
-    var obj = __recognizer914390410.logProbe([
+    var obj = __recognizer903246013.logProbe([
             1,
             0,
             1,
             3
-        ], app), fn = __recognizer914390410.logProbe([
+        ], app), fn = __recognizer903246013.logProbe([
             1,
             4,
             1,
@@ -171,11 +171,46 @@ var __recognizer914390410 = (function () {
         ], obj.controller);
     return fn.apply(obj, arguments);
 }.bind(this)('aula06Controller', function ($scope) {
-    __recognizer914390410.logEntry([
+    __recognizer903246013.logEntry([
         1,
         35,
         1,
         43
     ], arguments);
     $scope.nome = 'Curso AngularJs';
+    $scope.olaMundo = function (nome) {
+        __recognizer903246013.logEntry([
+            6,
+            22,
+            6,
+            30
+        ], arguments);
+        __recognizer903246013.logProbe([
+            7,
+            8,
+            7,
+            35
+        ], __recognizer903246013.logProbe([
+            7,
+            8,
+            7,
+            13
+        ], alert)('Ola ' + __recognizer903246013.logProbe([
+            7,
+            23,
+            7,
+            27
+        ], nome) + '!'));
+    };
+    __recognizer903246013.logProbe([
+        10,
+        4,
+        10,
+        18
+    ], __recognizer903246013.logProbe([
+        10,
+        4,
+        10,
+        9
+    ], alert)('teste'));
 }));

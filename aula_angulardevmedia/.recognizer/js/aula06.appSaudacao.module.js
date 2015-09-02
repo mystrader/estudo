@@ -3,7 +3,7 @@
  * https://github.com/equiet/recognizer
  */
 
-var __recognizer694212223 = (function () {
+var __recognizer243355987 = (function () {
     'use strict';
 
     var global = this;
@@ -158,12 +158,12 @@ var __recognizer694212223 = (function () {
  */
 
 var appSaudacao = function () {
-        var obj = __recognizer694212223.logProbe([
+        var obj = __recognizer243355987.logProbe([
                 1,
                 18,
                 1,
                 25
-            ], angular), fn = __recognizer694212223.logProbe([
+            ], angular), fn = __recognizer243355987.logProbe([
                 1,
                 26,
                 1,
@@ -172,12 +172,12 @@ var appSaudacao = function () {
         return fn.apply(obj, arguments);
     }.bind(this)('appSaudacao', []);
 (function () {
-    var obj = __recognizer694212223.logProbe([
+    var obj = __recognizer243355987.logProbe([
             3,
             0,
             3,
             11
-        ], appSaudacao), fn = __recognizer694212223.logProbe([
+        ], appSaudacao), fn = __recognizer243355987.logProbe([
             3,
             12,
             3,
@@ -185,20 +185,20 @@ var appSaudacao = function () {
         ], obj.filter);
     return fn.apply(obj, arguments);
 }.bind(this)('ola', function () {
-    __recognizer694212223.logEntry([
+    __recognizer243355987.logEntry([
         3,
         25,
         3,
         33
     ], arguments);
     return function (nome) {
-        __recognizer694212223.logEntry([
+        __recognizer243355987.logEntry([
             4,
             11,
             4,
             19
         ], arguments);
-        return 'Ol\xe1 ' + __recognizer694212223.logProbe([
+        return 'Ol\xe1 ' + __recognizer243355987.logProbe([
             5,
             24,
             5,

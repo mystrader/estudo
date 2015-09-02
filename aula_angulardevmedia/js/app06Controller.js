@@ -7,6 +7,6 @@ app.controller('aula06Controller', function($scope){
         alert("Ola " + nome +  "!");
     }
     
-    alert('teste')!
+    alert('teste');
     
 });

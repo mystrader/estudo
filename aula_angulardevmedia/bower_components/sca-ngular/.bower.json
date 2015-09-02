@@ -21,7 +21,6 @@
     "commit": "1a95922377697df4dcc48b1e7d35d2b7a6293666"
   },
   "_source": "git://github.com/tagama/sca-ngular.git",
-  "_target": "~0.0.11",
-  "_originalSource": "sca-ngular",
-  "_direct": true
+  "_target": "0.0.11",
+  "_originalSource": "sca-ngular"
 }

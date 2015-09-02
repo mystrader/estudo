@@ -1,0 +1,6 @@
+{
+    "name": "aula_angulardevmedia",
+    "dependencies": {
+        "sca-ngular": "0.0.11"
+    }
+}
