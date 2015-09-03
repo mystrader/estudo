@@ -3,7 +3,7 @@
  * https://github.com/equiet/recognizer
  */
 
-var __recognizer372504051 = (function () {
+var __recognizer808394244 = (function () {
     'use strict';
 
     var global = this;
@@ -157,17 +157,56 @@ var __recognizer372504051 = (function () {
  * Instrumented code
  */
 
-var app = function () {
-        var obj = __recognizer372504051.logProbe([
-                1,
-                10,
-                1,
-                17
-            ], angular), fn = __recognizer372504051.logProbe([
-                1,
-                18,
-                1,
-                24
-            ], obj.module);
+(function () {
+    var obj = __recognizer808394244.logProbe([
+            1,
+            0,
+            1,
+            3
+        ], app), fn = __recognizer808394244.logProbe([
+            1,
+            4,
+            1,
+            14
+        ], obj.controller);
+    return fn.apply(obj, arguments);
+}.bind(this)('aula07Controller', function ($scope) {
+    __recognizer808394244.logEntry([
+        1,
+        35,
+        1,
+        43
+    ], arguments);
+    $scope.nomes = [
+        'jaison',
+        'Daniel',
+        'tiago',
+        'jaison',
+        'Daniel',
+        'tiago'
+    ];
+    (function () {
+        var obj = __recognizer808394244.logProbe([
+                3,
+                15,
+                3,
+                22
+            ], console), fn = __recognizer808394244.logProbe([
+                3,
+                23,
+                3,
+                26
+            ], obj.log);
         return fn.apply(obj, arguments);
-    }.bind(this)('app', []);
+    }.bind(this)(__recognizer808394244.logProbe([
+        3,
+        34,
+        3,
+        39
+    ], __recognizer808394244.logProbe([
+        3,
+        27,
+        3,
+        33
+    ], $scope).nomes)));
+}));
