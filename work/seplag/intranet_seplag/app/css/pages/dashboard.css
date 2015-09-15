@@ -120,10 +120,12 @@ Bootstrap Admin Template by EGrappler.com
 
 .news-items li {
 	display: table;
-	padding: 0 2em 0 1.5em;
-	padding-bottom: 1em;
-	margin-bottom: 1em;
-	border-bottom: 1px dotted #CCC;
+    padding: 0 2em 0 1.2em;
+    padding-bottom: 1em;
+    word-break: break-word;
+    margin-bottom: 1em;
+    width: 96%;
+    border-bottom: 1px dotted #CCC;
 }
 
 .news-items li:last-child { padding-bottom: 0; border: none; }
@@ -157,7 +159,7 @@ Bootstrap Admin Template by EGrappler.com
 
 .news-item-preview {
 	margin-bottom: 0;
-	
+	    padding-right: 8px;
 	color: #777;
 }
 
