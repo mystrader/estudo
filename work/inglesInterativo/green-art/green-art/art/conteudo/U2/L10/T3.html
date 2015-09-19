@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+		<meta name="language" content="pt-BR" />
+        <title>U2/L10/T3 - Green Art | Brownie and Friends</title>
+		
+		<meta name="viewport" content="width=1240">
+		<meta name="robots" content="noindex,nofollow">
+        <meta name="description" content="">
+		
+		<meta name="apple-mobile-web-app-title" content="BF-Green">
+		<link rel="shortcut icon" href="../../../../assets/img/icons/favicon.ico">
+		<link rel="apple-touch-icon" sizes="57x57" href="../../../../assets/img/icons/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="../../../../assets/img/icons/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="../../../../assets/img/icons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="../../../../assets/img/icons/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="../../../../assets/img/icons/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="../../../../assets/img/icons/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="../../../../assets/img/icons/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="../../../../assets/img/icons/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/img/icons/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="../../../../assets/img/icons/favicon-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="../../../../assets/img/icons/favicon-160x160.png" sizes="160x160">
+		<link rel="icon" type="image/png" href="../../../../assets/img/icons/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="../../../../assets/img/icons/favicon-16x16.png" sizes="16x16">
+		<link rel="icon" type="image/png" href="../../../../assets/img/icons/favicon-32x32.png" sizes="32x32">
+		<meta name="msapplication-TileColor" content="#5ca038">
+		<meta name="msapplication-TileImage" content="../../../../assets/img/icons/mstile-144x144.png">
+		<meta name="msapplication-config" content="../../../../assets/img/icons/browserconfig.xml">
+		
+        <link rel="stylesheet" href="../../../../assets/css/normalize.css">
+		<link rel="stylesheet" href="../../../../assets/css/responsive.gs.12col.css">
+        <link rel="stylesheet" href="../../../../assets/css/main.css">
+		
+		<style type="text/css">
+			#footer .footer-content .intro-link {
+				background: url(../../../../art/assets/img/interface/rodape_U2_L10.png) no-repeat center center;
+			}
+
+			.ui-draggable-dragging {
+				cursor:move !important;
+				z-index:100 !important;	
+			}
+			
+			/* CLASSES forma */
+			.forma {
+				position:absolute;
+				z-index:50;
+				cursor:pointer;
+			}
+			div[id^="recebe-"] {
+				z-index:0;
+				cursor:default;
+			}
+			
+			/* GRUPOS */
+				.grupo {
+					position: absolute;
+					width: 100%;
+					height: 100%
+				}
+				.grupo.grupo-1, .grupo.grupo-2, .grupo.grupo-3, .grupo.grupo-4 {
+					display: none;
+				}
+				.grupo.grupo-1 {
+					display: block;
+					background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T3_IMG00.png) no-repeat 0 0;
+				}
+				.grupo.grupo-2 {
+					background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T4_IMG00.png) no-repeat 40px 0;
+				}
+				.grupo.grupo-3 {
+					background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T5_IMG00.png) no-repeat 0 0;
+				}
+				.grupo.grupo-4 {
+					background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T6_IMG00.png) no-repeat 0 0;
+				}
+		
+				/* GRUPO: 1 */
+					.grupo.grupo-1 #triangulo-certo {
+						top:109px;
+						left:62px;
+						background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T3_IMG01.png) no-repeat 0 0;
+						width:130px;
+						height:126px;
+					}
+					.grupo.grupo-1 #triangulo-errado {
+						top:364px;
+						right:137px;
+						background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T3_IMG01_ERRADO.png) no-repeat 0 0;
+						width:131px;
+						height:126px;
+					}
+					.grupo.grupo-1 #circulo-certo {
+						top:17px;
+						right:26px;
+						background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T3_IMG02.png) no-repeat 0 0;
+						width:110px;
+						height:110px;
+					}
+					.grupo.grupo-1 #circulo-errado {
+						top:437px;
+						left:145px;
+						background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T3_IMG02_ERRADO.png) no-repeat 0 0;
+						width:110px;
+						height:110px;
+					}
+					.grupo.grupo-1 #quadrado-certo {
+						top:135px;
+						right:145px;
+						background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T3_IMG03.png) no-repeat 0 0;
+						width:112px;
+						height:112px;
+					}
+					.grupo.grupo-1 #quadrado-errado {
+						top:273px;
+						left:143px;
+						background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T3_IMG03_ERRADO.png) no-repeat 0 0;
+						width:112px;
+						height:112px;
+					}
+					.grupo.grupo-1 #retangulo-certo {
+						top:272px;
+						left:23px;
+						background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T3_IMG04.png) no-repeat 0 0;
+						width:104px;
+						height:270px;
+					}
+					.grupo.grupo-1 #retangulo-errado {
+						top:229px;
+						right:16px;
+						background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T3_IMG04_ERRADO.png) no-repeat 0 0;
+						width:104px;
+						height:270px;
+					}
+					.grupo.grupo-1 #recebe-triangulo {
+						top:40px;
+						left:501px;
+						width:130px;
+						height:126px;
+					}
+					.grupo.grupo-1 #recebe-retangulo {
+						top: 41px;
+						left: 687px;
+						width: 104px;
+						height: 270px;
+					}
+					.grupo.grupo-1 #recebe-quadrado {
+						top: 395px;
+						left: 405px;
+						width: 112px;
+						height: 112px;
+					}
+					.grupo.grupo-1 #recebe-circulo {
+						left: 673px;
+						top: 359px;
+						width: 110px;
+						height: 110px;
+					}
+					
+				/* GRUPO: 2 */
+					.grupo.grupo-2 #triangulo-certo {
+						top: 267px;
+  						right: 8px;
+						background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T4_IMG01.png) no-repeat 0 0;
+						width:130px;
+						height:126px;
+					}
+					.grupo.grupo-2 #triangulo-errado {
+						top:258px;
+						left:0px;
+						background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T4_IMG01_ERRADO.png) no-repeat 0 0;
+						width:131px;
+						height:126px;
+					}
+					.grupo.grupo-2 #circulo-certo {
+						top: 255px;
+  						left: 120px;
+						background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T4_IMG02.png) no-repeat 0 0;
+						width:110px;
+						height:110px;
+					}
+					.grupo.grupo-2 #circulo-errado {
+						top: 136px;
+  						right: 4px;
+						background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T4_IMG02_ERRADO.png) no-repeat 0 0;
+						width:110px;
+						height:110px;
+					}
+					.grupo.grupo-2 #quadrado-certo {
+						top: 12px;
+  						right: 13px;
+						background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T4_IMG03.png) no-repeat 0 0;
+						width:112px;
+						height:112px;
+					}
+					.grupo.grupo-2 #quadrado-errado {
+						top: 119px;
+  						left: 58px;
+						background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T4_IMG03_ERRADO.png) no-repeat 0 0;
+						width:112px;
+						height:112px;
+					}
+					.grupo.grupo-2 #retangulo-certo {
+						top:402px;
+						right:3px;
+						background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T4_IMG04.png) no-repeat 0 0;
+						width:104px;
+						height:270px;
+					}
+					.grupo.grupo-2 #retangulo-errado {
+						top:402px;
+						left:82px;
+						background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T4_IMG04_ERRADO.png) no-repeat 0 0;
+						width:104px;
+						height:270px;
+					}
+					.grupo.grupo-2 #recebe-triangulo {
+						top:238px;
+						left:314px;
+						width:130px;
+						height:126px;
+					}
+					.grupo.grupo-2 #recebe-retangulo {
+						top: 190px;
+						left: 808px;
+						width: 104px;
+						height: 270px;
+					}
+					.grupo.grupo-2 #recebe-quadrado {
+						top: 413px;
+						left: 462px;
+						width: 112px;
+						height: 112px;
+					}
+					.grupo.grupo-2 #recebe-circulo {
+						left: 679px;
+  						top: 249px;
+						width: 110px;
+						height: 110px;
+					}
+				
+				/* GRUPO: 3 */
+					.grupo.grupo-3 #triangulo-certo {
+						top:12px;
+						right:18px;
+						background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T5_IMG01.png) no-repeat 0 0;
+						width:130px;
+						height:126px;
+					}
+					.grupo.grupo-3 #triangulo-errado {
+						top:305px;
+						right:129px;
+						background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T5_IMG01_ERRADO.png) no-repeat 0 0;
+						width:131px;
+						height:126px;
+					}
+					.grupo.grupo-3 #circulo-certo {
+						top:131px;
+						left:34px;
+						background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T5_IMG02.png) no-repeat 0 0;
+						width:110px;
+						height:110px;
+					}
+					.grupo.grupo-3 #circulo-errado {
+						top:482px;
+						left:164px;
+						background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T5_IMG02_ERRADO.png) no-repeat 0 0;
+						width:110px;
+						height:110px;
+					}
+					.grupo.grupo-3 #quadrado-certo {
+						top:464px;
+						right:26px;
+						background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T5_IMG03.png) no-repeat 0 0;
+						width:112px;
+						height:112px;
+					}
+					.grupo.grupo-3 #quadrado-errado {
+						top:138px;
+						right:148px;
+						background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T5_IMG03_ERRADO.png) no-repeat 0 0;
+						width:112px;
+						height:112px;
+					}
+					.grupo.grupo-3 #retangulo-certo {
+						top:13px;
+						left:182px;
+						background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T5_IMG04.png) no-repeat 0 0;
+						width:104px;
+						height:270px;
+					}
+					.grupo.grupo-3 #retangulo-errado {
+						top:302px;
+						left:37px;
+						background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T5_IMG04_ERRADO.png) no-repeat 0 0;
+						width:104px;
+						height:270px;
+					}
+					.grupo.grupo-3 #recebe-triangulo {
+						top:394px;
+						left:545px;
+						width:130px;
+						height:126px;
+					}
+					.grupo.grupo-3 #recebe-retangulo {
+						top: 92px;
+						left: 687px;
+						width: 104px;
+						height: 270px;
+					}
+					.grupo.grupo-3 #recebe-quadrado {
+						top: 487px;
+						left: 405px;
+						width: 112px;
+						height: 112px;
+					}
+					.grupo.grupo-3 #recebe-circulo {
+						left: 513px;
+						top: 149px;
+						width: 110px;
+						height: 110px;
+					}
+					
+				/* GRUPO: 4 */
+					.grupo.grupo-4 #triangulo-certo {
+						top: 280px;
+  						right: 913px;
+						background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T6_IMG01.png) no-repeat 0 0;
+						width:130px;
+						height:126px;
+					}
+					.grupo.grupo-4 #triangulo-errado {
+						top: 407px;
+  						right: 50px;
+						background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T6_IMG01_ERRADO.png) no-repeat 0 0;
+						width:131px;
+						height:126px;
+					}
+					.grupo.grupo-4 #circulo-certo {
+						top: 551px;
+  						right: 25px;
+						background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T6_IMG02.png) no-repeat 0 0;
+						width:110px;
+						height:110px;
+					}
+					.grupo.grupo-4 #circulo-errado {
+						top: 101px;
+  						left: 51px;
+						background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T6_IMG02_ERRADO.png) no-repeat 0 0;
+						width:110px;
+						height:110px;
+					}
+					.grupo.grupo-4 #quadrado-certo {
+						top: 213px;
+  						left: 0px;
+						background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T6_IMG03.png) no-repeat 0 0;
+						width:112px;
+						height:112px;
+					}
+					.grupo.grupo-4 #quadrado-errado {
+						top: 9px;
+  						left: 963px;
+						background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T6_IMG03_ERRADO.png) no-repeat 0 0;
+						width:112px;
+						height:112px;
+					}
+					.grupo.grupo-4 #retangulo-certo {
+						top: 398px;
+  						left: 34px;
+						background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T6_IMG04.png) no-repeat 0 0;
+						width:104px;
+						height:270px;
+					}
+					.grupo.grupo-4 #retangulo-errado {
+						top: 132px;
+  						right: 0px;
+						background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T6_IMG04_ERRADO.png) no-repeat 0 0;
+						width:104px;
+						height:270px;
+					}
+					.grupo.grupo-4 #recebe-triangulo {
+						top: 166px;
+						left: 273px;
+						width: 130px;
+						height: 126px;
+					}
+					.grupo.grupo-4 #recebe-circulo {
+						left: 219px;
+						top: 369px;
+						width: 110px;
+						height: 110px;
+					}
+					.grupo.grupo-4 #recebe-quadrado {
+						top: 63px;
+						left: 722px;
+						width: 112px;
+						height: 112px;
+					}
+					.grupo.grupo-4 #recebe-retangulo {
+						top: 128px;
+						left: 485px;
+						width: 104px;
+						height: 270px;
+					}
+			
+			.proximo {
+				position:absolute;
+				width:203px;
+				height:370px;
+				top:900px;
+				right:0;
+				background:url(../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T3_IMG00_01.png) no-repeat 0 0;
+				cursor:pointer
+			}
+		</style>
+
+		<script src="../../../../assets/js/vendor/jquery-1.11.1.min.js"></script>
+		
+		<script src="../../../../assets/js/vendor/jquery-ui-1.10.4.custom.min.js"></script>
+		<script src="../../../../assets/js/vendor/jquery.ui.touch-punch.min.js"></script>
+		
+		<script src="../../../../assets/js/plugins.js"></script>
+		<script src="../../../../assets/js/main.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready( function() {
+				var fase = 1;
+				var pontos = 0;
+				var totalPontos = 16;
+				
+				/* Arraste e solte */
+				$(".formas").children().draggable({
+					containment: "#geral",
+					revert: function(is_valid_drop){
+								if(is_valid_drop){
+									//$("#audio-certo").click();
+									return false;
+								} else {
+									//$("#audio-errado").click();
+									return true;
+								}
+							},
+					revertDuration: 200,
+					refreshPositions: true
+				});
+				
+				$(".alvos").children().each( function() {
+					$(this).droppable( {
+						accept: "#" + $(this).attr("id").replace("recebe-", "") + "-certo",
+						hoverClass: 'hover',
+						revert: "invalid",
+						drop: handleCardDrop
+					});
+				});
+			
+				function handleCardDrop( event, ui ) {
+					if(ui.draggable.attr("id").replace("-certo", "") == $(this).attr("id").replace("recebe-", "") ){
+						
+						ui.draggable.draggable('disable').removeClass("forma").css({"position":"absolute", "top":$(this).css("top"), "left": $(this).css("left")});
+						pontos++;
+						
+						if(pontos == 4){
+							$(".forma").fadeOut();
+							$(".proximo").animate({"top":"300"});
+						} else if(pontos == 8){
+							$(".forma").fadeOut();
+							$(".proximo").animate({"top":"300"});
+						}else if(pontos == 12){
+							$(".forma").fadeOut();
+							$(".proximo").animate({"top":"300"});
+						} else if(pontos == totalPontos){
+							$(".forma").fadeOut();
+							$("#audio-palmas").click();
+							$("#nav-menos").fadeIn(400);
+							finalizaAtividade();
+						}
+						
+						if( $("#nav-menos:visible") && !atividadeFinalizada ) {
+							$("#nav-menos").fadeOut(400);
+						}
+					}
+				}
+				
+				
+				function trocaTela(sentido){
+					console.log("# trocaTela:");
+					$(".grupo.grupo-"+ fase).fadeOut(300, function(){
+						$(".proximo").animate({"top":"900"}, function(){
+							$(".grupo.grupo-"+ fase).fadeOut(400, function(){
+								$(this).children(".formas").children().each( function() {
+									$(this).removeAttr("style").attr("class", "forma").draggable("enable");
+								});
+								$(this).children(".alvos").children().show();
+								if(sentido == 1) {
+									fase++;
+								} else {
+									fase--;
+								}
+								console.log("|--- fase: " + fase);
+								console.log("|--- pontos: " + pontos);
+								$(".grupo.grupo-"+ fase).fadeIn(400, function(){
+									$(".forma").fadeIn();
+									if( fase > 1){
+										$("#nav-menos").fadeIn(400);
+										if(fase == 2){
+											pontos = 4;
+										} else if(fase == 3){
+											pontos = 8;
+										} else if(fase == 4){
+											pontos = 12;
+										} else if(fase == 5){
+											pontos = 4;
+										}
+									} else {
+										pontos = 0;
+										$("#nav-menos").fadeOut(400);
+									}
+								});
+							});
+						});
+					});
+				}
+				$(".proximo").click( function(){
+					trocaTela(1);
+				});
+				
+				$("#nav-menos").on("click", function() {
+					console.log("# nav-menos:");
+					if( atividadeFinalizada ) {
+						atividadeFinalizada = false;
+						$("#fim").fadeOut(400, function() {
+							$(this).remove();
+						});
+					}
+					trocaTela(0);
+				});
+				
+			
+				var audios = {
+					certo: {
+						btn: "#audio-certo",
+						url: "FAIRY_PIXIE"
+					},
+					errado: {
+						btn: "#audio-errado",
+						url: "BOING"
+					},
+					palmas: {
+						btn: "#audio-palmas",
+						url: "PALMAS"
+					}
+				};
+						
+				tempEixo = "art";
+				tempUnidade = "2";
+				tempLicao = "10";
+				tempTela = "3";
+				preparaAudio(audios);
+			});
+		</script>
+
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+			<p class="outdated-browser upgrade-msg">You are using an <strong>outdated</strong> browser. Please <a href="../../../conteudo/browser.html">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+        <p class="outdated-browser audio-msg" style="display:none;">Your browser <strong>does not support the HTML5 audio element</strong>. Please <a href="../../../conteudo/browser.html">upgrade your browser</a> to improve your experience.</p>
+		
+		<div class="container">
+			<div id="loading"><span></span></div>
+			<div id="borda-main-content" class="row"></div>
+			<div id="main-content" class="row">
+				<div id="atividade">
+					<!-- Início do código da tela -->
+					
+						<div id="preload">
+							<img src="../../../../art/assets/img/interface/rodape_U2_L10.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T3_IMG00.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T3_IMG00_01.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T3_IMG01.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T3_IMG01_ERRADO.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T3_IMG02.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T3_IMG02_ERRADO.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T3_IMG03.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T3_IMG03_ERRADO.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T3_IMG04.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T3_IMG04_ERRADO.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T4_IMG00.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T4_IMG01.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T4_IMG01_ERRADO.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T4_IMG02.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T4_IMG02_ERRADO.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T4_IMG03.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T4_IMG03_ERRADO.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T4_IMG04.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T4_IMG04_ERRADO.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T5_IMG00.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T5_IMG01.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T5_IMG01_ERRADO.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T5_IMG02.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T5_IMG02_ERRADO.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T5_IMG03.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T5_IMG03_ERRADO.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T5_IMG04.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T5_IMG04_ERRADO.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T6_IMG00.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T6_IMG01.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T6_IMG01_ERRADO.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T6_IMG02.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T6_IMG02_ERRADO.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T6_IMG03.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T6_IMG03_ERRADO.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T6_IMG04.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L10/T3/BF_GREEN_ART_U2_L10_T6_IMG04_ERRADO.png" alt="" height="1" width="1">
+						</div><!-- // #preload -->
+                        <div id="nav-menos" class="opc-2"></div>
+						
+						<div class="grupo grupo-1">
+							<div class="formas">
+								<div id="triangulo-certo" class="forma"></div>
+								<div id="triangulo-errado" class="forma"></div>
+								
+								<div id="retangulo-certo" class="forma"></div>
+								<div id="retangulo-errado" class="forma"></div>
+								
+								<div id="quadrado-errado" class="forma"></div>
+								<div id="quadrado-certo" class="forma"></div>
+								
+								<div id="circulo-errado" class="forma"></div>
+								<div id="circulo-certo" class="forma"></div>
+							</div>
+							<div class="alvos">
+								<div id="recebe-triangulo" class="forma"></div>
+								<div id="recebe-retangulo" class="forma"></div>
+								<div id="recebe-quadrado" class="forma"></div>
+								<div id="recebe-circulo" class="forma"></div>
+							</div>
+						</div>
+					
+						<div class="grupo grupo-2">
+							<div class="formas">
+								<div id="triangulo-certo" class="forma"></div>
+								<div id="triangulo-errado" class="forma"></div>
+								
+								<div id="retangulo-certo" class="forma"></div>
+								<div id="retangulo-errado" class="forma"></div>
+								
+								<div id="quadrado-errado" class="forma"></div>
+								<div id="quadrado-certo" class="forma"></div>
+								
+								<div id="circulo-errado" class="forma"></div>
+								<div id="circulo-certo" class="forma"></div>
+							</div>
+							<div class="alvos">
+								<div id="recebe-triangulo" class="forma"></div>
+								<div id="recebe-retangulo" class="forma"></div>
+								<div id="recebe-quadrado" class="forma"></div>
+								<div id="recebe-circulo" class="forma"></div>
+							</div>
+						</div>
+					
+						<div class="grupo grupo-3">
+							<div class="formas">
+								<div id="triangulo-certo" class="forma"></div>
+								<div id="triangulo-errado" class="forma"></div>
+								
+								<div id="retangulo-certo" class="forma"></div>
+								<div id="retangulo-errado" class="forma"></div>
+								
+								<div id="quadrado-errado" class="forma"></div>
+								<div id="quadrado-certo" class="forma"></div>
+								
+								<div id="circulo-errado" class="forma"></div>
+								<div id="circulo-certo" class="forma"></div>
+							</div>
+							<div class="alvos">
+								<div id="recebe-triangulo" class="forma"></div>
+								<div id="recebe-retangulo" class="forma"></div>
+								<div id="recebe-quadrado" class="forma"></div>
+								<div id="recebe-circulo" class="forma"></div>
+							</div>
+						</div>
+					
+						<div class="grupo grupo-4">
+							<div class="formas">
+								<div id="triangulo-certo" class="forma"></div>
+								<div id="triangulo-errado" class="forma"></div>
+								
+								<div id="retangulo-certo" class="forma"></div>
+								<div id="retangulo-errado" class="forma"></div>
+								
+								<div id="quadrado-errado" class="forma"></div>
+								<div id="quadrado-certo" class="forma"></div>
+								
+								<div id="circulo-errado" class="forma"></div>
+								<div id="circulo-certo" class="forma"></div>
+							</div>
+							<div class="alvos">
+								<div id="recebe-triangulo" class="forma"></div>
+								<div id="recebe-retangulo" class="forma"></div>
+								<div id="recebe-quadrado" class="forma"></div>
+								<div id="recebe-circulo" class="forma"></div>
+							</div>
+						</div>
+					
+						<div class="proximo"></div>
+					
+						<div class="audios">
+							<div id="audio-certo"></div>
+							<div id="audio-errado"></div>
+							<div id="audio-palmas"></div>
+						</div>
+
+					<!-- Fim do código da tela --> 
+					
+				</div> <!-- // #atividade -->
+			</div> <!-- // #main-content -->
+			
+			<div id="footer">
+				<div class="row footer-content">
+				<a href="index.html" title="Go back to lesson menu" class="intro-link"></a>
+				<div class="nav-btn">
+					<a href="T2.html" class="voltar"></a>
+					<div class="recarregar" onclick="window.location.reload()" title="Reload"></div>
+					<a href="#" class="avancar transp-50"></a>
+				</div>
+				<a href="../../../../index.html" title="Go back to main menu" class="menu-link"></a>
+				</div>
+			</div>
+		</div>
+    </body>
+</html>
