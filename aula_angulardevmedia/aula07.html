@@ -15,6 +15,10 @@
         </ul>
 
          
+         <input type="text" id="nomepessoa" placeholder="pessoa">
+         <input type="text" id="idadepessoa" placeholder="idade">
+         <button type="button" ng-click="adicionaPessoa()">Adiciona</button>
+         <!-- exibindo array de obj -->
           <ul>
               <li ng-repeat="pessoa in pessoas">
                   {{pessoa.nome}} - {{pessoa.idade}}
