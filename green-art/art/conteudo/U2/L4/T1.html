@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+		<meta name="language" content="pt-BR" />
+        <title>U2/L4/T1 - Green Art | Brownie and Friends</title>
+		
+		<meta name="viewport" content="width=1240">
+		<meta name="robots" content="noindex,nofollow">
+        <meta name="description" content="">
+		
+		<meta name="apple-mobile-web-app-title" content="BF-Green">
+		<link rel="shortcut icon" href="../../../../assets/img/icons/favicon.ico">
+		<link rel="apple-touch-icon" sizes="57x57" href="../../../../assets/img/icons/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="../../../../assets/img/icons/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="../../../../assets/img/icons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="../../../../assets/img/icons/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="../../../../assets/img/icons/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="../../../../assets/img/icons/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="../../../../assets/img/icons/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="../../../../assets/img/icons/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/img/icons/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="../../../../assets/img/icons/favicon-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="../../../../assets/img/icons/favicon-160x160.png" sizes="160x160">
+		<link rel="icon" type="image/png" href="../../../../assets/img/icons/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="../../../../assets/img/icons/favicon-16x16.png" sizes="16x16">
+		<link rel="icon" type="image/png" href="../../../../assets/img/icons/favicon-32x32.png" sizes="32x32">
+		<meta name="msapplication-TileColor" content="#5ca038">
+		<meta name="msapplication-TileImage" content="../../../../assets/img/icons/mstile-144x144.png">
+		<meta name="msapplication-config" content="../../../../assets/img/icons/browserconfig.xml">
+		
+        <link rel="stylesheet" href="../../../../assets/css/normalize.css">
+		<link rel="stylesheet" href="../../../../assets/css/responsive.gs.12col.css">
+        <link rel="stylesheet" href="../../../../assets/css/main.css">
+		
+		<style type="text/css">
+			#footer .footer-content .intro-link {
+				background: url(../../../../art/assets/img/interface/rodape_U2_L4.png) no-repeat center center;
+			}
+			#atividade {
+				background:url(../../../../art/assets/img/U2/L4/T1/BF_GREEN_ART_U2_L4_T1_IMG01.png) no-repeat center center #5F391D;
+			}
+
+			.forma {
+				display:block;
+				float:left;
+				position:absolute;
+				cursor:pointer;
+			}
+			#quadrado {
+				width:151px;
+				height:151px;
+				top:64px;
+				left:96px;
+				background:url(../../../../art/assets/img/U2/L4/T1/BF_GREEN_ART_U2_L4_T1_IMG02.png);
+			}	
+			#coracao {
+				width:215px;
+				height:192px;
+				top:370px;
+				left:70px;
+				background:url(../../../../art/assets/img/U2/L4/T1/BF_GREEN_ART_U2_L4_T1_IMG03.png);
+			}
+			#estrela {
+				width:262px;
+				height:248px;
+				top:156px;
+				left:292px;
+				background:url(../../../../art/assets/img/U2/L4/T1/BF_GREEN_ART_U2_L4_T1_IMG04.png);
+			}
+			#retangulo {
+				width:346px;
+				height:135px;
+				top:440px;
+				left:459px;
+				background:url(../../../../art/assets/img/U2/L4/T1/BF_GREEN_ART_U2_L4_T1_IMG05.png);
+			}
+			#circulo {
+				width:225px;
+				height:226px;
+				top:29px;
+				left:645px;
+				background:url(../../../../art/assets/img/U2/L4/T1/BF_GREEN_ART_U2_L4_T1_IMG06.png);
+			}
+			#triangulo {
+				width:190px;
+				height:174px;
+				top:234px;
+				left:545px;
+				background:url(../../../../art/assets/img/U2/L4/T1/BF_GREEN_ART_U2_L4_T1_IMG07.png);
+			}
+		</style>
+
+		<script src="../../../../assets/js/vendor/jquery-1.11.1.min.js"></script>
+		
+		<!--<script src="../../../../assets/js/vendor/jquery-ui-1.10.4.custom.min.js"></script>
+		<script src="../../../../assets/js/vendor/jquery.ui.touch-punch.min.js"></script>-->
+		
+		<script src="../../../../assets/js/plugins.js"></script>
+		<script src="../../../../assets/js/main.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready( function() {
+				var clique = 0;
+				var totalClique = 6;
+				$(".forma").click( function(event){
+					
+					if( !$(this).hasClass("clicado") ){
+						$(this).addClass("clicado");
+						clique++;
+						console.log("|-- clique: " + clique);
+						
+						if( clique == totalClique ){
+							finalizaAtividade();
+						}
+					}
+				});
+				
+				var audios = {
+					quadrado: {
+						btn: "#quadrado",
+						url: "BF_GREEN_ART_U2_L4_T1_01"
+					},
+					retangulo: {
+						btn: "#retangulo",
+						url: "BF_GREEN_ART_U2_L4_T1_02"
+					},
+					circulo: {
+						btn: "#circulo",
+						url: "BF_GREEN_ART_U2_L4_T1_03"
+					},
+					triangulo: {
+						btn: "#triangulo",
+						url: "BF_GREEN_ART_U2_L4_T1_04"
+					},	
+					estrela: {
+						btn: "#estrela",
+						url: "BF_GREEN_ART_U2_L4_T1_05"
+					},
+					coracao: {
+						btn: "#coracao",
+						url: "BF_GREEN_ART_U2_L4_T1_06"
+					}
+				};
+						
+				tempEixo = "art";
+				tempUnidade = "2";
+				tempLicao = "4";
+				tempTela = "1";
+				preparaAudio(audios);
+			});
+		</script>
+
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+			<p class="outdated-browser upgrade-msg">You are using an <strong>outdated</strong> browser. Please <a href="../../../conteudo/browser.html">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+        <p class="outdated-browser audio-msg" style="display:none;">Your browser <strong>does not support the HTML5 audio element</strong>. Please <a href="../../../conteudo/browser.html">upgrade your browser</a> to improve your experience.</p>
+		
+		<div class="container">
+			<div id="loading"><span></span></div>
+			<div id="borda-main-content" class="row"></div>
+			<div id="main-content" class="row">
+				<div id="atividade">
+					<!-- Início do código da tela -->
+					
+						<div id="preload">
+							<img src="../../../../art/assets/img/interface/rodape_U2_L4.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L4/T1/BF_GREEN_ART_U2_L4_T1_IMG01.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L4/T1/BF_GREEN_ART_U2_L4_T1_IMG02.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L4/T1/BF_GREEN_ART_U2_L4_T1_IMG02_01.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L4/T1/BF_GREEN_ART_U2_L4_T1_IMG03.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L4/T1/BF_GREEN_ART_U2_L4_T1_IMG03_01.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L4/T1/BF_GREEN_ART_U2_L4_T1_IMG04.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L4/T1/BF_GREEN_ART_U2_L4_T1_IMG04_01.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L4/T1/BF_GREEN_ART_U2_L4_T1_IMG05.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L4/T1/BF_GREEN_ART_U2_L4_T1_IMG05_01.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L4/T1/BF_GREEN_ART_U2_L4_T1_IMG06.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L4/T1/BF_GREEN_ART_U2_L4_T1_IMG06_01.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L4/T1/BF_GREEN_ART_U2_L4_T1_IMG07.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U2/L4/T1/BF_GREEN_ART_U2_L4_T1_IMG07_01.png" alt="" height="1" width="1">
+						</div><!-- // #preload -->
+						
+						<div id="quadrado" class="forma"></div>
+						<div id="coracao" class="forma"></div>
+						<div id="estrela" class="forma"></div>
+						<div id="retangulo" class="forma"></div>
+						<div id="circulo" class="forma"></div>
+						<div id="triangulo" class="forma"></div>
+
+					<!-- Fim do código da tela --> 
+					
+				</div> <!-- // #atividade -->
+			</div> <!-- // #main-content -->
+			
+			<div id="footer">
+				<div class="row footer-content">
+				<a href="index.html" title="Go back to lesson menu" class="intro-link"></a>
+				<div class="nav-btn">
+					<a href="#" class="voltar transp-50"></a>
+					<div class="recarregar" onclick="window.location.reload()" title="Reload"></div>
+					<a href="T2.html" class="avancar"></a>
+				</div>
+				<a href="../../../../index.html" title="Go back to main menu" class="menu-link"></a>
+				</div>
+			</div>
+		</div>
+    </body>
+</html>

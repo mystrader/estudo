@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+<meta charset="utf-8">
+<title>Mídia Indoor - SEPLAG</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/pages/dashboard.css" rel="stylesheet">
+<link href="css/style_mindoor.css" rel="stylesheet">
+<link rel="Shortcut Icon" href="img/favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
+  
+  
+
+  
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="midia_indoor">
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container"> 
+                   <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span
+                    class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span> </a>
+                    <a class="brand" href="index.html" ><img src="img/logo_seplag.png" alt="Logo SEPLAG-RJ"></a>
+                    
+                    <div class="nav-collapse">
+				<div class="pull-right userarea">
+					<div class="nome">
+						<i class="icon-user"></i> Henrique de Lucena Carvalho
+						[<a href="#myModal" role="button" data-toggle="modal" class="changekey">Trocar Senha</a>]</div>
+						
+						
+<!-- chamada modal: troca senha-->
+						<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+								  <div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	<h3 id="myModalLabel"><i class="icon-key"></i> Troca de Senha</h3>
+								  </div>
+								  <div class="modal-body">
+									<p>Digite sua senha atual e sua nova senha:</p>
+									
+							<div class="login-fields">
+
+						<div class="field">
+							<label for="password">Senha Atual:</label>
+							<input type="password" id="password" name="password" value="" placeholder="Senha" class="login password-field">
+							<span class="erroform dnone">* Campo <strong>SENHA</strong> ausente.</span>
+							</div> <!-- /password -->
+
+							<div class="field">
+							<label for="password">Nova Senha:</label>
+							<input type="password" id="password" name="password" value="" placeholder="Senha" class="login password-field">
+							<span class="erroform dnone">* Campo <strong>NOVA SENHA</strong> ausente.</span>
+							</div> <!-- /password -->
+							
+							
+								<div class="field">
+							<label for="password">Repete Nova Senha:</label>
+							<input type="password" id="password" name="password" value="" placeholder="Senha" class="login password-field">
+							<span class="erroform dnone">* Campo <strong>NOVA SENHA</strong> ausente.</span>
+							</div> <!-- /password -->
+						
+						
+						
+							</div>
+									
+									
+								  </div>
+								  <div class="modal-footer">
+									<button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Fechar</button>
+									<button class="btn btn-success">Trocar Senha </button>
+								  </div>
+								</div>
+<!-- chamada modal: troca senha-->						
+						
+						
+				  <div class="sair pull-right"><a href="#"><i class="icon-off"></i> sair</a></div>
+				</div>
+			
+		
+			</div>
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                    
+                    
+   
+      <!--/.nav-collapse --> 
+    </div>
+    <!-- /container --> 
+  </div>
+  <!-- /navbar-inner --> 
+</div>
+<!-- /navbar -->
+
+<div class="subnavbar">
+  <div class="subnavbar-inner">
+    <div class="container">
+      <ul class="mainnav listagem-slider">
+        	<li class="subnavbar-open-right">
+             	<a href="mindoor-novo-slider.html">
+             		<i class="icon-plus-sign"></i>
+             		<span>Novo</span> 
+             	</a> 
+             </li>
+             <li class="active subnavbar-open-right">
+             	<a href="mindoor-listagem-slider.html">
+             		<i class="icon-list-ul"></i>
+             		<span>Slider Cadastrado</span> 
+             	</a> 
+             </li>
+             <li class="subnavbar-open-right">
+             	<a href="mindoor-adm-usuario.html">
+             		<i class="icon-cog"></i>
+             		<span>Adm Usuários</span> 
+             	</a> 
+             </li> 
+      </ul>
+    </div>
+    <!-- /container --> 
+  </div>
+  <!-- /subnavbar-inner --> 
+</div>
+
+	
+	<div class="breadcontainer midiaindoor">
+	<div class="container">
+	<div class="row">
+       <div class="span7">
+        	<ul class="bc">
+			<li><a href="" class="firstitem" style="color: #666;">/ TV SEPLAG</a></li>
+			<li><strong>/ SLIDER CADASTRADO</strong></li>
+
+		</ul>
+       </div>
+<!--
+        <div class="pull-right">
+        <button class="btn btn-info"><i class="icon-user icon-white"></i> Adm Perfis</button>
+   <br />
+        </div>
+-->
+	</div>
+</div>
+</div>
+	
+
+	
+
+<div class="main">
+  <div class="main-inner">
+    <div class="container">
+      
+      <div class="row">
+
+   
+       
+        <div class="span12">
+         <div class="widget">
+            <div class="widget-header header-lista-user"> <i class="icon-list"></i>
+              <h3>Adm Slider </h3>
+            </div>
+            
+            
+            
+            
+            <!-- /widget-header -->
+            <div class="widget-content"> 
+<div class="control-group">										
+										
+<div class="bs-example" data-example-id="striped-table">
+    <table class="table table-bordered table-slider">
+      <thead>
+        <tr>
+          <th>Ativo</th>
+          <th>Ordem</th>
+          <th>Título</th>
+          <th>Descrição</th>
+          <th>imagem</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"><INPUT TYPE="checkbox" NAME="OPCAO" VALUE="op1" checked="cheked"></th>
+          <td>
+			<select name="ordenacaoSlider" id="">
+				<option value="">#1</option>
+				<option value="">#2</option>
+				<option value="">#3</option>
+			</select>
+         </td>
+          <td>Título do slider #1 asdfa sdfa sdf</td>
+          <td>Lipsum dorem etc prop burt etc lodir sdlsdfis lsdfisdfl isdifslid fidsoidfsdf</td>
+           <td><img src="images/slider1.jpg" alt="imagem slider 1" width="180" height="100"></td>
+        </tr>
+        <tr>
+          <th scope="row"><INPUT TYPE="checkbox" NAME="OPCAO" VALUE="op1" checked="cheked"></th>
+          <td>	<select name="ordenacaoSlider" id="">
+				<option value="">#1</option>
+				<option value="" selected>#2</option>
+				<option value="">#3</option>
+			</select></td>
+          <td>Título do slider #2 asdfa sdfa sdf</td>
+          <td>Lipsum dorem etc prop burt etc lodir sdlsdfis lsdfisdfl isdifslid fidsoidfsdf</td>
+          <td><img src="images/slider2.jpg" width="180" height="100" alt="imagem slider 2"></td>
+        </tr>
+        <tr>
+          <th scope="row"><INPUT TYPE="checkbox" NAME="OPCAO" VALUE="op1"></th>
+          <td>	<select name="ordenacaoSlider" id="">
+				<option value="">#1</option>
+				<option value="">#2</option>
+				<option value="" selected >#3</option>
+			</select></td>
+          <td>Título do slider #3 asdfa sdfa sdf</td>
+          <td>Lipsum dorem etc prop burt etc lodir sdlsdfis lsdfisdfl isdifslid fidsoidfsdf</td>
+          <td><img src="images/slider3.jpg" width="180" height="100" alt="imagem slider 3"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div><!-- /control-group -->
+                                 
+											
+											
+											
+
+											
+											
+	<div class="form-actions">
+			<button type="submit" class="btn btn-primary">Guardar Edição</button> 
+			<button class="btn">Cancelar</button>
+		</div> 											
+											
+				
+										</fieldset>
+									</form>
+						
+						
+						  
+						  
+					
+            
+	 
+       
+            <!-- /widget-content -->   
+  
+ </div>
+      </div>
+      <!-- /row --> 
+    </div>
+    <!-- /container --> 
+  </div>
+  <!-- /main-inner --> 
+</div>
+<!-- /main -->
+<div class="extra">
+  <div class="extra-inner">
+    <div class="container">
+      <div class="row">
+                    <div class="span9">
+                       
+                            
+             <ul>
+			<li><h4>CONTATO</h4></li>
+         	<li>(21) 2332-7059</li>
+         	<li>(21) 2332-6994</li>
+         </ul>
+     
+<!--
+                        <ul>
+                            <li><a href="javascript:;">Vídeos</a></li>
+                            <li><a href="javascript:;">Imagem</a></li>
+                            <li><a href="javascript:;">Áudio</a></li>
+                            <li><a href="javascript:;">Públicações</a></li>
+                        </ul>
+-->
+                    </div>
+       
+                    <div class="span3">                       
+                        <ul>
+                            <li style="text-align: right"><img src="images/logo_governorj.png" alt=""></li>
+                                                      
+                        </ul><br />
+		
+                        
+
+
+
+                         
+                    </div>
+                    <!-- /span3 -->
+                </div>
+      <!-- /row --> 
+    </div>
+    <!-- /container --> 
+  </div>
+  <!-- /extra-inner --> 
+</div>
+<!-- /extra -->
+<div class="footer">
+  <div class="footer-inner">
+    <div class="container">
+      <div class="row">
+        <div class="span12"> &copy; 2013 <a href="http://www.servidor.rj.gov.br/portal-web/index">SECRETARIA DE ESTADO DE PLANEJAMENTO E GESTÃO - CNPJ:42.498.634/0001-66 - Av. Erasmo Braga, nº118 Centro, Rio de Janeiro - RJ - CEP 20020-000</a>. </div>
+        <!-- /span12 --> 
+      </div>
+      <!-- /row --> 
+    </div>
+    <!-- /container --> 
+  </div>
+  <!-- /footer-inner --> 
+</div>
+<!-- /footer --> 
+<!-- Le javascript
+================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="js/jquery-1.7.2.min.js"></script> 
+<script src="js/excanvas.min.js"></script> 
+<script src="js/chart.min.js" type="text/javascript"></script> 
+<script src="js/bootstrap.js"></script>
+<script language="javascript" type="text/javascript" src="js/full-calendar/fullcalendar.min.js"></script>
+ 
+<script src="js/base.js"></script> 
+
+<script>
+	
+	
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                $('#blah').attr('src', e.target.result);
+            }
+            
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    
+    $("#imgInp").change(function(){
+        readURL(this);
+    });
+	
+</script>
+
+</body>
+</html>

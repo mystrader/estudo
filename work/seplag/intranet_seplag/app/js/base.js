@@ -59,6 +59,33 @@ $(function(){var a=document.createElement("input");"placeholder"in a==0&&$("[pla
 
 
 
+    /***
+    * / PÁGINAS: TODAS
+    * / FUNÇÃO:  aparecer uma nova versão do menu no scrollar
+    ************************************************************************************************************/
+		
+		/*Função para scrollTop*/
+		$(function(){   
+			var _subnavbar = $('.subnavbar');
+			var _logo_newmenu = $('.logo_newmenu');
+			
+			_logo_newmenu.hide();
+			
+		     $(window).scroll(function () { 
+			if ($(this).scrollTop() > 100) {
+				_subnavbar.addClass('scrollnew');
+				_logo_newmenu.show(200);
+			} else {
+				_subnavbar.removeClass('scrollnew');
+				_logo_newmenu.hide(100);
+			} 
+			});  
+		});
+    	
+
+
+
+
 
 
 

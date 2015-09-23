@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+		<meta name="language" content="pt-BR" />
+        <title>U1/L12/T2 - Green Art | Brownie and Friends</title>
+		
+		<meta name="viewport" content="width=1240">
+		<meta name="robots" content="noindex,nofollow">
+        <meta name="description" content="">
+		
+		<meta name="apple-mobile-web-app-title" content="BF-Green">
+		<link rel="shortcut icon" href="../../../../assets/img/icons/favicon.ico">
+		<link rel="apple-touch-icon" sizes="57x57" href="../../../../assets/img/icons/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="../../../../assets/img/icons/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="../../../../assets/img/icons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="../../../../assets/img/icons/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="../../../../assets/img/icons/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="../../../../assets/img/icons/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="../../../../assets/img/icons/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="../../../../assets/img/icons/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/img/icons/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="../../../../assets/img/icons/favicon-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="../../../../assets/img/icons/favicon-160x160.png" sizes="160x160">
+		<link rel="icon" type="image/png" href="../../../../assets/img/icons/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="../../../../assets/img/icons/favicon-16x16.png" sizes="16x16">
+		<link rel="icon" type="image/png" href="../../../../assets/img/icons/favicon-32x32.png" sizes="32x32">
+		<meta name="msapplication-TileColor" content="#5ca038">
+		<meta name="msapplication-TileImage" content="../../../../assets/img/icons/mstile-144x144.png">
+		<meta name="msapplication-config" content="../../../../assets/img/icons/browserconfig.xml">
+		
+        <link rel="stylesheet" href="../../../../assets/css/normalize.css">
+		<link rel="stylesheet" href="../../../../assets/css/responsive.gs.12col.css">
+        <link rel="stylesheet" href="../../../../assets/css/main.css">
+		
+		<style type="text/css">
+			#footer .footer-content .intro-link {
+				background: url(../../../../art/assets/img/interface/rodape_U1_L12.png) no-repeat center center;
+			}
+			
+			#atividade {
+				background:url(../../../../art/assets/img/U1/L12/T2/BF_GREEN_ART_U1_L12_T2_IMG01.jpg) no-repeat 0 0;
+			}
+
+			#overlay, #cardOverlay {
+				position: absolute;
+				display: none;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				z-index: 9999;
+			}
+			#overlay.on, #cardOverlay.on {
+				display: block;
+			}
+
+			.inativo {
+				cursor:default;
+			}
+			.bola {
+				position:absolute;
+				top:479px;
+				width:133px;
+				height:123px;
+				cursor:pointer;
+			}
+			#azul.bola {
+				left:32px;
+				background:url(../../../../art/assets/img/U1/L12/T2/BF_GREEN_ART_U1_L12_T2_IMG02.png) no-repeat 0 0;
+				background-position: 0 -123px;
+			}
+			#amarelo.bola {
+				right:22px;
+				background:url(../../../../art/assets/img/U1/L12/T2/BF_GREEN_ART_U1_L12_T2_IMG03.png) no-repeat 0 0;
+				background-position: 0 -123px;
+			}
+			.bola#azul:hover,
+			.bola#amarelo:hover,
+			.bola#azul.ativado,
+			.bola#amarelo.ativado {
+				background-position: 0 0;
+			}
+			#area-cards {
+				position: relative;
+				float:left;
+				width:743px;
+				height:559px;
+				margin:10px 0 0 186px;
+			}
+			.card {
+				float:left;
+				width:182px;
+				height:137px;
+				margin:0 3px 3px 0;
+				cursor:pointer;
+				z-index:4;
+				-webkit-transform: rotateY(0deg);
+				   -moz-transform: rotateY(0deg);
+					-ms-transform: rotateY(0deg);
+					 -o-transform: rotateY(0deg);
+						transform: rotateY(0deg);
+			}
+			
+			/* BGs figuras */
+			.figura1 {
+				background:url(../../../../art/assets/img/U1/L12/T2/BF_GREEN_ART_U1_L12_T2_IMG05.png) no-repeat 0 0;
+			}
+			.figura2 {
+				background:url(../../../../art/assets/img/U1/L12/T2/BF_GREEN_ART_U1_L12_T2_IMG06.png) no-repeat 0 0;
+			}
+			.figura3 {
+				background:url(../../../../art/assets/img/U1/L12/T2/BF_GREEN_ART_U1_L12_T2_IMG07.png) no-repeat 0 0;
+			}
+			.figura4 {
+				background:url(../../../../art/assets/img/U1/L12/T2/BF_GREEN_ART_U1_L12_T2_IMG08.png) no-repeat 0 0;
+			}
+			.figura5 {
+				background:url(../../../../art/assets/img/U1/L12/T2/BF_GREEN_ART_U1_L12_T2_IMG09.png) no-repeat 0 0;
+			}
+			.figura6 {
+				background:url(../../../../art/assets/img/U1/L12/T2/BF_GREEN_ART_U1_L12_T2_IMG10.png) no-repeat 0 0;
+			}
+			.figura7 {
+				background:url(../../../../art/assets/img/U1/L12/T2/BF_GREEN_ART_U1_L12_T2_IMG11.png) no-repeat 0 0;
+			}
+			.figura8 {
+				background:url(../../../../art/assets/img/U1/L12/T2/BF_GREEN_ART_U1_L12_T2_IMG12.png) no-repeat 0 0;
+			}
+			
+			/* BGs sons */
+			.som1,
+			.som2,
+			.som3,
+			.som4,
+			.som5,
+			.som6,
+			.som7,
+			.som8 {
+				background:url(../../../../art/assets/img/U1/L12/T2/BF_GREEN_ART_U1_L12_T2_IMG21.png) no-repeat 0 0;
+			}
+			
+			/* Card virado */
+			.card-verso {
+				-webkit-background-size: 182px 137px;
+				   -moz-background-size: 182px 137px;
+					 -o-background-size: 182px 137px;
+						background-size: 182px 137px;
+										
+				background:url(../../../../art/assets/img/U1/L12/T2/BF_GREEN_ART_U1_L12_T2_IMG04_verso_carta.png) no-repeat 0 0;
+			}
+			/* Card grupo amarelo */
+			.grupo-amarelo {
+				background-position: 0 -137px;
+			}
+			/* Card grupo azul */
+			.grupo-azul {
+				background-position: 0 -274px;
+			}
+			
+			/* Efeito flip card */
+			/* vira */
+			.vira-card {
+				-webkit-transform: translateZ(0); /* FIX: CSS ANIMATION SLOW OR CHOPPY IN MOBILE BROWSERS */ 
+				   -moz-transform: translateZ(0);
+					-ms-transform: translateZ(0);
+					 -o-transform: translateZ(0);
+						transform: translateZ(0);
+		
+				-webkit-animation: viraCard 0.5s ease-in-out 1 forwards;
+				   -moz-animation: viraCard 0.5s ease-in-out 1 forwards;
+					 -o-animation: viraCard 0.5s ease-in-out 1 forwards;
+						animation: viraCard 0.5s ease-in-out 1 forwards;
+						z-index:10;
+			}
+			@-webkit-keyframes viraCard { 
+				0% {
+					-webkit-transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					   -moz-transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					    -ms-transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					     -o-transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					        transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					-webkit-animation-timing-function: ease-in;
+        			        animation-timing-function: ease-in;
+				}
+				50% {
+					-webkit-transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					   -moz-transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					    -ms-transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					     -o-transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					        transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					-webkit-animation-timing-function: ease-out;
+        			        animation-timing-function: ease-out;
+				}
+				100% {
+					-webkit-transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					   -moz-transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					    -ms-transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					     -o-transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					        transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					-webkit-animation-timing-function: ease-in;
+        			        animation-timing-function: ease-in;
+				}
+			}
+			@-moz-keyframes viraCard { 
+				0% {
+					-webkit-transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					   -moz-transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					    -ms-transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					     -o-transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					        transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					-webkit-animation-timing-function: ease-in;
+        			        animation-timing-function: ease-in;
+				}
+				50% {
+					-webkit-transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					   -moz-transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					    -ms-transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					     -o-transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					        transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					-webkit-animation-timing-function: ease-out;
+        			        animation-timing-function: ease-out;
+				}
+				100% {
+					-webkit-transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					   -moz-transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					    -ms-transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					     -o-transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					        transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					-webkit-animation-timing-function: ease-in;
+        			        animation-timing-function: ease-in;
+				}
+			}
+			@-o-keyframes viraCard { 
+				0% {
+					-webkit-transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					   -moz-transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					    -ms-transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					     -o-transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					        transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					-webkit-animation-timing-function: ease-in;
+        			        animation-timing-function: ease-in;
+				}
+				50% {
+					-webkit-transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					   -moz-transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					    -ms-transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					     -o-transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					        transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					-webkit-animation-timing-function: ease-out;
+        			        animation-timing-function: ease-out;
+				}
+				100% {
+					-webkit-transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					   -moz-transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					    -ms-transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					     -o-transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					        transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					-webkit-animation-timing-function: ease-in;
+        			        animation-timing-function: ease-in;
+				}
+			}
+			@keyframes viraCard { 
+				0% {
+					-webkit-transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					   -moz-transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					    -ms-transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					     -o-transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					        transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					-webkit-animation-timing-function: ease-in;
+        			        animation-timing-function: ease-in;
+				}
+				50% {
+					-webkit-transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					   -moz-transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					    -ms-transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					     -o-transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					        transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					-webkit-animation-timing-function: ease-out;
+        			        animation-timing-function: ease-out;
+				}
+				100% {
+					-webkit-transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					   -moz-transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					    -ms-transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					     -o-transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					        transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					-webkit-animation-timing-function: ease-in;
+        			        animation-timing-function: ease-in;
+				}
+			}	
+			/* desvira */
+			.desvira-card {						
+				-webkit-transform: translateZ(0); /* FIX: CSS ANIMATION SLOW OR CHOPPY IN MOBILE BROWSERS */ 
+				   -moz-transform: translateZ(0);
+					-ms-transform: translateZ(0);
+					 -o-transform: translateZ(0);
+						transform: translateZ(0);
+		
+				-webkit-animation: desviraCard 0.5s ease-in-out 1 forwards;
+				   -moz-animation: desviraCard 0.5s ease-in-out 1 forwards;
+					 -o-animation: desviraCard 0.5s ease-in-out 1 forwards;
+						animation: desviraCard 0.5s ease-in-out 1 forwards;
+						z-index:10;
+			}
+			@-webkit-keyframes desviraCard { 
+				0% {
+					
+					-webkit-transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					   -moz-transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					    -ms-transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					     -o-transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					        transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					-webkit-animation-timing-function: ease-in;
+        			        animation-timing-function: ease-in;
+					z-index:5;
+				}
+				50% {
+					-webkit-transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					   -moz-transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					    -ms-transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					     -o-transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					        transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					-webkit-animation-timing-function: ease-out;
+        			        animation-timing-function: ease-out;
+					z-index:10;
+				}
+				100% {
+					-webkit-transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					   -moz-transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					    -ms-transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					     -o-transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					        transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					-webkit-animation-timing-function: ease-in;
+        			        animation-timing-function: ease-in;
+					z-index:5;
+				}
+			}
+			@-moz-keyframes desviraCard { 
+				0% {
+					
+					-webkit-transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					   -moz-transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					    -ms-transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					     -o-transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					        transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					-webkit-animation-timing-function: ease-in;
+        			        animation-timing-function: ease-in;
+					z-index:5;
+				}
+				50% {
+					-webkit-transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					   -moz-transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					    -ms-transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					     -o-transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					        transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					-webkit-animation-timing-function: ease-out;
+        			        animation-timing-function: ease-out;
+					z-index:10;
+				}
+				100% {
+					-webkit-transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					   -moz-transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					    -ms-transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					     -o-transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					        transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					-webkit-animation-timing-function: ease-in;
+        			        animation-timing-function: ease-in;
+					z-index:5;
+				}
+			}
+			@-o-keyframes desviraCard { 
+				0% {
+					
+					-webkit-transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					   -moz-transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					    -ms-transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					     -o-transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					        transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					-webkit-animation-timing-function: ease-in;
+        			        animation-timing-function: ease-in;
+					z-index:5;
+				}
+				50% {
+					-webkit-transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					   -moz-transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					    -ms-transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					     -o-transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					        transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					-webkit-animation-timing-function: ease-out;
+        			        animation-timing-function: ease-out;
+					z-index:10;
+				}
+				100% {
+					-webkit-transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					   -moz-transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					    -ms-transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					     -o-transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					        transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					-webkit-animation-timing-function: ease-in;
+        			        animation-timing-function: ease-in;
+					z-index:5;
+				}
+			}
+			@keyframes desviraCard { 
+				0% {
+					
+					-webkit-transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					   -moz-transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					    -ms-transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					     -o-transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					        transform: perspective(580px) translateZ(0) rotateY(180deg) scale(1);
+					-webkit-animation-timing-function: ease-in;
+        			        animation-timing-function: ease-in;
+					z-index:5;
+				}
+				50% {
+					-webkit-transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					   -moz-transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					    -ms-transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					     -o-transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					        transform: perspective(580px) translateZ(0) rotateY(90deg) scale(1.5);
+					-webkit-animation-timing-function: ease-out;
+        			        animation-timing-function: ease-out;
+					z-index:10;
+				}
+				100% {
+					-webkit-transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					   -moz-transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					    -ms-transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					     -o-transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					        transform: perspective(580px) translateZ(0) rotateY(0deg) scale(1);
+					-webkit-animation-timing-function: ease-in;
+        			        animation-timing-function: ease-in;
+					z-index:5;
+				}
+			}
+			/* vira imagem 180 graus */
+			.vira-img {
+				-webkit-background-size: 182px 411px!important;
+				   -moz-background-size: 182px 411px!important;
+					 -o-background-size: 182px 411px!important;
+						background-size: 182px 411px!important;
+						
+				-webkit-transform: rotateY(180deg);
+				   -moz-transform: rotateY(180deg);
+					-ms-transform: rotateY(180deg);
+					 -o-transform: rotateY(180deg);
+						transform: rotateY(180deg);
+			}
+		</style>
+
+		<script src="../../../../assets/js/vendor/jquery-1.11.1.min.js"></script>
+		
+		<!--<script src="../../../../assets/js/vendor/jquery-ui-1.10.4.custom.min.js"></script>
+		<script src="../../../../assets/js/vendor/jquery.ui.touch-punch.min.js"></script>-->
+		
+		<script src="../../../../assets/js/plugins.js"></script>
+		<script src="../../../../assets/js/main.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready( function() {
+				var tentativas = 0;
+				var tempGrupo;
+				var conferindoResposta = atividadeFinalizada = false;
+				var cardClicado1 = cardClicado2 = "";
+				//var tempResposta = [];
+				var tempResposta = "";
+				var tempResposta1 = "";
+				var tempResposta2 = "";
+				var acertos = 0;
+				var totalAcertos = 8;
+				var esperaAudio = false;
+				var erroDelay;
+				var playing = false;
+				
+				/* inicia a atividade */
+				$(".card").shuffle();
+				desativaCards();
+				
+				function ativaGrupo(cor){
+					if( tempGrupo != cor ){
+						console.log("# ativaGrupo");
+						console.log("|--- grupo atual: " + cor);
+						$(".bola#"+ cor).addClass("ativado");
+						$(".bola:not(#"+ cor +")").removeClass("ativado");
+						tempGrupo = cor;
+						ativaCards();
+						$("#cardOverlay").removeClass("on");
+					}
+				}
+				function desativaGrupos(){
+					console.log("# desativaGrupos");
+					$(".bola").removeClass("ativado");
+					tempGrupo = null;
+				}
+				function ativaCards(){
+					console.log("# ativaCards");
+					$(".card").each( function() {
+						$(this).addClass("ativado");
+					});
+				}
+				function desativaCards(){
+					console.log("# desativaCards");
+					$(".card").each( function() {
+						$(this).removeClass("ativado");
+					});
+				}
+				
+				function confereResposta(){
+					console.log("# confereResposta");
+					conferindoResposta = true;
+				
+					cardClicado1 = tempResposta1.indexOf("audio-") > -1 ? tempResposta1.replace("audio-", "").toString() : tempResposta1;
+					cardClicado2 = tempResposta2.indexOf("audio-") > -1 ? tempResposta2.replace("audio-", "").toString() : tempResposta2;
+					/*console.log("|--- cardClicado1: " + cardClicado1);
+					console.log("|--- cardClicado2: " + cardClicado2);
+					console.log("|--- tempResposta1: " + tempResposta1);
+					console.log("|--- tempResposta2: " + tempResposta2);*/
+					
+					
+					if(cardClicado1 == cardClicado2){
+						console.log("|--- Resposta correta! :) ");
+						acertos++;
+						setTimeout( function(){
+							$("#"+ tempResposta1 +", #"+ tempResposta2).addClass("grupo-"+ tempGrupo).removeClass("on");
+							if(esperaAudio) {
+								setTimeout( function(){
+									$("#acertou").click();
+								}, 1000);
+							} else {
+								$("#acertou").click();
+							}
+							setTimeout( function(){
+								$("#overlay").toggleClass("on");
+								$("#cardOverlay").addClass("on");
+							}, 1000);
+						}, 300);
+					} else {
+						console.log("|--- Resposta errada! :( ");
+						//desviraCards();
+						if(esperaAudio) {
+							erroDelay = 3500;
+						} else {
+							erroDelay = 2000;
+						}
+							
+						setTimeout( function(){
+							$("#errou").click();
+							$this = $("#"+ tempResposta1 +", #"+ tempResposta2);
+							
+								$this.removeClass("on vira-card").addClass("desvira-card");
+								setTimeout( function(){
+									$this.addClass("card-verso").removeClass("vira-img");
+								}, 250);
+								setTimeout( function(){
+									$this.removeClass("vira-card desvira-card");
+								}, 500);
+								setTimeout( function(){
+									$("#overlay").toggleClass("on");
+									$("#cardOverlay").addClass("on");
+								}, 1000);
+						}, erroDelay); // tempo de espera antes de desvirar as cartas
+					}
+					setTimeout( function(){
+						$this.removeClass("efeito-verso efeito-frente");
+					}, 1300);
+					
+				
+					// Reativa a ativiade
+					setTimeout( function(){
+						$(".desvirado.on").removeClass("on");
+						tentativas = 0;
+						playing = false;
+						tempResposta = [];
+						conferindoResposta = false;
+						desativaGrupos();
+						if(acertos == totalAcertos) {
+							finalizaAtividade();
+							atividadeFinalizada = true;
+						}
+						console.log("|--- Reativando a atividade...");
+						console.log("|--- tentativas: " + tentativas);
+						console.log("|--- tempResposta: " + tempResposta);
+						console.log("|--- conferindoResposta: " + conferindoResposta);
+						console.log("|--- tempGrupo: " + tempGrupo);
+					}, 350);				
+				}
+				
+				function flip(card) {
+					$this = card;
+					console.log("Card flipado");
+					$this.toggleClass("vira-card");
+					setTimeout( function(){
+						$this.toggleClass("card-verso").toggleClass("vira-img");
+					}, 250);
+				}
+				
+				$(".bola").click( function() {
+					if(!playing && !conferindoResposta && !atividadeFinalizada){
+						ativaGrupo( $(this).attr("id") );
+					}
+				});
+				
+				$(".card").on("click", function(event) {
+					$this = $(event.target);
+					if ( $this.hasClass("ativado") && !$this.hasClass("on") && !$this.hasClass("grupo-amarelo") && !$this.hasClass("grupo-azul") ){
+						playing = true;
+						$("#cardOverlay").addClass("on");
+						$this = $(event.target);
+						console.log("# card clicado:");
+						console.log("|--- card: " + $this.attr("class"));
+						$this.addClass("on");
+							
+						// $this.addClass("vira-card");
+						// setTimeout( function(){
+						// 	$this.removeClass("card-verso").addClass("vira-img");
+						// }, 250);
+						flip($this);
+						
+						tentativas++;
+						setTimeout(function(){$("#cardOverlay").removeClass("on");},1500);
+						if (tentativas == 1) {
+							tempResposta1 = $this.attr("id");
+							tempResposta1.indexOf("audio-") > -1 ? $("#toca-"+ tempResposta1).click() : "";
+							
+							esperaAudio = false;
+							
+						} else if (tentativas == 2){
+							$("#overlay").toggleClass("on");
+							tempResposta2 = $this.attr("id");
+							tempResposta2.indexOf("audio-") > -1 ? $("#toca-"+ tempResposta2).click() : "";
+							
+							esperaAudio = tempResposta2.indexOf("audio-") > -1 ? true : false;
+							
+							console.log("|--- Segundo clique");
+							setTimeout( function(){
+								desativaCards();
+								confereResposta(esperaAudio);
+							}, 300);
+						}
+					}
+				});
+				
+				var audios = {
+					acertou: {
+						btn: "#acertou",
+						url: "BF_GREEN_ART_U1_L12_T2_00"
+					},
+					errou: {
+						btn: "#errou",
+						url: "BF_GREEN_ART_U1_L12_T1_Spring_Boing"
+					},
+					meninoVerde: {
+						btn: "#toca-audio-menino",
+						url: "BF_GREEN_ART_U_L12_a_green_boy"
+					},
+					meninaVioleta: {
+						btn: "#toca-audio-menina",
+						url: "BF_GREEN_ART_U_L12_a_purple_girl"
+					},
+					passarinhoAmarelo: {
+						btn: "#toca-audio-passaro",
+						url: "BF_GREEN_ART_U_L12_a_yellow_bird"
+					},
+					gatoCinza: {
+						btn: "#toca-audio-gato",
+						url: "BF_GREEN_ART_U_L12_a_grey_cat"
+					},
+					peixinhoLaranja: {
+						btn: "#toca-audio-peixe",
+						url: "BF_GREEN_ART_U_L12_a_orange_fish"
+					},
+					camundongoBranco: {
+						btn: "#toca-audio-camundongo",
+						url: "BF_GREEN_ART_U_L12_a_white_mouse"
+					},
+					cachorroMarrom: {
+						btn: "#toca-audio-cachorro-marrom",
+						url: "BF_GREEN_ART_U_L12_a_brow_and_white_dog"
+					},
+					cachorroPreto: {
+						btn: "#toca-audio-cachorro-preto",
+						url: "BF_GREEN_ART_U_L12_a_black_dog"
+					}
+				};
+						
+				tempEixo = "art";
+				tempUnidade = "1";
+				tempLicao = "12";
+				tempTela = "2";
+				preparaAudio(audios);
+			});
+		</script>
+
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+			<p class="outdated-browser upgrade-msg">You are using an <strong>outdated</strong> browser. Please <a href="../../../conteudo/browser.html">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+        <p class="outdated-browser audio-msg" style="display:none;">Your browser <strong>does not support the HTML5 audio element</strong>. Please <a href="../../../conteudo/browser.html">upgrade your browser</a> to improve your experience.</p>
+		
+		<div class="container">
+			<div id="loading"><span></span></div>
+			<div id="borda-main-content" class="row"></div>
+			<div id="main-content" class="row">
+				<div id="atividade">
+					<!-- Início do código da tela -->
+					
+						<div id="preload">
+							<img src="../../../../art/assets/img/interface/rodape_U1_L12.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U1/L12/T2/BF_GREEN_ART_U1_L12_T2_IMG01.jpg" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U1/L12/T2/BF_GREEN_ART_U1_L12_T2_IMG02.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U1/L12/T2/BF_GREEN_ART_U1_L12_T2_IMG03.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U1/L12/T2/BF_GREEN_ART_U1_L12_T2_IMG04_verso_carta.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U1/L12/T2/BF_GREEN_ART_U1_L12_T2_IMG05-222222.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U1/L12/T2/BF_GREEN_ART_U1_L12_T2_IMG05.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U1/L12/T2/BF_GREEN_ART_U1_L12_T2_IMG06.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U1/L12/T2/BF_GREEN_ART_U1_L12_T2_IMG07.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U1/L12/T2/BF_GREEN_ART_U1_L12_T2_IMG08.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U1/L12/T2/BF_GREEN_ART_U1_L12_T2_IMG09.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U1/L12/T2/BF_GREEN_ART_U1_L12_T2_IMG10.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U1/L12/T2/BF_GREEN_ART_U1_L12_T2_IMG11.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U1/L12/T2/BF_GREEN_ART_U1_L12_T2_IMG12.png" alt="" height="1" width="1">
+							<img src="../../../../art/assets/img/U1/L12/T2/BF_GREEN_ART_U1_L12_T2_IMG21.png" alt="" height="1" width="1">
+						</div><!-- // #preload -->
+						
+						<div id="azul" class="bola"></div>
+						<div id="amarelo" class="bola"></div>
+						<div id="area-cards">
+							<div id="menino" class="card figura1 card-verso"></div>
+							<div id="menina" class="card figura2 card-verso"></div>
+							<div id="audio-menino" class="card som1 card-verso"></div>
+							<div id="audio-menina" class="card som2 card-verso"></div>
+							
+							<div id="passaro" class="card figura3 card-verso"></div>
+							<div id="gato" class="card figura4 card-verso"></div>
+							<div id="audio-passaro" class="card som3 card-verso"></div>
+							<div id="audio-gato" class="card som4 card-verso"></div>
+							
+							<div id="peixe" class="card figura5 card-verso"></div>
+							<div id="camundongo" class="card figura6 card-verso"></div>
+							<div id="audio-peixe" class="card som5 card-verso"></div>
+							<div id="audio-camundongo" class="card som6 card-verso"></div>
+							
+							<div id="cachorro-marrom"class="card figura7 card-verso"></div>
+							<div id="cachorro-preto" class="card figura8 card-verso"></div>
+							<div id="audio-cachorro-marrom" class="card som7 card-verso"></div>
+							<div id="audio-cachorro-preto" class="card som8 card-verso"></div>
+
+							<div id="cardOverlay" class="on"></div>
+						</div>
+
+						<div id="overlay"></div>
+
+						<div id="audios">
+							<div id="acertou"></div>
+							<div id="errou"></div>
+					
+							<div id="toca-audio-menino"></div>
+							<div id="toca-audio-menina"></div>
+							<div id="toca-audio-passaro"></div>
+							<div id="toca-audio-gato"></div>
+							<div id="toca-audio-peixe"></div>
+							<div id="toca-audio-camundongo"></div>
+							<div id="toca-audio-cachorro-marrom"></div>
+							<div id="toca-audio-cachorro-preto"></div>
+						</div>
+
+					<!-- Fim do código da tela --> 
+					
+				</div> <!-- // #atividade -->
+			</div> <!-- // #main-content -->
+			
+			<div id="footer">
+				<div class="row footer-content">
+				<a href="index.html" title="Go back to lesson menu" class="intro-link"></a>
+				<div class="nav-btn">
+					<a href="T1.html" class="voltar"></a>
+					<div class="recarregar" onclick="window.location.reload()" title="Reload"></div>
+					<a href="#" class="avancar transp-50"></a>
+				</div>
+				<a href="../../../../index.html" title="Go back to main menu" class="menu-link"></a>
+				</div>
+			</div>
+		</div>
+    </body>
+</html>
