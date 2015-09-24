@@ -1,42 +1,30 @@
-app.controller("aula07Controller", function($scope){
-         $scope.nomes = [ 'jaison', 'Daniel', 'tiago', 'fernando' ];
-
-        $scope.pessoas = [];
-        $scope.pessoas.push(
-            { nome: "marcus henrique", idade: 31, status: false }             
-          );
-        $scope.pessoas.push(
-            { nome: "Paulo", idade: 31, status: false }             
-          );
-        $scope.pessoas.push(
-            { nome: "marcus henrique", idade: 31, status: false }             
-          );
-        $scope.pessoas.push(
-            { nome: "Thiago", idade: 31, status: false }              
-          );
-        $scope.pessoas.push(
-            { nome: "Mateus", idade: 31, status: false }              
-          );
-        $scope.pessoas.push(
-            { nome: "João", idade: 31, status: false }              
-          );
-        $scope.pessoas.push(
-            { nome: "Pedro", idade: 31, status: false }             
-          );
-        console.log($scope.pessoas);
+app.controller("aula08Controller", function($scope){
 
 
+$scope.estados = ['RS', 'BA', 'RJ', 'SC']
 
-      $scope.adicionaPessoa = function(){
-        var nome = document.getElementById("nomepessoa");
-        var idade = document.getElementById("idadepessoa");
+$scope.pessoa = novaPessoa();
+ $scope.pessoas = [];
 
-        $scope.pessoas.push({
-          nome: nome.value, idade : idade.value
-        });
+ $scope.salvarPessoa = function(pessoa){
+    $scope.pessoas.push(pessoa);
+    $scope.pessoa = novaPessoa();
+ }
 
-        nome.value = "";
-        idade.value = "";
-      }
+
 
 });
+
+
+function novaPessoa(){
+  return{
+    nome: "",
+    email:"",
+    sexo: "f",
+    estado: "RJ"
+  }
+}
+
+
+
+
