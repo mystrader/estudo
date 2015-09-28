@@ -1,0 +1,35 @@
+<html ng-app="app">
+    <head>
+        <title>Curso AngularJS</title>
+        <meta charset="utf-8">
+        
+        <style>
+            .ui-match {
+                background: red;
+                color:white;
+            }
+        </style>
+        
+    </head>
+    <body>
+        
+        <div ng-controller="Aula22Controller" ng-init="busca='';var1='';var2=''">
+            
+            <input type="search" ng-model="busca">
+            <hr/>
+            <div ng-bind-html="texto | highlight:busca"></div>
+            
+            <hr/>
+            <input ng-model="var1" ui-mask="{{maskCpf}}">
+            <input ng-model="var2" ui-mask="{{maskFone}}">
+            
+            {{var2}}
+            
+        </div>
+    
+        <script src="js/angular/angular.min.js"></script>
+        <script src="js/angular/angular-sanitize.min.js"></script>
+        <script src="js/angular/ui-utils.min.js"></script>
+        <script src="js/aula22Controller.js"></script>
+    </body>
+</html>
