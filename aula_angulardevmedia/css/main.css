@@ -1,0 +1,15 @@
+
+/*GERAL*/
+body{font-family: 'Ubuntu', sans-serif; color: #666;margin: 40px;font-size: 15px;}
+h1{font-size:0.9em;font-weight: 500; color: #2A5F72;}
+h2{font-size:1.2em;font-weight: 400; color: #239AB8;margin: 0px 0 20px 0}
+
+/*OVERWRITE > bootstrap 3.+ */
+.jumbotron{padding: 50px;}
+input.ng-invalid{background: #E17272; color: #fff; } 
+input.ng-valid{background-color: #CFE0CB; color: #333; } 
+input{border: 1px solid #ccc;padding: 3px;}
+.btn{font-size: 19px;}
+
+/*FORM*/
+.erro{font-family: 'Ubuntu', sans-serif; color: #666;font-size: 0.9em;color: #5B1515;margin-top: -5px;} 

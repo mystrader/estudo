@@ -9,6 +9,10 @@ $scope.pessoa = novaPessoa();
  $scope.salvarPessoa = function(pessoa){
     $scope.pessoas.push(pessoa);
     $scope.pessoa = novaPessoa();
+
+    // não funcionou :(
+    $scope.frm.$setUntouched();
+    $scope.frm.$setPristine();
  }
 
 
