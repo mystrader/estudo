@@ -139,7 +139,7 @@ text-align: center;clear: both;}
 
 
 .table-slider  select{width: 55px;} 
-.table-slider th{vertical-align: middle;}
+.table-slider th{vertical-align: middle;text-align: center}
 .acenter{text-align: center!important;}
 
 h4.titwidgetsform{font-size: 16px;font-weight: 400;color: #007DC3;margin: 10px 0 13px 0;}
@@ -204,20 +204,11 @@ form{margin-bottom: 0px}
 }
 
 
-
-.qutton{
-	box-sizing : content-box !important;
-	background-repeat : no-repeat !important;
-	background-position: center center !important;
-	box-shadow:  0 3px 6px 0 rgba(0, 0, 0, 0.3);
-	cursor : auto;
+/* OVERWRITE */
+.table.table-slider td {
+    vertical-align: middle;
+    text-align: center;
 }
-
-.qutton.close {
-	position : absolute !important;
-	cursor : pointer;
-}
-
-.quttonClonePlaceHolder {
-	visibility: hidden;
+.table.table-slider img{    
+	border: 5px solid #ECECEC;
 }
