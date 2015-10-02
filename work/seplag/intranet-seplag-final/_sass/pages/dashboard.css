@@ -1,0 +1,358 @@
+/*------------------------------------------------------------------
+Bootstrap Admin Template by EGrappler.com
+------------------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------------
+[1. Shortcuts / .shortcuts]
+*/
+
+.shortcuts {
+	text-align: center;	
+}
+
+.shortcuts .shortcut { 
+	width: auto;
+	display: inline-block;
+	padding: 12px 18px;
+	margin: 0 .9% 1em;
+	vertical-align: top;	
+	text-decoration: none;
+	background: #F5F5F5;
+	border-radius: 3px;
+		 -webkit-transition: all 100ms ease-in-out;
+    -moz-transition: all 100ms ease-in-out;
+    -ms-transition: all 100ms ease-in-out;
+    -o-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
+}
+
+.shortcuts .shortcut .shortcut-icon {
+	margin-top: .25em;
+	margin-bottom: .25em;
+	
+	font-size: 32px;
+	color: #545454;
+}
+
+.shortcuts .shortcut:hover {
+	background: #007ABA;
+   -moz-box-shadow:    inset 0 0 10px #036496;
+   -webkit-box-shadow: inset 0 0 10px #036496;
+   box-shadow:         inset 0 0 8px #036496;
+}
+
+.shortcuts .shortcut:hover span{
+	color: #fff;
+}
+
+.shortcuts .shortcut:hover .shortcut-icon {
+	color: #fff;
+}
+
+.shortcuts .shortcut-label {
+	display: block;	
+	font-weight: 400;
+	color: #545454;
+}
+
+
+
+/*------------------------------------------------------------------
+[2. Stats / .stats]
+*/
+
+.stats {
+	width: 100%;
+	display: table;
+	padding: 0 0 0 10px;
+	margin-top: .5em;
+	margin-bottom: 1.9em;
+}
+
+.stats .stat {
+	display: table-cell;
+	width: 40%;
+	vertical-align: top;
+	
+	font-size: 11px;
+	font-weight: bold;
+	color: #999;
+}
+
+.stat-value {
+	display: block;
+	margin-bottom: .55em;
+	
+	font-size: 30px;
+	font-weight: bold;
+	letter-spacing: -2px;
+	color: #444;
+}
+
+.stat-time {
+	text-align: center;
+	padding-top: 1.5em;
+}
+
+.stat-time .stat-value {
+	color: #19bc9c;
+	font-size: 40px;
+}
+
+.stats #donut-chart {
+	height: 100px;
+	margin-left: -20px;	
+}
+
+
+
+
+
+/*------------------------------------------------------------------
+[3. News Item / .news-items]
+*/
+
+.news-items {
+	margin: 1em 0 0;
+}
+
+.news-items li {
+	display: table;
+    padding: 0 2em 0 1.2em;
+    padding-bottom: 1em;
+    word-break: break-word;
+    margin-bottom: 1em;
+    width: 96%;
+    border-bottom: 1px dotted #CCC;
+}
+
+.news-items li:last-child { padding-bottom: 0; border: none; }
+
+.news-item-date {
+	display: table-cell;
+}
+
+.news-item-detail {
+	display: table-cell;
+}
+
+.news-item-title {
+	font-size: 13px;
+	font-weight: 400;
+}
+
+.news-item-date {
+	width: 75px;
+	vertical-align: middle;
+	text-align: center;
+	
+}
+
+.news-item-day {
+    display: block;
+    margin-bottom: .25em;
+    font-size: 31px;
+    color: #92684C;
+}
+
+.news-item-preview {
+	margin-bottom: 0;
+	    padding-right: 8px;
+	color: #777;
+}
+
+.news-item-month {
+	display: block;
+	padding-right: 1px;	
+	
+	font-size: 12px;
+	font-weight: 600;
+	color: #888;
+}
+
+
+
+/*------------------------------------------------------------------
+[4. Action Table / .action-table]
+*/
+
+.action-table .btn-small {
+	padding: 4px 5px 5px;
+	
+	font-size: 10px;
+}
+
+.action-table .td-actions { 
+	width: 80px; 
+	
+	text-align: center; 
+}
+
+	.action-table .td-actions .btn { 
+		margin-right: .5em;		
+	}
+	
+	.action-table .td-actions .btn:last-child { 
+		margin-rigth: 0; 		
+	}
+	
+	
+	
+#big_stats 
+{ 
+	width: 100%; 
+	display: table;
+	margin-top: 1.5em;
+	
+	
+}
+
+.big-stats-container .widget-content {
+	border:0;
+}
+
+#big_stats .stat
+{
+	width: 25%;
+	height: 90px;
+	text-align: center;
+	display: table-cell;
+	padding: 0;
+	position: relative;
+	
+	border-right: 1px solid #CCC;
+	border-left: 1px solid #FFF;
+}
+#big_stats  i { font-size:30px; display:block; line-height: 40px; color:#b2afaa;}
+#big_stats .stat:hover i {color:#184F7D;;}
+
+h6.bigstats{
+    margin: 20px;
+    font-weight: 500;
+	font-size: 0.9em;
+    color: #A9A189;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 26px;	
+}
+
+#big_stats .stat:first-child {
+	border-left: none;
+}
+
+#big_stats .stat:last-child {
+	border-right: none;
+}
+
+#big_stats .stat h4
+{
+	font-size: 11px;
+	font-weight: bold;
+	color: #777;
+	margin-bottom: 1.5em;
+}
+
+#big_stats .stat .value
+{
+	font-size: 45px;
+	font-weight: 200;
+	color: #545454;
+	line-height: 1.2em;
+}
+
+
+
+@media all and (max-width: 950px) and (min-width: 1px) {
+	
+	#big_stats {
+		display: block;
+		margin-bottom: -40px;
+	}
+	
+	#big_stats .stat {
+		width: 49%;
+		display: block;
+		margin-bottom: 3em;
+		float: left;
+	}	
+	
+	#big_stats .stat:nth-child(2) {
+		border-right: none;
+	}
+	
+	#big_stats .stat:nth-child(3) {
+		border-left: none;
+	}
+	
+}
+
+@media (max-width: 767px) {
+	#big_stats .stat .value {
+		font-size: 40px;
+	}
+}
+	
+	
+	
+	
+@media (max-width: 979px) {
+	
+	.shortcuts .shortcut {
+		width: 31%;
+	}
+}
+
+
+@media (max-width: 480px) {
+	
+	.stats .stat {
+		
+		margin-bottom: 3em;
+	}
+	
+	.stats .stat .stat-value {
+		margin-bottom: .15em;
+		
+		font-size: 20px;
+	}
+	
+	.stats {
+		float: left;
+		
+		display: block;
+		
+		margin-bottom: 0;
+	}
+	
+	#chart-stats {
+		margin: 2em 0 1em;		
+	}
+	
+	.shortcuts .shortcut {
+		width: 48%;
+	}
+}
+
+
+
+
+.dropdown-user img{
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	border: 2px solid #E8E8E8;
+	width: 40px;
+}
+
+.dropdown .caret{margin: 8px 0 0 10px;}    
+
+/* overwrite*/
+.navbar .nav>li>a {float: none;font-size: 0.9em;padding: 10px 20px 11px;line-height: 19px;color: #00518D!important;text-decoration: none;text-shadow: none;background-color: rgba(24, 79, 125, 0.03);}
+.navbar .nav>li>a:hover{background-color: rgba(27, 82, 128, 0.06);    -webkit-transition: background 400ms ease-in-out;
+    -moz-transition: background 400ms ease-in-out;
+    -ms-transition: background 400ms ease-in-out;
+    -o-transition: background 400ms ease-in-out;
+    transition: background 400ms ease-in-out;}
