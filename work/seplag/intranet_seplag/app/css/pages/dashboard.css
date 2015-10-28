@@ -2,14 +2,13 @@
 Bootstrap Admin Template by EGrappler.com
 ------------------------------------------------------------------*/
 
-
-
 /*------------------------------------------------------------------
 [1. Shortcuts / .shortcuts]
 */
 
 .shortcuts {
 	text-align: center;	
+	cursor: pointer;
 }
 
 .shortcuts .shortcut { 
@@ -20,8 +19,8 @@ Bootstrap Admin Template by EGrappler.com
 	vertical-align: top;	
 	text-decoration: none;
 	background: #F5F5F5;
-	border-radius: 3px;
-		 -webkit-transition: all 100ms ease-in-out;
+	border-radius: 2px;
+	-webkit-transition: all 100ms ease-in-out;
     -moz-transition: all 100ms ease-in-out;
     -ms-transition: all 100ms ease-in-out;
     -o-transition: all 100ms ease-in-out;
@@ -30,32 +29,46 @@ Bootstrap Admin Template by EGrappler.com
 
 .shortcuts .shortcut .shortcut-icon {
 	margin-top: .25em;
-	margin-bottom: .25em;
-	
-	font-size: 32px;
-	color: #545454;
-}
-
-.shortcuts .shortcut:hover {
-	background: #007ABA;
-   -moz-box-shadow:    inset 0 0 10px #036496;
-   -webkit-box-shadow: inset 0 0 10px #036496;
-   box-shadow:         inset 0 0 8px #036496;
-}
-
-.shortcuts .shortcut:hover span{
+	margin-bottom: .25em;	
+	font-size: 2.5em;
 	color: #fff;
 }
 
-.shortcuts .shortcut:hover .shortcut-icon {
-	color: #fff;
-}
+.shortcuts .shortcut:hover {background: #007ABA; /*   -moz-box-shadow:    inset 0 0 10px #036496; -webkit-box-shadow: inset 0 0 10px #036496; box-shadow:         inset 0 0 8px #036496;*/ }
+.shortcuts .shortcut:hover span{color: #fff; }
+.shortcuts .shortcut:hover .shortcut-icon {color: #fff; }
+.shortcuts .shortcut-label {display: block; font-weight: 400; font-size: 1.0em; color: #545454; }
 
-.shortcuts .shortcut-label {
-	display: block;	
-	font-weight: 400;
-	color: #545454;
-}
+
+
+
+/* disable status */
+.disable {background-color: #ccc!important;color: #666!important;cursor: default!important;}
+.disable i{color: #666!important}
+
+
+/* Cor Atalhos */
+.shortcuts .bens-pat,
+.shortcuts .m-predial,
+.shortcuts .veiculo,
+.shortcuts .telefonia,
+.shortcuts .aniversariantes,
+.shortcuts .atdm-tecnico,
+.shortcuts .sup-tecnico,
+.shortcuts .cat-eletronico{background-color: #007ABA;}
+
+.shortcuts i{color: #fff!important;}
+
+
+.shortcuts .bens-pat:hover,
+.shortcuts .m-predial:hover,
+.shortcuts .veiculo:hover,
+.shortcuts .telefonia:hover,
+.shortcuts .aniversariantes:hover,
+.shortcuts .atdm-tecnico:hover,
+.shortcuts .sup-tecnico:hover,
+.shortcuts .cat-eletronico:hover{background-color: #184F7D;}
+
 
 
 
@@ -301,8 +314,18 @@ h6.bigstats{
 @media (max-width: 979px) {
 	
 	.shortcuts .shortcut {
-		width: 31%;
+		width: 16%;
+		padding: 2px 5px;
 	}
+
+
+.shortcuts .shortcut .shortcut-icon{
+    margin-top: .15em;
+    margin-bottom: .10em;
+    font-size: 2.4em;
+}
+
+
 }
 
 
@@ -332,7 +355,7 @@ h6.bigstats{
 	}
 	
 	.shortcuts .shortcut {
-		width: 48%;
+		width: 12%;
 	}
 }
 

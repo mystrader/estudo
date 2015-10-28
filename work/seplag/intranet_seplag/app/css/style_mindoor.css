@@ -31,10 +31,7 @@ box-shadow: 0px;
 
 
 .midia_indoor .account-container:hover {
-	     -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1);
-	
+	 
 	
 -webkit-box-shadow: -1px 2px 23px 0px rgba(34,56,64,1);
 -moz-box-shadow: -1px 2px 23px 0px rgba(34,56,64,1);
@@ -156,23 +153,19 @@ form{margin-bottom: 0px}
 
 
 /* NOVO USER */
-
 .widget-header.header-adduser{background-color: #B85A45;}
 .mainnav.novo-slider li.active a{background-color: #B85A45!important;}
-
-
 .novo-slider .active{border-bottom: 3px solid #D69384}
 
 /* LISTAGEM SLIDER */
-.widget-header.header-lista-user{background-color: #D2946A}
-.mainnav.listagem-slider li.active a{background-color: #D2946A!important;}
-.listagem-slider .active{border-bottom: 3px solid #E0B79B;}
-
+.widget-header.header-lista-user{background-color: #B85A45}
+.mainnav.listagem-slider li.active a{background-color: #B85A45!important;}
+.listagem-slider .active{border-bottom: 3px solid #D69384;}
 
 /* ADM USER */
 .widget-header.header-adm-user{background-color: #0078B9} 
 .mainnav.adm-usuario li.active a{background-color: #0078B9!important}
-.adm-usuario     .active{border-bottom: 3px solid #60A9D0}
+.adm-usuario  .active{border-bottom: 3px solid #60A9D0}
 
 /**/
 
@@ -202,6 +195,14 @@ form{margin-bottom: 0px}
 	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=98);
 	filter:alpha(opacity=98);
 }
+/* overwrite */
+span.login-checkbox {    
+    margin-top: 21px;
+}
+
+
+/* ADD SLIDE */
+.addslide{margin: 0px 0px  20px}
 
 
 /* OVERWRITE */

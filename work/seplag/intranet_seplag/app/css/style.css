@@ -5,8 +5,20 @@
 [1. Global]
 */
 
-
 .clear{clear: both}
+.controls-line{margin-bottom: 30px;}
+.th-btn-excluir{width: 70px;}
+.mleft15{margin-right: 15px;}    
+
+/*util*/
+.errorinput{color: #BE1B1B;margin-left: 5px;font-size: 14px;font-weight: 400;}
+.acenter{text-align: center!important;margin: 0 auto;}
+
+/*FIX*/
+.btn-group{float: right;}
+.btn .caret{margin-top: 0px;}
+.checkbox.inline input{position: relative; top: -2px;margin-right: 10px;}
+
  /* fontsGoogle */
  @font-face {
     font-family: 'Open Sans';
@@ -52,10 +64,32 @@
     font-weight: 800;
     font-style: normal;
 }
+/*icon fonts google*/
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(../fonts/MaterialIcons-Regular.woff2) format('woff2'),
+       url(../fonts/MaterialIcons-Regular.woff) format('woff'),
+       url(../fonts/MaterialIcons-Regular.ttf) format('truetype');
+}
+.material-icons {font-family: 'Material Icons'; font-weight: normal; font-style: normal; font-size: 24px;  /* Preferred icon size */ display: inline-block; width: 1em; height: 1em; line-height: 1; text-transform: none; letter-spacing: normal; word-wrap: normal; white-space: nowrap; direction: ltr; /* Support for all WebKit browsers. */ -webkit-font-smoothing: antialiased; /* Support for Safari and Chrome. */ text-rendering: optimizeLegibility; /* Support for Firefox. */ -moz-osx-font-smoothing: grayscale; /* Support for IE. */ font-feature-settings: 'liga'; }
+// Rules for sizing the icon.
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
 
+// Rules for using icons as black on a light background.
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
 
-
-
+// Rules for using icons as white on a dark background.
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 
 
 h3{line-height: 27px;font-size: 20px;font-family: 'open sans', verdana, sans-serif;font-weight: 400;}
@@ -101,8 +135,7 @@ textarea {
 	background:-ms-linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%); /* IE10+ */
 	background:linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9');
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9')";
-	
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9')";	
 	font-size: 10px;
 	color: #444;
 	text-transform: uppercase;
@@ -1354,7 +1387,7 @@ color: #333;
 
 
 
-.breadcontainer{background-color: #F1F1F1;padding: 16px 0px 0px;margin-bottom: 25px;}
+.breadcontainer{background-color: #F1F1F1;padding: 16px 0px 0px;margin-bottom: 25px;height: 51px}
 .breadcontainer .bc {margin-left: -6px;float: left;height: 24px;}
 .breadcontainer .firstitem{color: #666;font-size: 25px!important;}
 .breadcontainer .bc strong{color: #666;font-size: 25px!important;font-weight: 600!important}
@@ -1366,14 +1399,27 @@ color: #333;
 
 .brand img{width: 270px;}
 
+.bc .btn-group{top: -7px}
+.bc .btn-large{border: 0px;background-color: #F1F1F1;}
+.bc .dropdown-menu{width: 100%;}
+
+
+/* BreadCump com dropDown em Solicitações */
+.bc  .btn-large .caret{margin-top: -2px;}
+.bc  .btn-large.dropdown-toggle{box-shadow: none}
+.bc .dropdown-menu.titleacess li{float: none;margin: 4px 0px;}
+.bc .dropdown-menu.titleacess li a{margin-left:: -3px; cursor: pointer; display: block; text-decoration: none; padding: 10px; color: #666; font-size: 25px!important; font-weight: 600!important; } 
+.bc .dropdown-menu.titleacess li a:hover{color: #fff;}
+
+.breadcontainer .bc select{font-weight: 600; font-size: 25px; color: #666; width: auto; padding: 5px; border: 0px; border-bottom: 1px solid #ccc; height: 48px; background-color: rgb(241, 241, 241); /* border: 0px; */ position: relative; top: -14px; }
+.breadcontainer .bc option{font-weight: 600!important; font-size: 25px; color: #666;}
+
+
 
 .icon-bell-alt .label-warning{background-color: #f89406;position: relative;left: -5px;top: -11px;}
 .dropdown.dropdown-user{margin-top: -8px;}
 
-
 .table-bordered th{font-size: 12px;font-weight: 400;}
-
-
 
 
 #myCarousel img{width: 100%;}
@@ -1384,28 +1430,24 @@ color: #333;
 -moz-box-shadow: 0px 3px 9px 0px rgba(214,214,214,1);
 box-shadow: 0px 3px 9px 0px rgba(214,214,214,1);}
 .alert strong{font-weight: 600;font-size: 16px;margin-right: 6px;}
+.alert.alert-fail{background-color: #F3D8D2; color: #823030;border: 1px solid #ECC4BB;}
 
 .acessorapido h3{color: #004586; margin-bottom: 10px}
 .label{padding: 4px 9px;font-weight: 400;margin: 0px 3px 0px 0}
 
-
-
-
-
-.shortcuts .shortcut .shortcut-icon.disable,.shortcuts .shortcut .shortcut-icon:hover.disable{color: #CBD1D6}
-
+/*Acesso*/
+/*.shortcuts .shortcut .shortcut-icon.disable,.shortcuts .shortcut .shortcut-icon:hover.disable{color: #CBD1D6}
+.shortcuts .shortcut.link{background-color: #BFD6DE;}
+.shortcuts .shortcut.phone{background-color: #DBDCC9;}
+.shortcuts .shortcut.people{background-color: #DFE6DD;}*/
 
 
 .shortcuts .shortcut.link{background-color: #BFD6DE;}
-
-
 .shortcuts .shortcut.phone{background-color: #DBDCC9;}
 .shortcuts .shortcut.people{background-color: #DFE6DD;}
 
 .shortcut.alertcall{}
-.shortcut.alertcall:hover{cursor: default; 
-}
-
+.shortcut.alertcall:hover{cursor: default;}
 
 
 /*Submit Index*/
@@ -1468,74 +1510,45 @@ opacity: 0.8;
 
 /*Notícia Geral*/
 
-/*
-Ref:
-Thanks to:
-http://www.jqueryscript.net/layout/Simple-jQuery-Plugin-To-Create-Pinterest-Style-Grid-Layout-Pinterest-Grid.html
-*/
-
-
-#pinBoot {
-  position: relative;
-  max-width: 100%;
-  width: 100%;
-}
-#pinBoot  img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-.white-panel {
-  position: absolute;
-  background: white;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
-  padding: 10px;
-}
-/*
-stylize any heading tags withing white-panel below
-*/
-
-.white-panel h1 {
-  font-size: 1em;
-}
-.white-panel h1 a {
-  color: #A92733;
-}
-.white-panel:hover {
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
-  margin-top: -5px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.news-item-date img{border-radius: 200px 200px 200px 200px;
--moz-border-radius: 200px 200px 200px 200px;
--webkit-border-radius: 200px 200px 200px 200px;
-border: 0px solid #000000;}
-
+.white-panel h1 {font-size: 1em; }
+ .white-panel h1 a {color: #A92733; } .white-panel:hover {box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5); margin-top: -5px; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+.news-item-date img{border-radius: 200px 200px 200px 200px; -moz-border-radius: 200px 200px 200px 200px; -webkit-border-radius: 200px 200px 200px 200px; border: 0px solid #000000;}
 
 .lermais{width: 94%!important;}
 
 
+/* Inicial */
 .previsao{display: block;text-align: center; margin: 20px 0 0 0 }
-
 .lugar{font-size: 12px;color: #403E3E; margin-right: 8px;}
-
 .label-intenso, .label-intenso:hover {background-color: #8A2623;}
-
-.widget-table .icon-folder-close{color: #CCC898;margin-right: 3px; }
-
+.widget-table .icon-folder-close{color: #CCC898;margin-right: 3px;}
 .widetraffic li span.lugar {font-size: 1.1em;margin-left: 10px;}
 
+/* texarea-medio*/
+.tarea-medio textarea{height: 100px;}
+
+.section h3{display: block; width: 100%; padding: 0; margin-bottom: 27px; font-size: 19.5px; line-height: 36px; color: #333333; border: 0; border-bottom: 1px solid #eee; }
 
 
     
+/* menu efeito scroll */
+.logo_newmenu{border: 0px;margin: 0px;padding: 0px;width: 208px;}
+.logo_newmenu img{width: 93%;margin: 0px;padding: 0px;}
 
+/*
+- Scroll nav new 
+- Descrição: navegação do topo reduzida ao scrollar;
+*/
+.scrollnew{z-index: 10000000; top: 0; position: fixed; width: 100%; margin: 0 auto; -webkit-box-shadow: 3px 0px 26px -1px rgba(209,209,209,1); -moz-box-shadow: 3px 0px 26px -1px rgba(209,209,209,1); box-shadow: 3px 0px 26px -1px rgba(209,209,209,1); -moz-opacity: 0.98; -khtml-opacity: 0.98; opacity: 0.9!important; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=98); filter: progid:DXImageTransform.Microsoft.Alpha(opacity=98); }
 
+/* Folder na table*/
+ table .icon-folder-close{
+    color: #B08220;
+    margin-right: 5px;
+}
 
-
+.container-privacidade{border: 1px dashed #ccc;width: auto;display: block;background-color: #FAFAFA;padding: 25px 30px;
+    margin-top: 2.3em;}
 
 
 

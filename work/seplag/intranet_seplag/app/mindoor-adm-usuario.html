@@ -108,12 +108,14 @@
   <div class="subnavbar-inner">
     <div class="container">
       <ul class="mainnav adm-usuario">
+<!--
         	<li class="subnavbar-open-right">
              	<a href="mindoor-novo-slider.html">
              		<i class="icon-plus-sign"></i>
              		<span>Novo</span> 
              	</a> 
              </li>
+-->
              <li class="subnavbar-open-right">
              	<a href="mindoor-listagem-slider.html">
              		<i class="icon-list-ul"></i>
@@ -172,6 +174,19 @@
             <!-- /widget-header -->
             <div class="widget-content"> 
            
+              <!-- mensagens de sistema -->
+<div class="alert alert-fail">
+<button type="button" class="close" data-dismiss="alert">×</button>
+ <i class="icon-info-sign"></i> Mensagem <strong class="erro_red">Erro</strong>feedback sistema.
+</div>
+                                           
+                                           <div class="alert alert-success">
+<button type="button" class="close" data-dismiss="alert">×</button>
+											   <i class="icon-info-sign"></i>  Mensagem <strong>Acerto</strong>feedback sistema.
+</div>
+<!-- mensagens de sistema -->
+              
+              
                <h4 class="titwidgetsform">
 Cadastrar Usuário</h4>   
                  
@@ -181,28 +196,32 @@ Cadastrar Usuário</h4>
 		<label class="control-label" for="addnome">Nome:</label>
 		<div class="controls">
 		<input type="text" id="addnome" value="" class="span5">
+		<span class="erro_red">Campo "NOME" ausente.</span>
 		</div> <!-- /controls -->
 	</div>	
-	<div class="span3">
+	<div class="span5">
 		<label class="control-label" for="addemail">Email:</label>
 		<div class="controls">
-			<input type="text"  id="addemail" value="" class="span3">
-		</div> <!-- /controls -->
-	</div>
-	<div class="span3">
-		<label class="control-label" for="addsenha">Senha:</label>
-		<div class="controls">
-			<input type="text"  id="addsenha" value="">
+			<input type="text"  id="addemail" value="" class="span3"><br />
+			<span class="erro_red">Campo "E-mail" ausente.</span>
 		</div> <!-- /controls -->
 	</div>											
 </div>
          
-             
+          <br />   
       <div class="form-actions">						
-			<button type="submit" class="btn btn-success">Adicionar</button> 
+			<button type="submit" class="btn btn-success"><i class="icon-plus"></i>&nbsp; Adicionar Usuário</button> 
+			
+			<span> ou, no modo edição --> </span>
+			
+					<button type="submit" class="btn btn-success"><i class="icon-ok"></i>&nbsp; Confirma Edição</button> 
+			
 		</div>   <br />
                                
+         
                          
+                                         
+                                                                         
       
 	 <h4 class="titwidgetsform">Usuários Cadastrados</h4>       
 
@@ -219,35 +238,75 @@ Cadastrar Usuário</h4>
         <td>John</td>
         <td>john@example.com</td>
      	<td class="acenter">     		
-     		<a class="btn btn-mini btn-danger" href="#"><i class=" icon-remove"></i> Excluir</a>
-     	</td>
-      </tr>
-      <tr>
-        <td>Mary</td>
-        <td>Mary@gmail.com</td>
-        <td class="acenter">        	
-     		<a class="btn btn-mini btn-danger" href="#"><i class=" icon-remove"></i> Excluir</a>
-     	</td>
-      </tr>
-      <tr>
-        <td>July</td>
-        <td>July@gmail.com</td>
-        <td class="acenter">        	
-     		<a class="btn btn-mini btn-danger" href="#"><i class=" icon-remove"></i> Excluir</a>
+     		<a class="btn btn-mini btn-danger" data-toggle="modal" href="#excluir">
+     		<i class=" icon-remove"></i> Excluir</a>
+    		   	
+     		 <a class="btn btn-mini btn-primary" data-toggle="modal" href="#_______editartemplate">
+     		 <i class="icon-check"></i> Editar</a>
+     		
      	</td>
       </tr>
     </tbody>
-  </table>
-          
-       
-              
-            </div>
+  </table>    
+	</div>
             <!-- /widget-content -->   
        </div>
         
 
       </div>
-     
+    
+     <!-- Modal de Exclusão -->
+<div id="excluir" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Confirmação</h3>
+  </div>
+  <div class="modal-body">
+    <p>Você realmente deseja EXCLUIR ? (*texto exemplo)</p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Não</button>
+    <button class="btn btn-success">Sim</button>
+  </div>
+</div>           	          	
+<!-- End: Modal de Exclusão --> 
+    
+      
+     <!-- Modal de EDIÇÂO DE USUÁRIO -->
+<div id="editartemplate" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Edição</h3>
+  </div>
+  <div class="modal-body">
+    <p></p>
+    <div class="control-group fixheight">			
+
+	<div class="span3">
+		<label class="control-label" for="addnome">Nome:</label>
+		<div class="controls">
+		<input type="text" id="addnome" value="" class="span3">
+		<span class="erro_red">Campo "NOME" ausente.</span>
+		</div> <!-- /controls -->
+	</div>	
+	<div class="span5">
+		<label class="control-label" for="addemail">Email:</label>
+		<div class="controls">
+			<input type="text" id="addemail" value="" class="span3"><br>
+			<span class="erro_red">Campo "E-mail" ausente.</span>
+		</div> <!-- /controls -->
+	</div>											
+</div>
+    
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Não</button>
+    <button class="btn btn-success">Sim</button>
+  </div>
+</div>           	          	
+<!-- Modal de EDIÇÂO DE USUÁRIO -->        
+          
+              
      
      
       <!-- /row --> 

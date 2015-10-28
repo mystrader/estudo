@@ -38,6 +38,16 @@
 		
 			<h2>TVSeplag - Login</h2>		
 			
+			
+			<div class="alert alert-success">
+<button type="button" class="close" data-dismiss="alert">×</button>
+	 <i class="icon-info-sign"></i> Crítica POSITIVA 
+</div>
+							  								  <div class="alert alert-danger">
+<button type="button" class="close" data-dismiss="alert">×</button>
+	 <i class="icon-info-sign"></i> Crítica NEGATIVA 
+</div>
+			
 			<div class="login-fields">
 				
 				<p>Por favor, digite seus dados:</p>
@@ -45,13 +55,13 @@
 				<div class="field">
 					<label for="username">Usuário</label>
 					<input type="text" id="username" name="username" value="" placeholder="Usuário" class="login username-field" />
-<span class="erroform dnone">* Campo <strong>USUÁRIO</strong> ausente.</span>
+<span class="erroform ">* Campo <strong>USUÁRIO</strong> ausente.</span>
 				</div> <!-- /field -->
 				
 				<div class="field">
 					<label for="password">Senha:</label>
 					<input type="password" id="password" name="password" value="" placeholder="Senha" class="login password-field"/>
-<span class="erroform dnone">* Campo <strong>SENHA</strong> ausente.</span>
+<span class="erroform ">* Campo <strong>SENHA</strong> ausente.</span>
 				</div> <!-- /password -->
 				
 			</div> <!-- /login-fields -->
@@ -59,8 +69,60 @@
 			<div class="login-actions">
 				
 				<span class="login-checkbox">					
-					<a href="" class="btn btn-small">Reenviar Senha</a>
+					<a href="#modal-trocaSenha"  data-toggle="modal"  class="btn btn-small" role="button" >Reenviar Senha</a>
+					
+				
+					
 				</span>
+								
+<!-- chamada modal: REENVIAR SENHA -->
+						<div id="modal-trocaSenha" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+							  
+							  
+							  
+								  <div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	<h3 id="myModalLabel"><i class="icon-envelope"></i> Recuperar Senha</h3>
+								  </div>
+								  
+								  
+<div class="alert alert-success">
+<button type="button" class="close" data-dismiss="alert">×</button>
+	 <i class="icon-info-sign"></i> Crítica POSITIVA de Formulário
+</div>
+							  								  <div class="alert alert-danger">
+<button type="button" class="close" data-dismiss="alert">×</button>
+	 <i class="icon-info-sign"></i> Crítica NEGATIVA de Formulário
+</div>
+			
+								  
+								  
+								  <div class="modal-body">
+									<p>Digite seu e-mail para recuperar sua senha:</p>
+									
+							<div class="login-fields">
+
+						<div class="field">
+							<label for="e-mail">E-mail:</label>
+							<input type="e-mail" id="e-mail" name="e-mail" value="" placeholder="e-mail" style="padding-left: 12px">
+							<span class="erroform ">* Campo <strong>e-mail</strong> ausente.</span>
+							</div> <!-- /password -->
+
+		
+							
+
+						
+							</div>	
+					</div>
+							  
+								  <div class="modal-footer">
+									<button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Fechar</button>
+									<button class="btn btn-success">Recuperar Senha </button>
+								  </div>
+								</div>
+<!-- chamada modal: REENVIAR SENHA  -->										
+								
+								
 									
 				<a href="mindoor-novo-slider.html" class="button btn btn-success btn-large">Entrar</a>
 				

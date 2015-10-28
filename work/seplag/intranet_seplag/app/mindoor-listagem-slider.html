@@ -108,12 +108,14 @@
   <div class="subnavbar-inner">
     <div class="container">
       <ul class="mainnav listagem-slider">
+<!--
         	<li class="subnavbar-open-right">
              	<a href="mindoor-novo-slider.html">
              		<i class="icon-plus-sign"></i>
              		<span>Novo</span> 
              	</a> 
              </li>
+-->
              <li class="active subnavbar-open-right">
              	<a href="mindoor-listagem-slider.html">
              		<i class="icon-list-ul"></i>
@@ -123,7 +125,7 @@
              <li class="subnavbar-open-right">
              	<a href="mindoor-adm-usuario.html">
              		<i class="icon-cog"></i>
-             		<span>Adm Usuários</span> 
+             		<span>Administração Usuários</span> 
              	</a> 
              </li> 
       </ul>
@@ -144,12 +146,6 @@
 
 		</ul>
        </div>
-<!--
-        <div class="pull-right">
-        <button class="btn btn-info"><i class="icon-user icon-white"></i> Adm Perfis</button>
-   <br />
-        </div>
--->
 	</div>
 </div>
 </div>
@@ -167,15 +163,47 @@
        
         <div class="span12">
          <div class="widget">
-            <div class="widget-header header-lista-user"> <i class="icon-list"></i>
-              <h3>Adm Slide </h3>
+            <div class="widget-header header-lista-user">
+              <i class="icon-list"></i>
+              <h3>Administração Slide </h3>
+              
             </div>
+            
+            
+
             
             
             
             
             <!-- /widget-header -->
-            <div class="widget-content"> 
+<div class="widget-content"> 
+
+
+            <!-- mensagens de sistema -->
+<div class="alert alert-fail">
+<button type="button" class="close" data-dismiss="alert">×</button>
+ <i class="icon-info-sign"></i> Mensagem <strong class="erro_red">Erro</strong>feedback sistema.
+</div>
+                                           
+                                           <div class="alert alert-success">
+<button type="button" class="close" data-dismiss="alert">×</button>
+											   <i class="icon-info-sign"></i>  Mensagem <strong>Acerto</strong>feedback sistema.
+</div>
+<!-- mensagens de sistema -->
+
+
+	<div class="alert">
+	<button type="button" class="close" data-dismiss="alert">×</button>
+	<strong>IMPORTANTE: </strong> Todas alterações realizadas só serão aplicadas, quando o usuário clicar no botão "Guardar".
+	</div>
+      
+
+        <div class="pull-right addslide">
+        <a href="mindoor-novo-slider.html" class="btn btn-info"><i class="icon-plus icon-white"></i>&nbsp; Adicionar Slide</a>
+        </div>
+
+            
+            
 <div class="control-group">										
 										
 <div class="bs-example" data-example-id="striped-table">
@@ -187,6 +215,7 @@
           <th>Título</th>
           <th>Descrição</th>
           <th>imagem</th>
+          <th>Ação</th>
         </tr>
       </thead>
       <tbody>
@@ -195,38 +224,56 @@
           <td>
 			<select name="ordenacaoSlider" id="">
 				<option value="">#1</option>
-				<option value="">#2</option>
-				<option value="">#3</option>
+				<option value="">#2</option>				
 			</select>
          </td>
           <td>Título do slide #1 asdfa sdfa sdf</td>
           <td>Lipsum dorem etc prop burt etc lodir sdlsdfis lsdfisdfl isdifslid fidsoidfsdf</td>
            <td><img src="images/slider1.jpg" alt="imagem slider 1" width="180" height="100"></td>
+           <td>
+<a class="btn btn-mini btn-danger" data-toggle="modal" href="#excluir">
+          	<i class="icon-remove"></i> Excluir</a>
+           	<a class="btn btn-mini btn-primary" href="mindoor-novo-slider.html">
+           	<i class="icon-check"></i> Editar</a>
+           </td>
         </tr>
         <tr>
-          <th scope="row"><INPUT TYPE="checkbox" NAME="OPCAO" VALUE="op1" checked="cheked"></th>
-          <td>	<select name="ordenacaoSlider" id="">
+          <th scope="row">
+          <INPUT TYPE="checkbox" NAME="OPCAO" VALUE="op1" checked="cheked">
+          </th>
+          <td>
+          <select name="ordenacaoSlider" id="">
 				<option value="">#1</option>
 				<option value="" selected>#2</option>
-				<option value="">#3</option>
 			</select></td>
           <td>Título do slide #2 asdfa sdfa sdf</td>
           <td>Lipsum dorem etc prop burt etc lodir sdlsdfis lsdfisdfl isdifslid fidsoidfsdf</td>
           <td><img src="images/slider2.jpg" width="180" height="100" alt="imagem slider 2"></td>
-        </tr>
-        <tr>
-          <th scope="row"><INPUT TYPE="checkbox" NAME="OPCAO" VALUE="op1"></th>
-          <td>	<select name="ordenacaoSlider" id="">
-				<option value="">#1</option>
-				<option value="">#2</option>
-				<option value="" selected >#3</option>
-			</select></td>
-          <td>Título do slide #3 asdfa sdfa sdf</td>
-          <td>Lipsum dorem etc prop burt etc lodir sdlsdfis lsdfisdfl isdifslid fidsoidfsdf</td>
-          <td><img src="images/slider3.jpg" width="180" height="100" alt="imagem slider 3"></td>
+          <td>
+<a class="btn btn-mini btn-danger" data-toggle="modal" href="#excluir"> Excluir</a>
+          	<a class="btn btn-mini btn-primary" href="mindoor-novo-slider.html"><i class=" icon-check"></i> Editar</a>
+          </td>
         </tr>
       </tbody>
     </table>
+    
+<!-- Modal de Exclusão -->
+<div id="excluir" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Confirmação</h3>
+  </div>
+  <div class="modal-body">
+    <p>Você realmente deseja EXCLUIR ? (*texto exemplo)</p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Não</button>
+    <button class="btn btn-success">Sim</button>
+  </div>
+</div>           	          	
+<!-- End: Modal de Exclusão -->     
+    
+    
   </div>
 </div><!-- /control-group -->
                                  
@@ -236,9 +283,9 @@
 
 											
 											
-	<div class="form-actions">
-			<button type="submit" class="btn btn-primary">Guardar Edição</button> 
+	<div class="form-actions">			
 			<button class="btn">Cancelar</button>
+			<button type="submit" class="btn btn-success">Guardar</button> 
 		</div> 											
 											
 				

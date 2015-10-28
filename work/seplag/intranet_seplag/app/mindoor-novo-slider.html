@@ -67,12 +67,9 @@
 							<span class="erroform dnone">* Campo <strong>NOVA SENHA</strong> ausente.</span>
 							</div> <!-- /password -->
 						
-						
-						
-							</div>
-									
-									
-								  </div>
+							</div>	
+					</div>
+							  
 								  <div class="modal-footer">
 									<button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Fechar</button>
 									<button class="btn btn-success">Trocar Senha </button>
@@ -108,14 +105,18 @@
   <div class="subnavbar-inner">
     <div class="container">
       <ul class="mainnav novo-slider">
-       	<li class="logo_newmenu"><img src="img/logo_seplag.png" alt="Logo SEPLAG-RJ"></li>
+       	<li class="logo_newmenu">
+       	
+       	<img src="img/logo_seplag.png" alt="Logo SEPLAG-RJ"></li>
+<!--
         	<li class="active subnavbar-open-right">
              	<a href="mindoor-novo-slider.html">
              		<i class="icon-plus-sign"></i>
              		<span>Novo</span> 
              	</a> 
              </li>
-             <li class="subnavbar-open-right">
+-->
+             <li class="active subnavbar-open-right">
              	<a href="mindoor-listagem-slider.html">
              		<i class="icon-list-ul"></i>
              		<span>Slide Cadastrado</span> 
@@ -157,14 +158,13 @@
 <div class="main">
   <div class="main-inner">
     <div class="container">
-      
       <div class="row">
 
 
         <div class="span12">
          <div class="widget">
             <div class="widget-header header-adduser"> <i class="icon-list"></i>
-              <h3>Adm Slide </h3>
+              <h3>Administração Slide </h3>
             </div>
             
             
@@ -173,17 +173,30 @@
             <!-- /widget-header -->
             <div class="widget-content"> 
      					
+     					<div class="pull-right addslide">
+        <a href="mindoor-listagem-slider.html" class="btn btn-info"><i class="icon-list icon-white"></i>&nbsp; Listagem Slide</a>
+        </div>
+     					
 						
 							<div class="tab-content">
 								<div class="tab-pane active" id="formcontrols">
 								<form id="edit-profile" class="form-horizontal">
 									<fieldset>
 
+		
 				
-						<div class="alert alert-fail">
-                        <button type="button" class="close" data-dismiss="alert">×</button>
- <i class="icon-info-sign"></i> Campo <strong class="erro_red">DESCRIÇÃO</strong>ausente, favor preencher.
-                                            </div>
+<!-- mensagens de sistema -->
+<div class="alert alert-fail">
+<button type="button" class="close" data-dismiss="alert">×</button>
+ <i class="icon-info-sign"></i> Mensagem <strong class="erro_red">Erro</strong>feedback sistema.
+</div>
+                                           
+                                           <div class="alert alert-success">
+<button type="button" class="close" data-dismiss="alert">×</button>
+											   <i class="icon-info-sign"></i>  Mensagem <strong>Acerto</strong>feedback sistema.
+</div>
+<!-- mensagens de sistema -->
+                                              
                                             
                                             
 <h4 class="titwidgetsform">Entre com os dados do seu novo slide</h4> 
@@ -193,14 +206,16 @@
 						<label class="control-label" for="titulo">Título: <div class="maxchar">~80 caracteres</div></label>
 						<div class="controls">
 							<input type="text" class="span6" id="titulo" value="escreva o título do slide" ng-model="tit_slider" maxlength="80">
+							<span class="erro_red">* Campo TÍTULO ausente.</span>
 							</div> <!-- /controls -->				
 					 </div> <!-- /control-group -->
 
 
 					<div class="control-group">										
-						<label class="control-label erro_red" for="descricao">Descrição: <div class="maxchar">~230 caracteres</div></label>
+						<label class="control-label" for="descricao">Descrição: <div class="maxchar">~230 caracteres</div></label>
 							<div class="controls">
-							<textarea name="" class="span6" id="descricao" cols="30" rows="3"  ng-model="desc_slider" maxlength="230"></textarea>							
+							<textarea name="" class="span6" id="descricao" cols="30" rows="3"  ng-model="desc_slider" maxlength="230"></textarea>
+							<span class="erro_red">* Campo DESCRIÇÃO ausente.</span>							
 						</div> <!-- /controls -->				
 					</div> <!-- /control-group -->
 										
@@ -214,8 +229,10 @@
 					   <div class="input-append">
 						&nbsp;&nbsp;
 						<input type="file" class="btn" id="imgInp" />
+						  <span class="erro_red"> * Mensagem de crítica de IMAGEM.</span
 						</div>
-					  </div>	<!-- /controls -->			
+					  </div>	<!-- /controls -->	
+							
 				</div> <!-- /control-group -->
                                         
 
