@@ -1,0 +1,26 @@
+footer[role="contentinfo"] { 
+    background: $gray-darker;
+    padding-top: $padding-large-vertical;
+    padding-bottom: 0;
+    position: relative;
+    width: 100%;
+    color: $light;
+    z-index: $zindex-footer;
+    
+    img, p {
+        padding: $padding-large-vertical $padding-large-horizontal;
+    }
+    
+    p {
+        line-height: 14px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+        
+    }
+    @media (min-width: $grid-float-breakpoint) {
+        position: fixed;
+        bottom: 0;
+    }
+}

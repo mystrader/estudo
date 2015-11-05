@@ -1,0 +1,39 @@
+//
+// Breadcrumbs
+// --------------------------------------------------
+
+
+.breadcrumb {
+  padding: $padding-large-vertical 0;
+  margin-bottom: 0;
+  list-style: none;
+  float: left;
+  margin: -2px 0px; // serve para corrigir o alinhamento e evitar que abaixo do botão voltar fique um espaço extra quando acontece o mouse over
+
+  > li {
+    display: block;
+    float: left;
+    padding-top: 2px;
+      
+      &:first-child {
+          line-height: 5px;
+          //padding-top: 10px;
+      }
+
+    + li:before {
+      @extend .material-icons;
+      float: left;
+      font-size: $font-size-base * 1.5;
+      line-height: $font-size-large;
+      content: "#{$breadcrumb-separator}"; // Unicode space added since inline-block means non-collapsing white-space
+      margin: 0 5px;
+      color: $breadcrumb-color;
+    }
+      > a {color: $breadcrumb-color }
+  }
+
+  > .active {
+    color: $breadcrumb-active-color;
+  }
+    
+}

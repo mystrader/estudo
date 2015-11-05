@@ -1,0 +1,223 @@
+---
+layout: default
+title:  "Criar Família"
+breadcrumb:  Criar Família
+---
+
+<div id="content" class="col-md-offset-2 col-md-8" role="main">
+
+   <div class="row">
+       <div class="col-md-12">
+       <h3 class="view-title" role="heading">Criar Família</h3>
+       </div>
+   </div>
+    
+    <div class="panel panel-default">
+    
+    <div class="row">
+        <div class="col-md-12">
+            <p>Para criar uma família entre com o código e o nome da família e a seguir associe itens à família criada.</p>
+        </div>
+    </div>
+ 
+    <form class="form-group panel-body" action="#">
+         
+       <div class="row">
+         
+         <div class="col-md-12">
+             
+             <div class="row">
+                 
+        <div class="col-md-4">
+
+        <div class="input-group">
+         <label for="codigo">Código</label>
+          <input class="form-control" name="codigo" id="codigo" placeholder="Código da Família">
+        </div><!-- /input-group -->
+        </div>
+        
+        <div class="col-md-8">
+        <div class="input-group">
+         <label for="nome">Nome</label>
+          <input class="form-control" name="nome" id="nome" placeholder="Nome da Família">
+        </div><!-- /input-group -->
+                
+            </div>
+
+        <div class="col-md-6">
+            <p class="h5">Associação de Itens</p>
+            <div class="btn-group" role="group" aria-label="associacaoItens">
+            <a class="btn btn-default btn-clear" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <i class="material-icons md first">&#xE892;</i> 
+              Associar por Código
+            </a>
+            <a class="btn btn-default btn-clear" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <i class="material-icons md first">&#xE8D2;</i>
+              Associar por Descrição
+            </a>
+            </div>
+        </div>
+                            
+             </div>
+
+         </div>
+
+        </div> <!-- / .row -->
+      </form>
+<div class="panel-group panel-invisible" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-invisible">
+    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        <div id="associaCodigo" class="row" data-group="criarFamilia">
+        <form action="#" class="form-group">
+
+            <div class="col-md-12">
+             <p>Para associar um ou mais itens à familia, insira seus códigos no campo abaixo separados por espaços ou vírgulas.</p>
+            </div>
+
+            <div class="col-md-12">
+                                           
+                <div class="input-group">
+                  <label for="codigoItem">Código dos Itens <small>Separados por espaços ou vírgulas</small></label>
+                   <div class="fake-form-control tagbox">
+                    <input id="itemCode" name="itemCode" type="text" class="form-control" placeholder="Entre com os códigos dos itens separados por espaços ou vírgulas">
+                   </div>
+                </div><!-- /input-group -->
+                
+            </div>
+
+<!--
+            <div class="col-md-8">
+                <p class="alert alert-info">Se preferir, é possível buscar itens pelas suas classificações nos campos a baixo.</p>
+            </div>
+-->
+            <div class="col-md-offset-6 col-md-6">
+                <button class="btn btn-primary pull-right has-tagbox"><i class="material-icons md first">&#xE161;</i> Salvar</button>
+            </div>
+
+        </form>
+
+    </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-invisible">
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        <div id="associaDescricao" class="row" data-group="criarFamilia">
+           <form action="#" class="form-group">
+                
+            <div class="col-md-12">
+             <p>Para associar um ou mais itens à familia, selecione o Grupo a Classe e o Artigo do Item para ver a lista de itens e sua descrição.</p>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+                   
+                    <div class="input-group">
+                      <label for="grupo">Grupo</label>
+                       <select class="form-control relation-filter" name="grupo" id="grupo" data-relation="associacaoItens">
+                           <option selected disabled>Selecione</option>
+                           <option value="01">01</option>
+                           <option value="02">02</option>
+                           <option value="03">03</option>
+                           <option value="04">04</option>
+                           <option value="05">05</option>
+                           <option value="06">06</option>
+                           <option value="07">07</option>
+                           <option value="08">08</option>
+                       </select>
+                     </div><!-- /input-group -->
+                   
+                    <div class="input-group">
+                      <label for="classe">Classe</label>
+                       <select class="form-control relation-filter" name="classe" id="classe" data-relation="associacaoItens">
+                           <option selected disabled>Selecione</option>
+                           <option value="01">01</option>
+                           <option value="02">02</option>
+                           <option value="03">03</option>
+                           <option value="04">04</option>
+                           <option value="05">05</option>
+                           <option value="06">06</option>
+                           <option value="07">07</option>
+                           <option value="08">08</option>
+                       </select>
+                     </div><!-- /input-group -->
+                   
+                    <div class="input-group">
+                      <label for="grupo">Artigo</label>
+                       <select class="form-control relation-filter" name="artigo" id="artigo" data-relation="associacaoItens">
+                           <option selected disabled>Selecione</option>
+                           <option value="01">01</option>
+                           <option value="02">02</option>
+                           <option value="03">03</option>
+                           <option value="04">04</option>
+                           <option value="05">05</option>
+                           <option value="06">06</option>
+                           <option value="07">07</option>
+                           <option value="08">08</option>
+                       </select>
+                     </div><!-- /input-group -->
+                     
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                   
+                    <div class="input-group">
+                      <label for="itens">Itens Disponíveis</label>
+                       <select id="selectOrigem" class="form-control library" name="itens" data-relation="associacaoItens" multiple>
+                           <option value="00001" data-relation="03"> 00001 - Descrição do item: Completa ...</option>
+                           <option value="00002" data-relation="03"> 00002 - Descrição do item: Completa ...</option>
+                           <option value="00003" data-relation="04"> 00003 - Descrição do item: Completa ...</option>
+                           <option value="00004" data-relation="04"> 00004 - Descrição do item: Completa ...</option>
+                           <option value="00005" data-relation="05"> 00005 - Descrição do item: Completa ...</option>
+                           <option value="00006" data-relation="05"> 00006 - Descrição do item: Completa ...</option>
+                           <option value="00007" data-relation="06"> 00007 - Descrição do item: Completa ...</option>
+                           <option value="10000" data-relation="06"> 10000 - Descrição do item: Completa ...</option>
+                       </select>
+                     
+                     <div class="row">
+                       <div class="col-md-12">
+                        <span class="btn btn-default pull-right" data-relation="associacaoItens" data-action="select-all"> Adicionar Todos <i class="material-icons first md">&#xE148;</i> </span>
+                       </div>
+                     </div>
+                     </div><!-- /input-group -->
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                   
+                    <div class="input-group">
+                      <label for="itens">Itens Associados</label>
+
+                        <select id="selectDestino" class="form-control selected" name="itens" data-relation="associacaoItens" multiple></select>
+
+
+                     <div class="row">
+                       <div class="col-md-12">
+                       <span class="btn btn-link undo undo-remove pull-right" data-relation="associacaoItens"> <i class="material-icons first md">&#xE166;</i> Desfazer </span>
+                       <span class="btn btn-default" data-relation="associacaoItens" data-action="remove-all"> <i class="material-icons first md">&#xE15D;</i> Remover Todos </span>
+
+                       </div>
+                     </div>
+                       
+                     </div><!-- /input-group -->
+                     
+                </div>
+                
+                <div class="col-md-12">
+                    <button class="btn btn-primary pull-right"> <i class="material-icons md last">&#xE161;</i> Salvar</button>
+                </div>
+                
+            </form>
+            
+        </div><!-- / .row -->
+      </div>
+    </div>
+  </div>
+</div> <!-- / .panel-group-->
+        
+    </div> <!-- / .panel -->
+    
+    
+
+
+</div>

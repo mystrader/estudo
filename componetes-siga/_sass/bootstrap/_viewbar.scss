@@ -1,0 +1,170 @@
+.viewbar {
+    overflow: visible;
+    bottom: 0;
+    position: absolute;
+    top: 0;
+    left: -15px;
+
+//    @media (max-width: $screen-sm-max) {
+//     
+//        position: relative;
+//        left: 0;
+//        
+//    }// @media (min-width: $screen-md)
+    
+
+
+.viewbar-header {    
+    
+    display: block;
+
+    @media (min-width: $grid-float-breakpoint) {
+        display:none;
+    }   
+    
+    .viewbar-toggle {
+        @extend .h3;
+        text-transform: none;
+        margin: 0;
+        color: $light;
+
+    }
+
+} //.viewbar-header
+
+
+#viewbar {
+    width: 100%;
+    overflow: visible;
+    background: darken($light, 7%);
+    
+    &.navbar-collapse.collapse {
+     
+        @media (min-width: $grid-float-breakpoint) {
+            
+            float: right;
+            height: 100%;
+
+        }   
+    }
+    
+    .navbar-nav{
+        margin: 0;
+        box-shadow: none;
+    
+        > li {
+            width: 100%;
+
+                &:first-child {
+                    display: none;
+
+                    @media (max-width: $grid-float-breakpoint) {
+
+                        display: block;
+
+                    }   
+                }
+
+                > a {
+                    @include transition(all .15s);
+                    background:  darken($light, 7%);
+                    color: $info-dark;
+                    border-left: 0 solid $info-dark;
+                }
+            
+             &.open {
+
+                > a {
+                    background: darken($light, 7%);
+                    color: $info-dark;
+                    border-left: 5px solid $info-dark;
+                    @include transition(all .15s);
+                }
+            }
+            
+            &.active {
+
+                > a {
+                    background: $light;
+                    color: $info-dark;
+                    border-left: 10px solid $info-dark;
+                    @include transition(all .15s);
+                }
+            }
+                
+            &:hover > a, > a:focus,
+            &.open a:focus,  
+            &.active a:focus {
+                border-left: 10px solid $info-dark;
+                background: lighten($info-lighter, 10%);
+                color: $info-darker;
+                outline: 0;
+                @include transition(all .15s);
+                
+                }
+            
+        }
+
+    // Dropdown menus
+    // Menu position and menu carets
+    > .dropdown {
+
+        > .dropdown-menu {
+            @include hide (-999em, initial);
+            z-index: 0;
+            width: 100%;
+            border: 0;
+            box-shadow: none;
+            
+            > li {
+
+                > a {
+                    border-left: 5px solid $info-dark;
+                    background: darken($light, 12%);
+                    @include transition(all .15s);
+                }
+                
+            &:hover > a, > a:focus {
+                border-left: 10px solid $info-dark;
+                background: lighten($info-lighter, 10%);
+                color: $info-darker;
+                @include transition(all .15s);
+                } 
+
+            &.active > a {
+                border-left: 10px solid $info-dark;
+                background: $light;
+                color: $info-dark;
+                } 
+
+            &.active:hover > a, &.active > a:focus {
+                border-left: 10px solid $info-dark;
+                background: $light;
+                } 
+            }
+        }
+
+        &.open > .dropdown-menu {
+            position: inherit;
+            left: 0;
+            }
+    } //.dropdown
+
+    } //.navbar-nav
+
+} //#viewbar
+
+    
+// Menu position and menu caret support for dropups via extra dropup class
+.navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
+  margin-bottom: 0;
+}
+    
+.open .caret {
+    -moz-transform: rotate(540deg);
+    -webkit-transform: rotate(540deg);
+    -o-transform: rotate(540deg);
+    -ms-transform: rotate(540deg);
+    transform: rotate(540deg);
+}
+}// /.viewbar

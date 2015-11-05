@@ -1,0 +1,330 @@
+---
+layout: default
+title:  "Perfis de Usuário"
+date:   2015-08-21 14:48:00
+breadcrumb:  Criar Perfil
+---
+
+<div class="col-md-10">
+    <div class="panel panel-default">
+     <header class="panel-heading" role="heading">
+        <h4 class="panel-title">Criar Perfil</h4>
+    </header>
+ 
+    <form class="form-group panel-body" action="#">
+         
+      <div class="row">
+         
+         <div class="col-md-6">
+          <div class="input-group required">
+           <label for="perfil">Perfil <small>Campo Obrigatório</small></label>
+           <div class="alert alert-warning alert-sm" role="alert"><i class="material-icons md first">&#xE001;</i> Preencha o campo Perfil</div>
+           <input class="form-control has-success" name="perfil" id="perfil" placeholder="Nome do Perfil" required>
+          </div><!-- /input-group -->
+
+         
+          <div class="input-group">
+           <label for="tipoUsuario">Tipo de Usuário</label>
+           <select class="form-control" name="tipoUsuario" id="tipoUsuario">
+            <option selected disabled>Selecione</option>
+            <option value="Comum">Fornecedor</option>
+            <option value="Administrativo">Governo</option>
+            <option value="Especial">Outros Entes</option>
+           </select>
+          </div><!-- /input-group -->
+
+         </div><!-- /col-md-* -->
+         <div class="col-md-6">
+         
+          <div class="input-group required">
+           <label for="tipoPerfil">Tipo Perfil <small>Campo Obrigatório</small></label>
+           <div class="alert alert-warning alert-sm" role="alert"><i class="material-icons md first">&#xE001;</i> Preencha o campo Tipo Perfil</div>
+           <select class="form-control" name="tipoPerfil" id="tipoPerfil" required>
+            <option selected disabled>Selecione</option>
+            <option value="Comum">Fornecedor</option>
+            <option value="Administrativo">Governo</option>
+            <option value="Especial">Outros Entes</option>
+           </select>
+          </div><!-- /input-group -->
+
+             
+          <div class="input-group required">
+           <label for="nivelAcesso">Nível de Acesso <small>Campo Obrigatório</small></label>
+           <div class="alert alert-warning alert-sm" role="alert"><i class="material-icons md first">&#xE001;</i> Preencha o campo Nível de Acesso</div>
+           <select class="form-control" name="nivelAcesso" id="nivelAcesso" required>
+            <option selected disabled>Selecione</option>
+            <option value="Comum">Comum</option>
+            <option value="Administrativo">Administrativo</option>
+            <option value="Especial">Especial</option>
+           </select>
+          </div><!-- /input-group -->
+
+         </div>
+          <div class="col-md-12">
+            <fieldset class="required" required>
+            <legend>Associar Funcionalidades</legend>
+           <div class="alert alert-warning alert-sm" role="alert"><i class="material-icons">&#xE001;</i> É necessário associar ao menos uma Funcionalidade</div>
+
+           <div class="col-md-6">
+               <div class="input-group"><!-- Unidade -->
+              <div class="checkbox-inline col-md-12">
+              <input class="marcaTodos" type="checkbox" id="unidade" name="unidade" value="Unidade">
+               <label class="h4" for="unidade">
+                Unidade
+               </label>
+              </div>
+              <div class="clearfix"></div>
+              <div class="checkbox-inline col-md-4">
+              <input type="checkbox" id="consultar" name="consultar" value="Consultar">
+               <label for="consultar">
+                Consultar
+               </label>
+               </div>
+              <div class="checkbox-inline col-md-4">
+               <input type="checkbox" id="detalhar" name="detalhar" value="Detalhar">
+               <label for="detalhar">
+                Detalhar
+               </label>
+              </div>
+              <div class="checkbox-inline col-md-4">
+               <input type="checkbox" id="excluir" name="excluir" value="Excluir">
+               <label for="excluir">
+                Excluir
+               </label>
+              </div>
+              <div class="checkbox-inline col-md-4">
+               <input type="checkbox" id="alterar" name="alterar" value="Alterar">
+               <label for="alterar">
+                Alterar
+               </label>
+              </div>
+              <div class="checkbox-inline col-md-4">
+               <input type="checkbox" id="bloquear" name="bloquear" value="Bloquear">
+               <label for="bloquear">
+                Bloquear
+               </label>
+              </div>
+              <div class="checkbox-inline col-md-4">
+               <input type="checkbox" id="ativar" name="ativar" value="Ativar">
+               <label for="ativar">
+                Ativar
+               </label>
+              </div>
+              <div class="checkbox-inline col-md-4">
+               <input type="checkbox" id="exportar" name="exportar" value="Exportar">
+               <label for="exportar">
+                Exportar
+               </label>
+              </div>
+              <div class="checkbox-inline col-md-4">
+               <input type="checkbox" id="imprimir" name="imprimir" value="Imprimir">
+               <label for="imprimir">
+                Imprimir
+               </label>
+              </div>
+              <div class="checkbox-inline col-md-4">
+               <input type="checkbox" id="cancelar" name="cancelar" value="Cancelar">
+               <label for="cancelar">
+                Cancelar
+               </label>
+              </div>
+              <div class="checkbox-inline col-md-4">
+               <input type="checkbox" id="pesquisar" name="pesquisar" value="Pesquisar">
+               <label for="pesquisar">
+                Pesquisar
+               </label>
+              </div>
+           </div><!-- /Unidade -->
+            
+           <div class="input-group"><!-- Visualizar Log de Eventos -->
+              <div class="checkbox-inline col-md-12">
+              <input class="marcaTodos" type="checkbox" id="VisualizarLogdeEventos" name="VisualizarLogdeEventos" value="Visualizar Log de Eventos">
+               <label class="h4" for="VisualizarLogdeEventos">
+                Log de Eventos
+               </label>
+              </div><div class="clearfix"></div>
+              <div class="checkbox-inline col-md-4">
+              <input type="checkbox" id="consultar" name="consultar" value="Consultar">
+               <label for="consultar">
+                Consultar
+               </label>
+               </div>
+              <div class="checkbox-inline col-md-4">
+               <input type="checkbox" id="exportar" name="exportar" value="Exportar">
+               <label for="exportar">
+                Exportar
+               </label>
+              </div>
+              <div class="checkbox-inline col-md-4">
+               <input type="checkbox" id="imprimir" name="imprimir" value="Imprimir">
+               <label for="imprimir">
+                Imprimir
+               </label>
+              </div>
+           </div><!-- /Visualizar Log de Eventos -->
+           </div><!-- /col-md-6 -->
+            
+            <div class="col-md-6">
+                           <div class="input-group"><!-- Visualizar Histórico -->
+              <div class="checkbox-inline col-md-12">
+              <input class="marcaTodos" type="checkbox" id="historico" name="historico" value="Historico">
+               <label class="h4" for="historico">
+               Históricos
+               </label>
+              </div><div class="clearfix"></div>
+              <div class="checkbox-inline col-md-4">
+              <input type="checkbox" id="consultar" name="consultar" value="Consultar">
+               <label for="consultar">
+                Consultar
+               </label>
+               </div>
+              <div class="checkbox-inline col-md-4">
+               <input type="checkbox" id="exportar" name="exportar" value="Exportar">
+               <label for="exportar">
+                Exportar
+               </label>
+              </div>
+              <div class="checkbox-inline col-md-4">
+               <input type="checkbox" id="imprimir" name="imprimir" value="Imprimir">
+               <label for="imprimir">
+                Imprimir
+               </label>
+              </div>
+           </div><!-- / Histórico -->
+           <div class="input-group"><!-- Visualizar Histórico -->
+              <div class="checkbox-inline col-md-12">
+              <input class="marcaTodos" type="checkbox" id="perfilfuncespecial" name="perfilfuncespecial" value="Perfil/Função Especial">
+               <label class="h4" for="perfilfuncespecial">
+               Perfil/Funcionalidade Especial
+               </label>
+              </div><div class="clearfix"></div>
+              <div class="checkbox-inline col-md-4">
+              <input type="checkbox" id="consultar" name="consultar" value="Consultar">
+               <label for="consultar">
+                Solicitar Perfil
+               </label>
+               </div>
+              <div class="checkbox-inline col-md-4">
+               <input type="checkbox" id="exportar" name="exportar" value="Exportar">
+               <label for="exportar">
+                Solicitar Funcionalidade
+               </label>
+              </div>
+              <div class="checkbox-inline col-md-4">
+               <input type="checkbox" id="fechar" name="fechar" value="fechar">
+               <label for="fechar">
+                Fechar
+               </label>
+              </div>
+              <div class="checkbox-inline col-md-4">
+               <input type="checkbox" id="incluirdocumento" name="incluirdocumento" value="incluirdocumento">
+               <label for="incluirdocumento">
+                Incluir Documento
+               </label>
+              </div>
+              <div class="checkbox-inline col-md-4">
+               <input type="checkbox" id="imprimir" name="imprimir" value="Imprimir">
+               <label for="imprimir">
+                Visualizar Documento
+               </label>
+              </div>
+              <div class="checkbox-inline col-md-4">
+               <input type="checkbox" id="excluirDocumento" name="excluirDocumento" value="Excluir Documento">
+               <label for="excluirDocumento">
+                Excluir Documento
+               </label>
+              </div>
+              <div class="checkbox-inline col-md-4">
+               <input type="checkbox" id="imprimir" name="imprimir" value="Imprimir">
+               <label for="imprimir">
+                Imprimir
+               </label>
+              </div>
+              <div class="checkbox-inline col-md-4">
+               <input type="checkbox" id="exportar" name="exportar" value="Exportar">
+               <label for="exportar">
+                Exportar
+               </label>
+              </div>
+              <div class="checkbox-inline col-md-4">
+               <input type="checkbox" id="solicitarCancelamento" name="solicitarCancelamento" value="Solicitar Cancelamento">
+               <label for="solicitarCancelamento">
+                Solicitar Cancelamento
+               </label>
+              </div>
+              <div class="checkbox-inline col-md-4">
+               <input type="checkbox" id="cancelarSolicitacao" name="cancelarSolicitacao" value="cancelarSolicitacao">
+               <label for="cancelarSolicitacao">
+                Cancelar Solicitação
+               </label>
+              </div>
+           </div><!-- /Visualizar Histórico -->
+            </div>
+
+            </fieldset>
+            </div>
+          
+           <div class="clearfix"></div>
+         <div class="col-md-6">
+          <button type="reset" class="btn btn-default">Limpar <i class="material-icons first md"><i class="material-icons">&#xE14C;</i></i></button>
+         </div>
+         
+         <div class="col-md-6">
+          <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#saveModal">Salvar <i class="material-icons first md">&#xE161;</i></button>
+         </div>
+          <div class="col-md-12" role="alert">
+          </div>
+             
+      </div>
+      
+    </form>
+  </div>
+</div>
+
+       <a href="#fimconteudo" id="fimconteudo" name="fimconteudo" class="sr-only">Fim do conteúdo</a>
+    </div>
+
+    <div class="actionbar col-md-2">
+        <div class="actionbar-header">
+    <button type="button" class="btn actionbar-toggle collapsed" data-toggle="collapse" data-target="#actionbar" aria-expanded="false" aria-controls="actionbar">
+        <span class="sr-only-right">Expandir Menu de Ações</span>
+        <i class="material-icons first">&#xE5D4;</i> Ações
+    </button>
+</div>
+<div id="actionbar" class="navbar-collapse collapse" aria-expanded="false" role="menu">
+    <a href="#iracoes" id="iracoes" name="iracoes" class="sr-only-right" accesskey="4">Início da Barra de Ações</a>
+<ul class="nav navbar-nav nav-stacked" role="menu">
+   <li>
+       <button type="button" class="btn actionbar-toggle collapsed" data-toggle="collapse" data-target="#actionbar" aria-expanded="false" aria-controls="actionbar">
+            <span class="sr-only-right">Expandir Menu de Ações</span>
+            <i class="material-icons first">&#xE5D4;</i> Ações
+        </button>
+   </li>
+    <!-- 1st level -->
+    <li><a href="#nogo"><i class="material-icons first md">&#xE8AD;</i>Imprimir</a></li>
+</ul>
+    <a href="#fimacoes" id="fimacoes" name="fimacoes" class="sr-only-right">Fim da Barra de Ações</a>
+
+</div><!--/.nav-collapse -->
+
+</div>
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="saveModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content success">
+      <div class="modal-body text-center">
+                <i class="material-icons lg stamp bevel">&#xE86C;</i>
+                <span class="h3">Salvo com Sucesso</span>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="material-icons first md">&#xE5CD;</i>Fechar</button>
+        <button type="button" class="btn btn-primary"><i class="material-icons first md">&#xE5CA;</i>Confirmar</button>
+      </div>
+    </div>
+  </div>
+</div>

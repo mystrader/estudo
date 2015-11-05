@@ -1,0 +1,1119 @@
+---
+layout: default
+title:  "Perfis de Usuário"
+date:   2015-08-21 14:48:00
+breadcrumb:  Criar Perfil
+---
+
+<div class="col-md-10">
+    <div class="panel panel-default">
+     <header class="panel-heading" role="heading">
+        <h4 class="panel-title">Criar Perfil</h4>
+    </header>
+ 
+    <form class="form-group panel-body" action="#">
+         
+      <div class="row">
+         
+         <div class="col-md-6">
+          <div class="input-group required">
+           <label for="perfil">Perfil <small>Campo Obrigatório</small></label>
+           <div class="alert alert-warning alert-sm" role="alert"><i class="material-icons md first">&#xE001;</i> Preencha o campo Perfil</div>
+           <input class="form-control has-success" name="perfil" id="perfil" placeholder="Nome do Perfil" required>
+          </div><!-- /input-group -->
+
+         
+          <div class="input-group">
+           <label for="tipoUsuario">Tipo de Usuário</label>
+           <select class="form-control" name="tipoUsuario" id="tipoUsuario">
+            <option selected disabled>Selecione</option>
+            <option value="Comum">Fornecedor</option>
+            <option value="Administrativo">Governo</option>
+            <option value="Especial">Outros Entes</option>
+           </select>
+          </div><!-- /input-group -->
+
+         </div><!-- /col-md-* -->
+         <div class="col-md-6">
+         
+          <div class="input-group required">
+           <label for="tipoPerfil">Tipo Perfil <small>Campo Obrigatório</small></label>
+           <div class="alert alert-warning alert-sm" role="alert"><i class="material-icons md first">&#xE001;</i> Preencha o campo Tipo Perfil</div>
+           <select class="form-control" name="tipoPerfil" id="tipoPerfil" required>
+            <option selected disabled>Selecione</option>
+            <option value="Comum">Comum</option>
+            <option value="Administrativo">Administrativo</option>
+            <option value="Especial">Especial</option>
+           </select>
+          </div><!-- /input-group -->
+
+             
+          <div class="input-group required">
+           <label for="nivelAcesso">Nível de Acesso <small>Campo Obrigatório</small></label>
+           <div class="alert alert-warning alert-sm" role="alert"><i class="material-icons md first">&#xE001;</i> Preencha o campo Nível de Acesso</div>
+           <select class="form-control" name="nivelAcesso" id="nivelAcesso" required>
+            <option selected disabled>Selecione</option>
+            <option value="Comum">Comum</option>
+            <option value="Administrativo">Administrativo</option>
+            <option value="Especial">Especial</option>
+           </select>
+          </div><!-- /input-group -->
+
+         </div>
+          <div class="col-md-12">
+            <fieldset class="fieldset-group required" required>
+            <legend>Associar Funcionalidades</legend>
+           <div class="alert alert-warning alert-sm" role="alert"><i class="material-icons">&#xE001;</i> É necessário associar ao menos uma Funcionalidade</div>
+           
+           <div class="row">
+           <div class="col-md-6">
+           
+           <ul class="tree input-group"><!-- .input-group.tree -->
+                      
+                  <li class="tree-branch">
+                 
+                  <input class="marcaTodos" type="checkbox" id="root-group02" name="root-group02" value="root-group02">
+                   <label for="root-group02">
+                    Administração <small class="sr-only">Marcar Todos</small>
+                   </label>
+                   <a href="#rootBody01" data-toggle="collapse" aria-expanded="true">
+                     <i class="material-icons last md">&#xE5CD;</i><span>Fechar</span>
+                   </a>
+                  
+                    <ul id="rootBody01" class="collapse" aria-expanded="true"><!-- #rootBody.-->
+
+                        <li class="tree-branch">
+                          
+                          <a href="#branch01-01-Body" class="caret first" data-toggle="collapse" aria-expanded="true"> </a>
+                          <input class="marcaTodos" type="checkbox" id="branch01-tree01" name="branch01-tree01" value="branch01-tree01">
+                           <label for="branch01-tree01">
+                            Parâmetros
+                           </label>
+
+                           <ul id="branch01-01-Body" class="collapse in" aria-expanded="true" > <!-- #branch01Body.-->
+                           
+                           <li class="tree-branch"> <!-- .tree-branch -->
+                          <a href="#subbranch01-01-Body" class="caret first" data-toggle="collapse" aria-expanded="true"></a>
+
+                            <input class="marcaTodos" type="checkbox" id="subBranch01-01" name="subBranch01-01" value="subBranch01-01">
+                           <label for="subBranch01-01">
+                            Sistema
+                           </label>
+
+                              <ul id="subbranch01-01-Body" class="collapse in" aria-expanded="true" ><!-- #subBranch01Body.-->
+
+                               <li class="tree-item">
+                                <input type="checkbox" id="consultargroup02tree01" name="consultargroup02tree01" value="Consultargroup02tree01">
+                                <label for="consultargroup02tree01">
+                                 Enviar
+                                </label>
+                               </li>
+
+                               <li class="tree-item">
+                               <input type="checkbox" id="imprimirgroup02tree01" name="imprimirgroup02tree01" value="Imprimirgroup02tree01">
+                               <label for="imprimirgroup02tree01">
+                                Limpar
+                               </label>
+                              </li>
+
+                               <li class="tree-item">
+                               <input type="checkbox" id="cancelargroup02tree01" name="cancelargroup02tree01" value="Cancelargroup02tree01">
+                               <label for="cancelargroup02tree01">
+                                Voltar
+                               </label>
+                              </li>
+                           
+                           
+                             </ul><!-- / #subBranch01Body.-->
+
+                           </li> <!-- /.tree-branch -->
+
+                           <li class="tree-branch"> <!-- .tree-branch -->
+
+                          <a href="#subbranch02-01-Bodyb" class="caret first" data-toggle="collapse" aria-expanded="true"> </a>
+                            <input class="marcaTodos" type="checkbox" id="subBranch02-01" name="subBranch02-01" value="subBranch02-01">
+                           <label for="subBranch02-01">
+                            Compras
+                           </label>
+
+                              <ul id="subbranch02-01-Bodyb" class="collapse in" aria-expanded="true" ><!-- #subBranch02Body.-->
+
+                               <li class="tree-item">
+                                <input type="checkbox" id="consultargroup03tree01" name="consultargroup03tree01" value="Consultargroup03tree01">
+                                <label for="consultargroup03tree01">
+                                 Parâmetros
+                                </label>
+                               </li>
+
+                             </ul><!-- / #subBranch02Body.-->
+
+                           </li> <!-- /.tree-branch -->
+
+                         </ul> <!-- / #branch01Body.-->
+                         
+
+                        </li> <!-- /.tree-item -->
+                    
+<li class="tree-branch">
+                          
+                          <a href="#branch02-01-Body" class="caret first" data-toggle="collapse" aria-expanded="true"> </a>
+                          <input class="marcaTodos" type="checkbox" id="branch01-tree01" name="branch01-tree01" value="branch01-tree01">
+                           <label for="branch01-tree01">
+                            Sistema
+                           </label>
+
+                           <ul id="branch02-01-Body" class="collapse in" aria-expanded="true" > <!-- #branch01Body.-->
+                           
+                           <li class="tree-branch"> <!-- .tree-branch -->
+                          <a href="#subbranch02-01-Body" class="caret first" data-toggle="collapse" aria-expanded="true"></a>
+
+                            <input class="marcaTodos" type="checkbox" id="subBranch01-01" name="subBranch01-01" value="subBranch01-01">
+                           <label for="subBranch01-01">
+                            Manter unidade Externa
+                           </label>
+
+                              <ul id="subbranch02-01-Body" class="collapse in" aria-expanded="true" ><!-- #subBranch01Body.-->
+
+                          <li class="tree-branch"> <!-- .tree-branch -->
+
+                          <a href="#subBranch01-02Body" class="caret first" data-toggle="collapse" aria-expanded="true"></a>
+                            <input class="marcaTodos" type="checkbox" id="subBranch01-01-01" name="subBranch01-01-01" value="subBranch01-01-01">
+                           <label for="subBranch01-01-01">
+                            Pesquisa de Unidades Externas
+                           </label>
+
+                              <ul id="subBranch01-02Body" class="collapse in" aria-expanded="true" ><!-- #subBranch01-01Body.-->
+
+                                                       <label for="consultargroup04">
+                         Consultar
+                        </label>
+
+                       </li>
+
+                       <li class="tree-item">
+
+                        <input type="checkbox" id="imprimirgroup04" name="imprimirgroup04" value="imprimirgroup04">
+
+                        <label for="imprimirgroup04">
+                         Imprimir
+                        </label>
+
+                       </li>
+
+                       <li class="tree-item">
+
+                        <input type="checkbox" id="cancelargroup04" name="cancelargroup04" value="cancelargroup04">
+
+                        <label for="cancelargroup04">
+                         Cancelar
+                        </label>
+
+                       </li>
+
+                       <li class="tree-item">
+
+                        <input type="checkbox" id="d6" name="d6" value="d6">
+
+                        <label for="d6">
+                         Alterar
+                        </label>
+
+                       </li>
+
+                       <li class="tree-item">
+
+                        <input type="checkbox" id="d5" name="d5" value="d5">
+
+                        <label for="d5">
+                         Bloquear
+                        </label>
+
+                       </li>
+
+                       <li class="tree-item">
+
+                        <input type="checkbox" id="d4" name="d4" value="d4">
+
+                        <label for="d4">
+                         Ativar
+                        </label>
+
+                       </li>
+
+                       <li class="tree-item">
+
+                        <input type="checkbox" id="d3" name="d3" value="d3">
+
+                        <label for="d3">
+                         Exportar
+                        </label>
+
+                       </li>
+
+                       <li class="tree-item">
+
+                        <input type="checkbox" id="d2" name="d2" value="d2">
+
+                        <label for="d2">
+                         Pesquisar
+                        </label>
+
+                       </li>
+
+                       <li class="tree-item">
+
+                        <input type="checkbox" id="d1" name="d1" value="d1">
+
+                        <label for="d1">
+                         Detalhar
+                        </label>
+
+                       </li>
+
+                             </ul><!-- / #subBranch01-01Body.-->
+
+                           </li> <!-- /.tree-branch -->
+                           
+                           
+                             </ul><!-- / #subBranch01Body.-->
+
+                           </li> <!-- /.tree-branch -->
+
+                           <li class="tree-branch"> <!-- .tree-branch -->
+
+                          <a href="#subbranch02-02-Body" class="caret first" data-toggle="collapse" aria-expanded="true"> </a>
+                            <input class="marcaTodos" type="checkbox" id="subBranch02-01" name="subBranch02-01" value="subBranch02-01">
+                           <label for="subBranch02-01">
+                            Compras
+                           </label>
+
+                              <ul id="subbranch02-02-Body" class="collapse in" aria-expanded="true" ><!-- #subBranch02Body.-->
+
+                               <li class="tree-item">
+                                <input type="checkbox" id="consultargroup03tree01" name="consultargroup03tree01" value="Consultargroup03tree01">
+                                <label for="consultargroup03tree01">
+                                 Parâmetros
+                                </label>
+                               </li>
+
+                             </ul><!-- / #subBranch02Body.-->
+
+                           </li> <!-- /.tree-branch -->
+
+                         </ul> <!-- / #branch01Body.-->
+                         
+
+                        </li> <!-- /.tree-item -->
+                    
+                    </ul> <!-- #rootBody.-->
+                    
+                       
+               </ul><!-- /.input-group.tree -->
+
+           <ul class="tree input-group"><!-- .input-group.tree -->
+                      
+                  <li class="tree-branch">
+                 
+                  <input class="marcaTodos" type="checkbox" id="root-group02" name="root-group02" value="root-group02">
+                   <label for="root-group02">
+                    Histórico <small class="sr-only">Marcar Todos</small>
+                   </label>
+                   <a href="#rootBody02" data-toggle="collapse" aria-expanded="true">
+                     <i class="material-icons last md">&#xE5CD;</i><span>Fechar</span>
+                   </a>
+                  
+                    <ul id="rootBody02" class="collapse" aria-expanded="true"><!-- #rootBody.-->
+
+                        <li class="tree-branch">
+                          
+                          <a href="#branch01-02-Body" class="caret first" data-toggle="collapse" aria-expanded="true"> </a>
+                          <input class="marcaTodos" type="checkbox" id="branch01-tree01" name="branch01-tree01" value="branch01-tree01">
+                           <label for="branch01-tree01">
+                            Parâmetros
+                           </label>
+
+                           <ul id="branch01-02-Body" class="collapse in" aria-expanded="true" > <!-- #branch01Body.-->
+                           
+                           <li class="tree-branch"> <!-- .tree-branch -->
+                          <a href="#subbranch01-02-Body" class="caret first" data-toggle="collapse" aria-expanded="true"></a>
+
+                            <input class="marcaTodos" type="checkbox" id="subBranch01-01" name="subBranch01-01" value="subBranch01-01">
+                           <label for="subBranch01-01">
+                            Sistema
+                           </label>
+
+                              <ul id="subbranch01-02-Body" class="collapse in" aria-expanded="true" ><!-- #subBranch01Body.-->
+
+                               <li class="tree-item">
+                                <input type="checkbox" id="consultargroup02tree01" name="consultargroup02tree01" value="Consultargroup02tree01">
+                                <label for="consultargroup02tree01">
+                                 Enviar
+                                </label>
+                               </li>
+
+                               <li class="tree-item">
+                               <input type="checkbox" id="imprimirgroup02tree01" name="imprimirgroup02tree01" value="Imprimirgroup02tree01">
+                               <label for="imprimirgroup02tree01">
+                                Limpar
+                               </label>
+                              </li>
+
+                               <li class="tree-item">
+                               <input type="checkbox" id="cancelargroup02tree01" name="cancelargroup02tree01" value="Cancelargroup02tree01">
+                               <label for="cancelargroup02tree01">
+                                Voltar
+                               </label>
+                              </li>
+                           
+                           
+                             </ul><!-- / #subBranch01Body.-->
+
+                           </li> <!-- /.tree-branch -->
+
+                           <li class="tree-branch"> <!-- .tree-branch -->
+
+                          <a href="#subbranch02-03-Body" class="caret first" data-toggle="collapse" aria-expanded="true"> </a>
+                            <input class="marcaTodos" type="checkbox" id="subBranch02-01" name="subBranch02-01" value="subBranch02-01">
+                           <label for="subBranch02-01">
+                            Compras
+                           </label>
+
+                              <ul id="subbranch02-03-Body" class="collapse in" aria-expanded="true" ><!-- #subBranch02Body.-->
+
+                               <li class="tree-item">
+                                <input type="checkbox" id="consultargroup03tree01" name="consultargroup03tree01" value="Consultargroup03tree01">
+                                <label for="consultargroup03tree01">
+                                 Parâmetros
+                                </label>
+                               </li>
+
+                             </ul><!-- / #subBranch02Body.-->
+
+                           </li> <!-- /.tree-branch -->
+
+                         </ul> <!-- / #branch01Body.-->
+                         
+
+                        </li> <!-- /.tree-item -->
+                    
+<li class="tree-branch">
+                          
+                          <a href="#branch02-02-Body" class="caret first" data-toggle="collapse" aria-expanded="true"> </a>
+                          <input class="marcaTodos" type="checkbox" id="branch01-tree01" name="branch01-tree01" value="branch01-tree01">
+                           <label for="branch01-tree01">
+                            Sistema
+                           </label>
+
+                           <ul id="branch02-02-Body" class="collapse in" aria-expanded="true" > <!-- #branch01Body.-->
+                           
+                           <li class="tree-branch"> <!-- .tree-branch -->
+                          <a href="#subbranch02-02-Body" class="caret first" data-toggle="collapse" aria-expanded="true"></a>
+
+                            <input class="marcaTodos" type="checkbox" id="subBranch01-01" name="subBranch01-01" value="subBranch01-01">
+                           <label for="subBranch01-01">
+                            Manter unidade Externa
+                           </label>
+
+                              <ul id="subbranch02-02-Body" class="collapse in" aria-expanded="true" ><!-- #subBranch01Body.-->
+
+                          <li class="tree-branch"> <!-- .tree-branch -->
+
+                          <a href="#subBranch01-03Body" class="caret first" data-toggle="collapse" aria-expanded="true"></a>
+                            <input class="marcaTodos" type="checkbox" id="subBranch01-01-01" name="subBranch01-01-01" value="subBranch01-01-01">
+                           <label for="subBranch01-01-01">
+                            Pesquisa de Unidades Externas
+                           </label>
+
+                              <ul id="subBranch01-03Body" class="collapse in" aria-expanded="true" ><!-- #subBranch01-01Body.-->
+
+                                                       <label for="consultargroup04">
+                         Consultar
+                        </label>
+
+                       </li>
+
+                       <li class="tree-item">
+
+                        <input type="checkbox" id="imprimirgroup04" name="imprimirgroup04" value="imprimirgroup04">
+
+                        <label for="imprimirgroup04">
+                         Imprimir
+                        </label>
+
+                       </li>
+
+                       <li class="tree-item">
+
+                        <input type="checkbox" id="cancelargroup04" name="cancelargroup04" value="cancelargroup04">
+
+                        <label for="cancelargroup04">
+                         Cancelar
+                        </label>
+
+                       </li>
+
+                       <li class="tree-item">
+
+                        <input type="checkbox" id="d6" name="d6" value="d6">
+
+                        <label for="d6">
+                         Alterar
+                        </label>
+
+                       </li>
+
+                       <li class="tree-item">
+
+                        <input type="checkbox" id="d5" name="d5" value="d5">
+
+                        <label for="d5">
+                         Bloquear
+                        </label>
+
+                       </li>
+
+                       <li class="tree-item">
+
+                        <input type="checkbox" id="d4" name="d4" value="d4">
+
+                        <label for="d4">
+                         Ativar
+                        </label>
+
+                       </li>
+
+                       <li class="tree-item">
+
+                        <input type="checkbox" id="d3" name="d3" value="d3">
+
+                        <label for="d3">
+                         Exportar
+                        </label>
+
+                       </li>
+
+                       <li class="tree-item">
+
+                        <input type="checkbox" id="d2" name="d2" value="d2">
+
+                        <label for="d2">
+                         Pesquisar
+                        </label>
+
+                       </li>
+
+                       <li class="tree-item">
+
+                        <input type="checkbox" id="d1" name="d1" value="d1">
+
+                        <label for="d1">
+                         Detalhar
+                        </label>
+
+                       </li>
+
+                             </ul><!-- / #subBranch01-01Body.-->
+
+                           </li> <!-- /.tree-branch -->
+                           
+                           
+                             </ul><!-- / #subBranch01Body.-->
+
+                           </li> <!-- /.tree-branch -->
+
+                           <li class="tree-branch"> <!-- .tree-branch -->
+
+                          <a href="#subbranch02-04-Body" class="caret first" data-toggle="collapse" aria-expanded="true"> </a>
+                            <input class="marcaTodos" type="checkbox" id="subBranch02-01" name="subBranch02-01" value="subBranch02-01">
+                           <label for="subBranch02-01">
+                            Compras
+                           </label>
+
+                              <ul id="subbranch02-04-Body" class="collapse in" aria-expanded="true" ><!-- #subBranch02Body.-->
+
+                               <li class="tree-item">
+                                <input type="checkbox" id="consultargroup03tree01" name="consultargroup03tree01" value="Consultargroup03tree01">
+                                <label for="consultargroup03tree01">
+                                 Parâmetros
+                                </label>
+                               </li>
+
+                             </ul><!-- / #subBranch02Body.-->
+
+                           </li> <!-- /.tree-branch -->
+
+                         </ul> <!-- / #branch01Body.-->
+                         
+
+                        </li> <!-- /.tree-item -->
+                    
+                    </ul> <!-- #rootBody.-->
+                    
+                       
+               </ul><!-- /.input-group.tree -->            
+           </div><!-- /col-md-6 -->
+            
+           <div class="col-md-6">
+           
+           <ul class="tree input-group"><!-- .input-group.tree -->
+                      
+                  <li class="tree-branch">
+                 
+                  <input class="marcaTodos" type="checkbox" id="root-group02" name="root-group02" value="root-group02">
+                   <label for="root-group02">
+                    Gestão <small class="sr-only">Marcar Todos</small>
+                   </label>
+                   <a href="#rootBody03" data-toggle="collapse" aria-expanded="true">
+                     <i class="material-icons last md">&#xE5CD;</i><span>Fechar</span>
+                   </a>
+                  
+                    <ul id="rootBody03" class="collapse" aria-expanded="true"><!-- #rootBody.-->
+
+                        <li class="tree-branch">
+                          
+                          <a href="#branch01-03-Body" class="caret first" data-toggle="collapse" aria-expanded="true"> </a>
+                          <input class="marcaTodos" type="checkbox" id="branch01-tree01" name="branch01-tree01" value="branch01-tree01">
+                           <label for="branch01-tree01">
+                            Parâmetros
+                           </label>
+
+                           <ul id="branch01-03-Body" class="collapse in" aria-expanded="true" > <!-- #branch01Body.-->
+                           
+                           <li class="tree-branch"> <!-- .tree-branch -->
+                          <a href="#subbranch01-03-Body" class="caret first" data-toggle="collapse" aria-expanded="true"></a>
+
+                            <input class="marcaTodos" type="checkbox" id="subBranch01-01" name="subBranch01-01" value="subBranch01-01">
+                           <label for="subBranch01-01">
+                            Sistema
+                           </label>
+
+                              <ul id="subbranch01-03-Body" class="collapse in" aria-expanded="true" ><!-- #subBranch01Body.-->
+
+                               <li class="tree-item">
+                                <input type="checkbox" id="consultargroup02tree01" name="consultargroup02tree01" value="Consultargroup02tree01">
+                                <label for="consultargroup02tree01">
+                                 Enviar
+                                </label>
+                               </li>
+
+                               <li class="tree-item">
+                               <input type="checkbox" id="imprimirgroup02tree01" name="imprimirgroup02tree01" value="Imprimirgroup02tree01">
+                               <label for="imprimirgroup02tree01">
+                                Limpar
+                               </label>
+                              </li>
+
+                               <li class="tree-item">
+                               <input type="checkbox" id="cancelargroup02tree01" name="cancelargroup02tree01" value="Cancelargroup02tree01">
+                               <label for="cancelargroup02tree01">
+                                Voltar
+                               </label>
+                              </li>
+                           
+                           
+                             </ul><!-- / #subBranch01Body.-->
+
+                           </li> <!-- /.tree-branch -->
+
+                           <li class="tree-branch"> <!-- .tree-branch -->
+
+                          <a href="#subbranch02-05-Body" class="caret first" data-toggle="collapse" aria-expanded="true"> </a>
+                            <input class="marcaTodos" type="checkbox" id="subBranch02-01" name="subBranch02-01" value="subBranch02-01">
+                           <label for="subBranch02-01">
+                            Compras
+                           </label>
+
+                              <ul id="subbranch02-05-Body" class="collapse in" aria-expanded="true" ><!-- #subBranch02Body.-->
+
+                               <li class="tree-item">
+                                <input type="checkbox" id="consultargroup03tree01" name="consultargroup03tree01" value="Consultargroup03tree01">
+                                <label for="consultargroup03tree01">
+                                 Parâmetros
+                                </label>
+                               </li>
+
+                             </ul><!-- / #subBranch02Body.-->
+
+                           </li> <!-- /.tree-branch -->
+
+                         </ul> <!-- / #branch01Body.-->
+                         
+
+                        </li> <!-- /.tree-item -->
+                    
+<li class="tree-branch">
+                          
+                          <a href="#branch02-03-Body" class="caret first" data-toggle="collapse" aria-expanded="true"> </a>
+                          <input class="marcaTodos" type="checkbox" id="branch01-tree01" name="branch01-tree01" value="branch01-tree01">
+                           <label for="branch01-tree01">
+                            Sistema
+                           </label>
+
+                           <ul id="branch02-03-Body" class="collapse in" aria-expanded="true" > <!-- #branch01Body.-->
+                           
+                           <li class="tree-branch"> <!-- .tree-branch -->
+                          <a href="#subbranch02-03-Body" class="caret first" data-toggle="collapse" aria-expanded="true"></a>
+
+                            <input class="marcaTodos" type="checkbox" id="subBranch01-01" name="subBranch01-01" value="subBranch01-01">
+                           <label for="subBranch01-01">
+                            Manter unidade Externa
+                           </label>
+
+                              <ul id="subbranch02-03-Body" class="collapse in" aria-expanded="true" ><!-- #subBranch01Body.-->
+
+                          <li class="tree-branch"> <!-- .tree-branch -->
+
+                          <a href="#subBranch01-04Body" class="caret first" data-toggle="collapse" aria-expanded="true"></a>
+                            <input class="marcaTodos" type="checkbox" id="subBranch01-01-01" name="subBranch01-01-01" value="subBranch01-01-01">
+                           <label for="subBranch01-01-01">
+                            Pesquisa de Unidades Externas
+                           </label>
+
+                              <ul id="subBranch01-04Body" class="collapse in" aria-expanded="true" ><!-- #subBranch01-01Body.-->
+
+                                                       <label for="consultargroup04">
+                         Consultar
+                        </label>
+
+                       </li>
+
+                       <li class="tree-item">
+
+                        <input type="checkbox" id="imprimirgroup04" name="imprimirgroup04" value="imprimirgroup04">
+
+                        <label for="imprimirgroup04">
+                         Imprimir
+                        </label>
+
+                       </li>
+
+                       <li class="tree-item">
+
+                        <input type="checkbox" id="cancelargroup04" name="cancelargroup04" value="cancelargroup04">
+
+                        <label for="cancelargroup04">
+                         Cancelar
+                        </label>
+
+                       </li>
+
+                       <li class="tree-item">
+
+                        <input type="checkbox" id="d6" name="d6" value="d6">
+
+                        <label for="d6">
+                         Alterar
+                        </label>
+
+                       </li>
+
+                       <li class="tree-item">
+
+                        <input type="checkbox" id="d5" name="d5" value="d5">
+
+                        <label for="d5">
+                         Bloquear
+                        </label>
+
+                       </li>
+
+                       <li class="tree-item">
+
+                        <input type="checkbox" id="d4" name="d4" value="d4">
+
+                        <label for="d4">
+                         Ativar
+                        </label>
+
+                       </li>
+
+                       <li class="tree-item">
+
+                        <input type="checkbox" id="d3" name="d3" value="d3">
+
+                        <label for="d3">
+                         Exportar
+                        </label>
+
+                       </li>
+
+                       <li class="tree-item">
+
+                        <input type="checkbox" id="d2" name="d2" value="d2">
+
+                        <label for="d2">
+                         Pesquisar
+                        </label>
+
+                       </li>
+
+                       <li class="tree-item">
+
+                        <input type="checkbox" id="d1" name="d1" value="d1">
+
+                        <label for="d1">
+                         Detalhar
+                        </label>
+
+                       </li>
+
+                             </ul><!-- / #subBranch01-01Body.-->
+
+                           </li> <!-- /.tree-branch -->
+                           
+                           
+                             </ul><!-- / #subBranch01Body.-->
+
+                           </li> <!-- /.tree-branch -->
+
+                           <li class="tree-branch"> <!-- .tree-branch -->
+
+                          <a href="#subbranch02-06-Body" class="caret first" data-toggle="collapse" aria-expanded="true"> </a>
+                            <input class="marcaTodos" type="checkbox" id="subBranch02-01" name="subBranch02-01" value="subBranch02-01">
+                           <label for="subBranch02-01">
+                            Compras
+                           </label>
+
+                              <ul id="subbranch02-06-Body" class="collapse in" aria-expanded="true" ><!-- #subBranch02Body.-->
+
+                               <li class="tree-item">
+                                <input type="checkbox" id="consultargroup03tree01" name="consultargroup03tree01" value="Consultargroup03tree01">
+                                <label for="consultargroup03tree01">
+                                 Parâmetros
+                                </label>
+                               </li>
+
+                             </ul><!-- / #subBranch02Body.-->
+
+                           </li> <!-- /.tree-branch -->
+
+                         </ul> <!-- / #branch01Body.-->
+                         
+
+                        </li> <!-- /.tree-item -->
+                    
+                    </ul> <!-- #rootBody.-->
+
+                  </li> <!-- /.tree-item -->
+                       
+               </ul><!-- /.input-group.tree -->            
+           
+           <ul class="tree input-group"><!-- .input-group.tree -->
+                      
+                  <li class="tree-branch">
+                 
+                  <input class="marcaTodos" type="checkbox" id="root-group02" name="root-group02" value="root-group02">
+                   <label for="root-group02">
+                    Log de Eventos <small class="sr-only">Marcar Todos</small>
+                   </label>
+                   <a href="#rootBody04" data-toggle="collapse" aria-expanded="true">
+                     <i class="material-icons last md">&#xE5CD;</i><span>Fechar</span>
+                   </a>
+                  
+                    <ul id="rootBody04" class="collapse" aria-expanded="true"><!-- #rootBody.-->
+
+                        <li class="tree-branch">
+                          
+                          <a href="#branch01-04-Body" class="caret first" data-toggle="collapse" aria-expanded="true"> </a>
+                          <input class="marcaTodos" type="checkbox" id="branch01-tree01" name="branch01-tree01" value="branch01-tree01">
+                           <label for="branch01-tree01">
+                            Parâmetros
+                           </label>
+
+                           <ul id="branch01-04-Body" class="collapse in" aria-expanded="true" > <!-- #branch01Body.-->
+                           
+                           <li class="tree-branch"> <!-- .tree-branch -->
+                          <a href="#subbranch01-04-Body" class="caret first" data-toggle="collapse" aria-expanded="true"></a>
+
+                            <input class="marcaTodos" type="checkbox" id="subBranch01-01" name="subBranch01-01" value="subBranch01-01">
+                           <label for="subBranch01-01">
+                            Sistema
+                           </label>
+
+                              <ul id="subbranch01-04-Body" class="collapse in" aria-expanded="true" ><!-- #subBranch01Body.-->
+
+                               <li class="tree-item">
+                                <input type="checkbox" id="consultargroup02tree01" name="consultargroup02tree01" value="Consultargroup02tree01">
+                                <label for="consultargroup02tree01">
+                                 Enviar
+                                </label>
+                               </li>
+
+                               <li class="tree-item">
+                               <input type="checkbox" id="imprimirgroup02tree01" name="imprimirgroup02tree01" value="Imprimirgroup02tree01">
+                               <label for="imprimirgroup02tree01">
+                                Limpar
+                               </label>
+                              </li>
+
+                               <li class="tree-item">
+                               <input type="checkbox" id="cancelargroup02tree01" name="cancelargroup02tree01" value="Cancelargroup02tree01">
+                               <label for="cancelargroup02tree01">
+                                Voltar
+                               </label>
+                              </li>
+                           
+                           
+                             </ul><!-- / #subBranch01Body.-->
+
+                           </li> <!-- /.tree-branch -->
+
+                           <li class="tree-branch"> <!-- .tree-branch -->
+
+                          <a href="#subbranch02-07-Body" class="caret first" data-toggle="collapse" aria-expanded="true"> </a>
+                            <input class="marcaTodos" type="checkbox" id="subBranch02-01" name="subBranch02-01" value="subBranch02-01">
+                           <label for="subBranch02-01">
+                            Compras
+                           </label>
+
+                              <ul id="subbranch02-07-Body" class="collapse in" aria-expanded="true" ><!-- #subBranch02Body.-->
+
+                               <li class="tree-item">
+                                <input type="checkbox" id="consultargroup03tree01" name="consultargroup03tree01" value="Consultargroup03tree01">
+                                <label for="consultargroup03tree01">
+                                 Parâmetros
+                                </label>
+                               </li>
+
+                             </ul><!-- / #subBranch02Body.-->
+
+                           </li> <!-- /.tree-branch -->
+
+                         </ul> <!-- / #branch01Body.-->
+                         
+
+                        </li> <!-- /.tree-item -->
+                    
+<li class="tree-branch">
+                          
+                          <a href="#branch02-04-Body" class="caret first" data-toggle="collapse" aria-expanded="true"> </a>
+                          <input class="marcaTodos" type="checkbox" id="branch01-tree01" name="branch01-tree01" value="branch01-tree01">
+                           <label for="branch01-tree01">
+                            Sistema
+                           </label>
+
+                           <ul id="branch02-04-Body" class="collapse in" aria-expanded="true" > <!-- #branch01Body.-->
+                           
+                           <li class="tree-branch"> <!-- .tree-branch -->
+                          <a href="#subbranch02-14-Body" class="caret first" data-toggle="collapse" aria-expanded="true"></a>
+
+                            <input class="marcaTodos" type="checkbox" id="subBranch01-01" name="subBranch01-01" value="subBranch01-01">
+                           <label for="subBranch01-01">
+                            Manter unidade Externa
+                           </label>
+
+                              <ul id="subbranch02-14-Body" class="collapse in" aria-expanded="true" ><!-- #subBranch01Body.-->
+
+                          <li class="tree-branch"> <!-- .tree-branch -->
+
+                          <a href="#subBranch01-05Body" class="caret first" data-toggle="collapse" aria-expanded="true"></a>
+                            <input class="marcaTodos" type="checkbox" id="subBranch01-01-01" name="subBranch01-01-01" value="subBranch01-01-01">
+                           <label for="subBranch01-01-01">
+                            Pesquisa de Unidades Externas
+                           </label>
+
+                              <ul id="subBranch01-05Body" class="collapse in" aria-expanded="true" ><!-- #subBranch01-01Body.-->
+
+                                                       <label for="consultargroup04">
+                         Consultar
+                        </label>
+
+                       </li>
+
+                       <li class="tree-item">
+
+                        <input type="checkbox" id="imprimirgroup04" name="imprimirgroup04" value="imprimirgroup04">
+
+                        <label for="imprimirgroup04">
+                         Imprimir
+                        </label>
+
+                       </li>
+
+                       <li class="tree-item">
+
+                        <input type="checkbox" id="cancelargroup04" name="cancelargroup04" value="cancelargroup04">
+
+                        <label for="cancelargroup04">
+                         Cancelar
+                        </label>
+
+                       </li>
+
+                       <li class="tree-item">
+
+                        <input type="checkbox" id="d6" name="d6" value="d6">
+
+                        <label for="d6">
+                         Alterar
+                        </label>
+
+                       </li>
+
+                       <li class="tree-item">
+
+                        <input type="checkbox" id="d5" name="d5" value="d5">
+
+                        <label for="d5">
+                         Bloquear
+                        </label>
+
+                       </li>
+
+                       <li class="tree-item">
+
+                        <input type="checkbox" id="d4" name="d4" value="d4">
+
+                        <label for="d4">
+                         Ativar
+                        </label>
+
+                       </li>
+
+                       <li class="tree-item">
+
+                        <input type="checkbox" id="d3" name="d3" value="d3">
+
+                        <label for="d3">
+                         Exportar
+                        </label>
+
+                       </li>
+
+                       <li class="tree-item">
+
+                        <input type="checkbox" id="d2" name="d2" value="d2">
+
+                        <label for="d2">
+                         Pesquisar
+                        </label>
+
+                       </li>
+
+                       <li class="tree-item">
+
+                        <input type="checkbox" id="d1" name="d1" value="d1">
+
+                        <label for="d1">
+                         Detalhar
+                        </label>
+
+                       </li>
+
+                             </ul><!-- / #subBranch01-01Body.-->
+
+                           </li> <!-- /.tree-branch -->
+                           
+                           
+                             </ul><!-- / #subBranch01Body.-->
+
+                           </li> <!-- /.tree-branch -->
+
+                           <li class="tree-branch"> <!-- .tree-branch -->
+
+                          <a href="#subbranch02-10-Body" class="caret first" data-toggle="collapse" aria-expanded="true"> </a>
+                            <input class="marcaTodos" type="checkbox" id="subBranch02-01" name="subBranch02-01" value="subBranch02-01">
+                           <label for="subBranch02-01">
+                            Compras
+                           </label>
+
+                              <ul id="subbranch02-10-Body" class="collapse in" aria-expanded="true" ><!-- #subBranch02Body.-->
+
+                               <li class="tree-item">
+                                <input type="checkbox" id="consultargroup03tree01" name="consultargroup03tree01" value="Consultargroup03tree01">
+                                <label for="consultargroup03tree01">
+                                 Parâmetros
+                                </label>
+                               </li>
+
+                             </ul><!-- / #subBranch02Body.-->
+
+                           </li> <!-- /.tree-branch -->
+
+                         </ul> <!-- / #branch01Body.-->
+                         
+
+                        </li> <!-- /.tree-item -->
+                    
+                    </ul> <!-- #rootBody.-->
+
+                  </li> <!-- /.tree-item -->
+                       
+               </ul><!-- /.input-group.tree -->            
+           
+           
+            </div>
+           </div>
+
+
+
+            </fieldset>
+            </div>
+          
+           <div class="clearfix"></div>
+         <div class="col-md-6">
+          <button type="reset" class="btn btn-default">Limpar <i class="material-icons first md"><i class="material-icons">&#xE14C;</i></i></button>
+         </div>
+         
+         <div class="col-md-6">
+          <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#saveModal">Salvar <i class="material-icons first md">&#xE161;</i></button>
+         </div>
+          <div class="col-md-12" role="alert">
+          </div>
+            
+            <div class="col-md-12">
+            </div>
+             
+      </div>
+      
+    </form>
+  </div>
+</div>
+
+       <a href="#fimconteudo" id="fimconteudo" name="fimconteudo" class="sr-only">Fim do conteúdo</a>
+    </div>
+
+    <div class="actionbar col-md-2">
+        <div class="actionbar-header">
+    <button type="button" class="btn actionbar-toggle collapsed" data-toggle="collapse" data-target="#actionbar" aria-expanded="false" aria-controls="actionbar">
+        <span class="sr-only-right">Expandir Menu de Ações</span>
+        <i class="material-icons first">&#xE5D4;</i> Ações
+    </button>
+</div>
+<div id="actionbar" class="navbar-collapse collapse" aria-expanded="false" role="menu">
+    <a href="#iracoes" id="iracoes" name="iracoes" class="sr-only-right" accesskey="4">Início da Barra de Ações</a>
+<ul class="nav navbar-nav nav-stacked" role="menu">
+   <li>
+       <button type="button" class="btn actionbar-toggle collapsed" data-toggle="collapse" data-target="#actionbar" aria-expanded="false" aria-controls="actionbar">
+            <span class="sr-only-right">Expandir Menu de Ações</span>
+            <i class="material-icons first">&#xE5D4;</i> Ações
+        </button>
+   </li>
+    <!-- 1st level -->
+    <li><a href="#nogo"><i class="material-icons first md">&#xE8AD;</i>Imprimir</a></li>
+</ul>
+    <a href="#fimacoes" id="fimacoes" name="fimacoes" class="sr-only-right">Fim da Barra de Ações</a>
+
+</div><!--/.nav-collapse -->
+
+</div>
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="saveModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content success">
+      <div class="modal-body text-center">
+                <i class="material-icons lg stamp bevel">&#xE86C;</i>
+                <span class="h3">Salvo com Sucesso</span>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="material-icons first md">&#xE5CD;</i>Fechar</button>
+        <button type="button" class="btn btn-primary"><i class="material-icons first md">&#xE5CA;</i>Confirmar</button>
+      </div>
+    </div>
+  </div>
+</div>

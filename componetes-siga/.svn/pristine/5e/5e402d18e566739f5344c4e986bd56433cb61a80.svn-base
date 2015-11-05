@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+   <title>Documentação</title>
+    <meta name="description" content="Descrição do Sistema ou site">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="alternate" type="application/rss+xml" title="SIGA" href="/feed.xml" />
+    <script type="text/javascript" language="javascript" src="../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" language="javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" language="javascript" src="../js/main.js"></script>
+<!--<script type="text/javascript" language="javascript" src="../js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" language="javascript" src="../js/dataTables.bootstrap.js"></script>
+	<script type="text/javascript" language="javascript" src="../js/dataTables.responsive.min.js"></script>-->
+	<script type="text/javascript" language="javascript" src="../js/datatables.js"></script>
+	<script type="text/javascript" language="javascript" src="../js/data-table.min.js"></script>
+<!--
+        <script type="text/javascript" language="javascript" src="../js/jquery.hotkeys-0.7.9.js"></script>
+-->
+<script type="text/javascript" language="javascript" src="../js/jquery.datetimepicker.js"></script>
+    
+   
+
+  <body>
+
+    <header role="banner" class="site-header">
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-10 accessbar">
+               <a href="#iracessibilidade" id="iracessibilidade" name="iracessibilidade" class="sr-only">Início da Navegação de Acessibilidade</a>
+
+               <ul class="access">
+                <li><a href="#navbar"><span class="label label-access">enter</span>Ir para Navegação</a></li>
+                <li><a href="#irconteudo"><span class="label label-access">alt + 1</span> Ir para Conteúdo</a></li>
+                <li><a href="#irbusca"><span class="label label-access">alt + 2</span> Ir para Busca</a></li>
+                <li><a href="#iracoes"><span class="label label-access">alt + 3</span> Ir para Barra de Ações</a></li>
+                <li><a href="#irvisualizacao"><span class="label label-access">alt + 4</span> Ir para Barra de Visualização</a></li>
+                <li><a href="#iracessibilidade" accesskey="6"><span class="label label-access">alt + 5</span> Acessibilidade</a></li>
+                <li><a href="#irmapasite" accesskey="7"><span class="label label-access">alt + 6</span> Mapa do Site</a></li>
+               </ul>
+               <a href="#fimacessibilidade" id="fimacessibilidade" name="fimacessibilidade" class="sr-only">Fim da Navegação de Acessibilidade</a>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+           <div class="col-xs-2"><div class="row">
+    <div class="navbar-header col-xs-6">
+        <a href="#navbar" type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Abrir Menu de Navegação</span>
+         <i class="material-icons md first">&#xE5D2;</i> Menu
+        </a>
+    </div>
+    <div class="logo col-xs-6">
+        <a class="site-title" href="../">
+            <h1 class="sr-only">SIGA Sistema Integrado de Gestão de Aquisições - Versão 2.0</h1>
+            <img src="../images/logo-trace-fawra.png" alt="Logo do SIGA">
+        </a>
+    </div> 
+</div>
+<nav class="navbar" role="navigation">
+    <div id="navbar" class="navbar-collapse collapse" aria-expanded="false">
+     <!--accesskey="3" id="irnavegacao" name="irnavegacao"-->
+      <a href="#nogo" class="sr-only">Início da Navegação</a>
+        <ul class="nav navbar-nav nav-stacked">
+            <!-- 1st level -->
+            
+            <li>
+                <a href="#" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+                     <span class="sr-only">Fechar Menu de Navegação</span>
+                     <i class="material-icons first md">&#xE5D2;</i> Menu
+                     <i class="material-icons last md">&#xE5CD;</i>
+                </a>
+            </li>
+            <li>
+             <form role="search">
+              <div class="form-group">
+               <div class="input-group">
+                <input type="text" class="form-control" placeholder="Buscar no SIGA" id="irbusca" name="irbusca" accesskey="2">
+                 <div class="input-group-btn">
+                  <button type="submit" class="btn btn-primary"><i class="material-icons single md">&#xE8B6;</i><span class="sr-only">Buscar</span></button>
+                 </div>
+               </div>
+              </div>
+             </form>
+            </li>
+                <li>
+                    <a href="../documentacao/index.html">Biblioteca de Componentes</a>
+                </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Abrir ou Fechar SubMenu</span> Registro de Preço <span class="caret last"></span></a>
+
+                        <ul class="dropdown-menu">
+                            <!-- 2nd level -->
+                            <!--with items group-->
+                                <li>
+                                    <a href="#">
+                                    PLS 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    Ata 
+                                    </a>
+                                </li>
+                                <li class="sr-only">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Fechar Submenu</a>
+                                </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Abrir ou Fechar SubMenu</span> Requisição <span class="caret last"></span></a>
+                        <ul class="dropdown-menu">
+                            <!-- 2nd level -->
+                            <!--with items group-->
+                                <li>
+                                    <a href="#">
+                                    Carrinho de Compras 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    Consulta de itens 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    Requisitar 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    Acompanhar Solicitação de Catalogação 
+                                    </a>
+                                </li>
+                                <li class="sr-only">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Fechar Submenu</a>
+                                </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Abrir ou Fechar SubMenu</span> Processo <span class="caret last"></span></a>
+                        <ul class="dropdown-menu">
+                            <!-- 2nd level -->
+                                <li>
+                                    <a href="../processo/carrinho-compra/index.html">
+                                    Definição 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    Planejamento 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    Pesquisa de Mercado 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    PED 
+                                    </a>
+                                </li>
+                                <li class="sr-only">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Fechar Submenu</a>
+                                </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Licitação</a>
+                    </li>
+                    <li>
+                        <a href="#">Contratação</a>
+                    </li>
+                    <li>
+                        <a href="#">Recebimento</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Abrir ou Fechar SubMenu</span>
+                        Almoxarifado <span class="caret last"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- 2nd level -->
+                               <ul class="dropdown-group">
+                                    <li class="dropdown-header">Operação</li>
+                                    <li>
+                                        <a href="#">
+                                        Armazenamento 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        Atendimento 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        Ressuprimento 
+                                        </a>
+                                    </li>
+                               </ul><!--/ .dropdown-group-->
+                               <ul class="dropdown-group">
+                                    <li class="dropdown-header">Gestão</li>
+                                    <li>
+                                        <a href="#">
+                                        Disponibilidade 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        Inventário 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        Relatórios 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        Parametrizar Itens 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        Parametrizar Almoxarifado 
+                                        </a>
+                                    </li>
+                               </ul> <!--/ .dropdown-group-->
+                                <li class="sr-only">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Fechar Submenu</a>
+                                </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Gestão</a>
+                    </li>
+                    <li>
+                        <a href="#">Minutas</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Abrir ou Fechar SubMenu</span>
+                        Administração <span class="caret last"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- 2nd level -->
+                                  
+                                   <li class="dropdown sub-dropdown">
+                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only">Abrir ou Fechar SubMenu</span>
+                                    Parâmetro <span class="caret last"></span>
+                                    </a>
+                                   <ul class="dropdown-menu">
+                                         <li>
+                                           <a href="#">
+                                           Sistema 
+                                           </a>
+                                         </li>
+                                         <li>
+                                           <a href="#">
+                                           Compras 
+                                           </a>
+                                         </li>
+                                       </ul><!--/ .dropdown-menu-->
+                                   </li>
+                                   
+                                <li class="sr-only">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Fechar Submenu</a>
+                                </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Cadastro</a>
+                    </li>
+        </ul>        <a href="#fimnavegacao" id="fimnavegacao" name="fimnavegacao" class="sr-only">Fim da Navegação</a>
+
+    </div><!--/.nav-collapse -->
+</nav></div>
+           <div class="col-xs-8">
+               <h2 class="page-title" role="heading">Documentação</h2>
+           </div>
+           <div class="col-sm-2">
+               <span class="userbar userbar-nav">
+                   <a href="#" class="btn btn-default" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Olá, Victor Santos<i class="material-icons lg first">&#xE853;</i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Ajuda</a></li>
+                        <li><a href="#">Suporte</a></li>
+                        <li><a href="#">Sair</a></li>
+                    </ul>
+               </span>
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+  
+
+    <div class="support-nav">
+                    
+          
+        <div class="row">
+    <div class="col-xs-6 col-md-2 col-sm-2">
+        <a href="javascript:history.back(1)" class="btn"><i class="material-icons first md">arrow_back</i>Voltar</a>
+    </div>
+
+    <div class="hidden-xs col-md-10">
+       <ol class="breadcrumb">
+<li><a href="../"><i class="material-icons md">&#xE88A;</i></a></li>
+
+
+
+
+    
+    
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <li >
+                
+                <a href="/documentacao/">Documentação</a>            </li>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+</ol>
+
+    </div>
+
+</div>
+           
+    </div>
+    <div class="content">
+        <div class="row">
+
+            <div class="viewbar col-md-2">
+        <div id="viewbar" class="navbar-collapse collapse" aria-expanded="false" role="menu">
+        <a href="#irvisualizacao" id="irvisualizacao" name="irvisualizacao" class="sr-only" accesskey="5">Início da Barra de Visualizações</a>
+    <ul class="nav navbar-nav nav-stacked" role="menu">
+    
+
+        
+
+            <li>
+                <a href="index.html">Introdução</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li>
+                <a href="estilo.html">Estilo</a>
+            </li>
+
+        
+
+    
+
+        
+
+            <li>
+                <a href="layout.html">Layout</a>
+            </li>
+
+        
+
+    
+
+        
+            <li class="dropdown">
+                <a href="#componentes" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Componentes <span class="caret last"></span><span class="sr-only">Abrir Submenu</span></a>
+
+                <ul id="componentes" class="dropdown-menu">
+                    <!-- 2nd level -->
+                    
+                        <li>
+                            <a href="componentes.html#paineis">
+                            Painéis
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="componentes.html#fomularios">
+                            Formulários
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="componentes.html#modais">
+                            Modais
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="componentes.html#tabelas">
+                            Tabelas
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="componentes.html#alertas">
+                            Alertas e Mensagens
+                            </a>
+                        </li>
+                    
+                    <li class="sr-only"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Fechar Submenu</a></li>
+                </ul>
+
+            </li>
+            
+
+    
+    </ul>
+        <a href="#fimvisualizacao" id="fimvisualizacao" name="fimvisualizacao" class="sr-only">Fim da Barra de Visualizações</a>
+
+</div><!--/.nav-collapse -->
+
+       
+    </div>
+
+    <div id="main" class="col-md-offset-2 col-md-8" role="main">
+       <a href="#irconteudo" class="sr-only" id="irconteudo" name="irconteudo" accesskey="1">Início do conteúdo</a>
+<!--Aqui vai o conteúdo-->
+
+        <h3 class="view-title" role="heading">Layout</h3>
+
+      <section role="section">
+
+       <div class="panel panel-default">
+        <header class="panel-heading" role="heading">
+            <h4 class="panel-title">Introdução</h4>
+        </header>
+        <div id="panelExample">
+       <div class="row">
+
+            <div class="panel-body">
+              <p>Nesta seção você encontrará instruções para a construção do layout usando os templates de grid componentes e de navegação.</p>
+              <p class="alert alert-info">Recomenda-se que se estude o <a href="http://getbootstrap.com/css/#grid" target="_blank">sistema de grid do bootstrap <i class="material-icons sm">&#xE89E;</i></a> para entender as classes referentes ao grid.</p>
+              <p>Para compreender e dominar a construção do layout deve-se ter em mente que ele parte do princípio de que existem três grandes conjuntos de tarefas que o usuário pode realizar no sistema: <strong>Navegar</strong>, <strong>Ver</strong> e <strong>Manipular</strong>. A partir delas classificamos os subtipos de tarefas.</p>
+         <div class="col-md-6">
+           <h5>Navegação</h5>
+           <p>A navegação é o ato de transitar entre as telas do sistema, ou seja:</p>
+           <ul>
+               <li><strong>Voltar</strong> e <strong>Avançar</strong></li>
+               <li><strong>Mudar de Contexto</strong></li>
+               <li><strong>logar</strong> e <strong>deslogar</strong></li>
+           </ul>
+           <p>O ato de navegar pode ser confundido com o de ver, no entanto se refere especificamente aos componentes:</p>
+            <ul>
+             <li><strong>barra de acessibilidade</strong></li>
+             <li><strong>menu de usuário</strong></li>
+             <li><strong>menu global</strong></li>
+             <li><strong>logo do sistema</strong></li>
+             <li><strong>botão voltar</strong></li>
+             <li><strong>Navegação Auxiliar</strong></li>
+             <li><strong>botão Ir para o topo</strong></li>
+            </ul>
+         </div>
+         <div class="col-md-6">
+           <h5>Exibição da Informação (ver)</h5>
+           <p>A exibição da informação envolve as tarefas de consulta, listagem e detalhamento. Os componetes usados para exibição de informação são:</p>
+           <ul>
+               <li><strong>Formulários de Consulta</strong></li>
+               <li><strong>Tabelas de Listagem</strong></li>
+               <li><strong>Elementos Textuais, como, Listas(<code>&lt;ul&gt;</code> e <code>&lt;ol&gt;</code>), Lista de Termos(<code>&lt;dl&gt;</code>), Parágrafos e etc.</strong></li>
+             <li><strong>Barra de Visualização</strong></li>
+           </ul>
+           <h5>Manipulação da Informação</h5>
+           <p>A manipulação da informação envolve as tarefas de inclusão, Alteração e exclusão e os componentes usados para execução dessa tarefa são:</p>
+              <ul>
+               <li><strong>Formulários de Inserção/Alteração de Dados</strong></li>
+               <li><strong>Tabelas de Edição</strong></li>
+               <li><strong>Barra de Ação</strong></li>
+              </ul>
+         </div>
+         <div class="col-md-12">
+          <div class="alert alert-info">
+            <i class="material-icons md first">&#xE88E;</i><p><strong>Regra de Ouro</strong></p>
+            <ol>
+            <li> Todo componente que é necessário para execução de tarefas de <strong>exibição</strong> ou <strong>manipulação</strong> deve estar no conteúdo <code>&lt;div class="content"&gt;</code>.</li>
+             <li>Tudo que não for navegação do sistema (cabeçalho de sistema, rodapé e menu global), barra de visualização o barra de ações deve estar inserido dentro da <code>&lt;div id="main" role="main"&gt;</code> Saiba mais em <a href="#divMain">#main</a></li>
+            </ol>
+            </div>
+         </div>
+       </div>
+
+            </div>
+       
+        
+        </div>
+   </div>
+       
+    <div class="panel panel-default">
+        <header class="panel-heading">
+            <h4 class="panel-title">As Áreas do Layout</h4>
+        </header>
+        <div id="panelId01" class="panel-body collapse in">
+         <div class="row">
+          <div class="col-md-12">
+           <p>Para entender os diferentes tipos de layout possíveis para a construção de uma página, primeiramente é preciso entender as partes que o compõe <strong>(Cabeçalho, Barra de Visualizações, Barra de Ações, Conteúdo e Rodapé)</strong>.</p>
+          </div>
+          <div class="col-md-12">
+          <h6>Cabeçalho</h6>
+          <p>O cabeçalho está presente em todos os tipos de layout e contém o <strong>menu de navegação</strong>, <strong>logo do sistema</strong>, <strong>título da página</strong>, <strong>barra de acessibilidade</strong>, <strong>menu do usuário</strong> e <strong>navegação auxiliar (breadcrumb)</strong>.</p>
+          <h6>Conteúdo</h6>
+          <p>O Conteúdo está presente em todos os tipos de layout e nele é exibido todos os <a href="componentes.html">componentes</a> necessários para a exibição de informação e realização de tarefas.</p>
+          <h6>Barra de Visualizações</h6>
+          <p>A Barra de Visualizações está presente apenas nos grid padrão e no grid view-bar e pode ser visto como uma navegação local, pois é um menu para as subseções do contexto atual.</p>
+          <h6>Barra de Ações</h6>
+          <p>A Barra de Ações está presente apenas nos grid padrão e no grid action-bar e contém as ações permitidas para o contexto e visualização atual.</p>
+          <h6>Rodapé</h6>
+          <p>Também está presente em todos os tipos de layout e apresenta apenas informações complementares, como uma versão reduzida do logo do sistema, informações de copright, o logo do governo do estado e um botão para voltar para o topo</p>
+          </div>
+          <div class="col-md-12">
+          <p>Veja os esquemas abaixo para entender como é montada a estrutura padrão e os tipos de layout:</p>
+              
+          </div>
+          <div class="col-sm-6">
+            <figure>
+             <img class="media-responsive" src="/images/docs/layout-main.png" alt="">
+             <figcaption>Estrutura do layout: Cabeçalho, Navegação Auxiliar, Conteúdo e Rodapé</figcaption>
+            </figure>
+            <figure>
+             <img class="media-responsive" src="/images/docs/layout-structure-content.png" alt="">
+             <figcaption>Tags Estruturais do layout</figcaption>
+            </figure>
+          </div>
+          <div class="col-sm-6">
+            <figure>
+             <img class="media-responsive" src="/images/docs/layout-twobars.png" alt="">
+             <figcaption>Estrutura do Conteúdo: Barra de Visualizações, Conteúdo e Barra de Ações</figcaption>
+            </figure>
+            <figure>
+             <img class="media-responsive" src="/images/docs/layout-structure.png" alt="">
+             <figcaption>Tags Estruturais do Conteúdo</figcaption>
+            </figure>
+          </div>
+          
+        <col-md-12>
+           <h5>Tipos de Layout</h5>
+        </col-md-12>
+         <div class="col-sm-6">
+         <figure>
+           <img class="media-responsive" src="/images/docs/layout-nobar.png" alt="">
+           <figcaption>Layout Sem Barras</figcaption>
+         </figure>
+          </div>
+         <div class="col-sm-6">
+         <figure>
+           <img class="media-responsive" src="/images/docs/layout-actionbar.png" alt="">
+           <figcaption>Layout com Barra de Ação</figcaption>
+         </figure>
+          </div>
+         <div class="col-sm-6">
+         <figure>
+          <img class="media-responsive" src="/images/docs/layout-viewbar.png" alt="">
+          <figcaption>Layout com Barra de Visualização</figcaption>
+         </figure>
+         </div>
+         <div class="col-sm-6">
+         <figure>
+           <img class="media-responsive" src="/images/docs/layout-twobars.png" alt="">
+           <figcaption>Layout Padrão (Duas Barras)</figcaption>
+         </figure>
+         </div>
+
+         </div>
+     
+      </div>
+       
+       <footer class="panel-footer" role="complementary">Recomenda-se que se estude o <a href="http://getbootstrap.com/css/#grid" target="_blank">sistema de grid do bootstrap <i class="material-icons sm">&#xE89E;</i></a> para entender as classes referentes ao grid.</footer>
+        
+    </div>
+
+    
+     <div id="divMain" class="panel panel-default">
+        <header class="panel-heading" role="heading">
+            <h4 class="panel-title">A Div#main</h4>
+        </header>
+      <div id="panelId" class="panel-body">
+      <div class="row">
+          <div class="col-md-12">
+            <p>Dentro da <code>&lt;div id="main" role="main"&gt;</code> existe uma gama de possibilidades, mas é necessário seguir algumas regras:</p>
+            <ol>
+                <li><strong>Tag section</strong>
+                  <ul>
+                     <li>É possível existir mais de uma tag <code>&lt;section role="section"&gt;</code> desde que elas separem conteúdos claramente distintos</li>
+                     <li>Sempre que o contexto possuir uma barra de visualização a primeira <code>&lt;section role="section"&gt;</code> deve possuir uma <code>&lt;h3 class="view-title"&gt;</code> como seu primeiro elemento, indicando qual é a visualização exibida no momento.</li>
+                  </ul>
+                </li>
+                <li><strong>Painéis</strong>
+                  <ul>
+                     <li>Todo Painel deve estar dentro de uma tag <code>&lt;section role="section"&gt;</code>.</li>
+                     <li>Todo conteúdo deve estar dentro de uma <code>&lt;div class="panel panel-default"&gt;</code>, mais especificamente dentro da <code>&lt;div id="idExemplo" class="panel-body"&gt;</code>. Saiba mais sobre a <a href="componentes.html">construção dos painéis</a>.</li>
+                     <li>É possível existir mais de um Painel dentro de uma tag <code>&lt;section role="section"&gt;</code>.</li>
+                  </ul>
+                </li>
+            </ol>
+          </div>
+      </div>
+      </div>
+     </div>
+        
+    </section>
+    
+   <section id="struts" role="section">
+    <h3>Montando o Layout com o Struts 2</h3>
+        
+     <div class="panel panel-default">
+      <div id="panelId" class="panel-body">
+      <div class="row">
+
+          <div class="col-md-12">
+            <p>Foram criados templates distintos para cada tipo de layout disponível. Para a utilização destes templates basta invocá-los pela tag <code> &lt;tiles:insertTemplate template=&quot;/layouts/fawra/layout-no-bars.jsp&quot;&gt;</code></p>
+			<p>O template deve ser substituído de acordo com o layout desejado: layout-default.jsp(possui a view-bar e a action-bar), layout-no-bars.jsp(sem nehuma das barras), layout-view-bar.jsp(possui apenas a view-bar) e layout-action-bar.jsp(possui apenas a action-bar)</p>
+			<p>Esta distribuição permite utilizar o layout adequado de acordo com a necessidade de utilização (ou não) das barras laterais. Porém, além das barras, existem alguns elementos que pode ser desejável a customização e que não tem relação direta com o layout de barras, pois permeiam todos os layouts.</p>
+			<p>Logo, além dos layouts distintos, foram criados atributos para a inserção de partes do layout conforme seja necessário, que podem ser utilizados através da tag <code>&lt;tiles:putAttribute name=&quot;scripts&quot;&gt;</code>. São eles: </p>
+			<span>Atributos presentes em todos os layouts.</span>
+			<ul>
+				<li><strong>head</strong> - Possui o cabeçalho html padrão do layout. Caso seja utilizado, substituirá o padrão pela nova definição.</li>
+				<li><strong>scripts</strong> - Uma possibilidade de inserção de tags(ex.: css e/ou js) no cabeçalho html. Esta tag não substitui a original, apenas acrescenta à ela. Originalmente não é inserido nenhum conteúdo neste atributo.</li>
+				<li><strong>menu</strong> - Utilizado para renderizar o menu do sistema, que já é preenchido por padrão. Sendo usado, substitui o menu original.</li>
+				<li><strong>pageTitle</strong> - Define o título da página, localizado no cabeçalho(tarja azul na parte superior). Por padrão, utiliza o valor: SIGA - Sistema Integrado de Gestão de Aquisições - Versão 2.0.</li>
+				<li><strong>voltar</strong> - Define o botão de voltar. Caso não seja utilizado, o botão assumirá o padrão: javascript:history.back(1).</li>
+				<li><strong>breadcrumb</strong> - Define o breadcrumb da página que por padrão é um ícone de uma casa. Caso utilizado, substitui o original.</li>
+				<li><strong>body</strong> - Define o conteúdo da página.(Obs.: por padrão ele vem vazio ;) )</li>
+				<li><strong>footer</strong> - Define o rodapé da página que por padrão possui o logo do Siga, informações de copyright e o link para o topo.</li>
+			</ul>
+			<span>Estes atributos são referentes às barras presentes apenas em alguns layout, conforme dito acima.</span>
+			<ul>
+				<li><strong>viewBar</strong> - Insere os itens da viewBar. Este atributo só existe no layout-default e no layout-view-bar. Caso um deles seja utilizado, este atributo deverá ser informado, caso contrário a barra será renderizada sem itens.</li>
+				<li><strong>actionBar</strong> - Insere os itens da actionBar. Este atributo só existe no layout-default e no layout-action-bar. Seu funcionamento é igual ao da viewBar.</li>
+			</ul>
+          </div>
+      </div>
+      </div>
+     </div>
+    </section>
+
+        
+<!--Fim do conteúdo-->
+       <a href="#fimconteudo" id="fimconteudo" name="fimconteudo" class="sr-only">Fim do conteúdo</a>
+    </div>
+
+    <div class="actionbar col-md-2">
+        <div class="actionbar-header">
+    <button type="button" class="btn actionbar-toggle collapsed" data-toggle="collapse" data-target="#actionbar" aria-expanded="false" aria-controls="actionbar">
+        <span class="sr-only-right">Expandir Menu de Ações</span>
+        <i class="material-icons first">&#xE5D4;</i> Ações
+    </button>
+</div>
+<div id="actionbar" class="navbar-collapse collapse" aria-expanded="false" role="menu">
+    <a href="#iracoes" id="iracoes" name="iracoes" class="sr-only-right" accesskey="4">Início da Barra de Ações</a>
+<ul class="nav navbar-nav nav-stacked" role="menu">
+   <li>
+       <button type="button" class="btn actionbar-toggle collapsed" data-toggle="collapse" data-target="#actionbar" aria-expanded="false" aria-controls="actionbar">
+            <span class="sr-only-right">Expandir Menu de Ações</span>
+            <i class="material-icons first">&#xE5D4;</i> Ações
+        </button>
+   </li>
+    <!-- 1st level -->
+    
+
+        
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="material-icons first md">&#xE80D;</i>Compartilhar <span class="caret last"></span><span class="sr-only-right">Abrir Submenu</span></a>
+
+                <ul class="dropdown-menu">
+                    <!-- 2nd level -->
+                    
+                        <li>
+                            <a href="#">
+                            <i class="material-icons first md">&#xE0BE;</i>
+                            Email
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a href="#">
+                            <i class="material-icons first md">&#xE14D;</i>
+                            Copiar URL
+                            </a>
+                        </li>
+                    
+                    <li class="sr-only-right"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Fechar Submenu</a></li>
+                </ul>
+
+            </li>
+            
+
+    
+
+        
+
+            <li>
+                <a href="#"><i class="material-icons first md">&#xE8AD;</i>Imprimir</a>
+            </li>
+
+        
+
+    
+</ul>
+    <a href="#fimacoes" id="fimacoes" name="fimacoes" class="sr-only-right">Fim da Barra de Ações</a>
+
+</div><!--/.nav-collapse -->
+
+       
+    </div>
+
+
+        </div>   
+    </div>
+
+    <footer class="container-fluid" role="contentinfo">
+   <div class="row">
+       <div class="col-sm-10">
+        <img src="../images/logo_min_footer.png" alt="SIGA versão 2.0" class="pull-left">
+        <p>Copyright 2013 SIGA - Sistema Integrado de Gestão de Aquisições - Versão 2.0 - Todos os direitos reservados.</p>
+       </div>
+       <div class="col-sm-2">
+        <p class="pull-right"><a id="backToTop" href="#">Ir para o topo</a></p>
+       </div>
+   </div>
+</footer>
+
+
+  </body>
+
+</html>

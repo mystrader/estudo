@@ -1,0 +1,124 @@
+
+/*!
+ *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/icon/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(../fonts/icon/MaterialIcons-Regular.woff2) format('woff2'),
+       url(../fonts/icon/MaterialIcons-Regular.woff) format('woff'),
+       url(../fonts/icon/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: inherit;  /* Preferred icon size */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1em;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  margin-top: -2px;
+
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  //fill: ;
+  position: relative;
+    
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+    
+  &.first {
+    @include icon-position(0px, 10px);
+
+  }
+    
+  &.last {
+    @include icon-position(10px, 0);
+
+    }
+    
+  &.single {
+    @include icon-position(0, 0);
+      
+  }
+  
+  //h1 &, h2 &, h3 &,
+  //h4 &, h5 &, h6 & { font-size: inherit; }
+
+  &.xs  { font-size: $icon-size-xs; height: $icon-size-xs; width: $icon-size-xs;   }
+  &.sm  { font-size: $icon-size-sm; height: $icon-size-sm; width: $icon-size-sm;   }
+  &.md  { font-size: $icon-size-base; height: $icon-size-base; width: $icon-size-base; }
+  &.lg  { font-size: $icon-size-lg; height: $icon-size-lg; width: $icon-size-lg;   }
+  &.xl  { font-size: $icon-size-xl; height: $icon-size-xl; width: $icon-size-xl;   }
+    
+  &.stamp {
+      display: block;
+      margin: 0 auto $padding-large-vertical;
+      
+      &.bevel { text-shadow: 1px 1px 1px $gray-light; }
+  }
+    
+  &.mirror {
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+    
+
+}
+
+@include text-emphasis-variant('.icon-online', $success-dark);
+@include text-emphasis-variant('.icon-status-blue', $info-dark);
+@include text-emphasis-variant('.icon-status-yellow', darken($warning-light, 5%));
+
+.caret {
+    
+    //padding: $padding-base-vertical;
+    
+  &.first {
+    @include icon-position(0px, 10px);
+    float:left;
+  }
+    
+  &.last {
+    @include icon-position(10px, 0);
+    float:right;
+    }
+
+}
+
+.icon-span {
+    
+  &.first {
+      @include icon-position(0px, 10px);
+      float: left;
+  }
+    
+  &.last {
+      @include icon-position(10px, 0);
+      float: right;
+    }
+
+}
+

@@ -1,0 +1,93 @@
+<div class="row">
+    <div class="navbar-header col-xs-6">
+        <a href="#navbar" type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Abrir Menu de Navegação</span>
+         <i class="material-icons md first">&#xE5D2;</i> Menu
+        </a>
+    </div>
+    <div class="logo-siga col-xs-6">
+        <a class="site-title" href="{{ relative }}">
+            <h1 class="sr-only">{{ site.title }} {{ site.description }}</h1>
+            <img src="{{ relative }}images/logo-siga.png" alt="Logo do {{ site.title }}">
+        </a>
+    </div> 
+</div>
+<nav class="navbar" role="navigation">
+    <div id="navbar" class="navbar-collapse collapse" aria-expanded="false">
+     <!--accesskey="3" id="irnavegacao" name="irnavegacao"-->
+      <a href="#nogo" class="sr-only">Início da Navegação</a>
+        <ul class="nav navbar-nav nav-stacked">
+            <!-- 1st level -->
+            
+            <li>
+                <a href="#navbar" type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="true" aria-controls="navbar">
+                     <span class="sr-only">Fechar Menu de Navegação</span>
+                     <i class="material-icons first md">&#xE5D2;</i> Menu
+                     <i class="material-icons last md">&#xE5CD;</i>
+                </a>
+            </li>
+            <li>
+             <form role="search">
+              <div class="form-group">
+               <div class="input-group">
+                <input type="text" class="form-control" placeholder="Buscar no SIGA" id="irbusca" name="irbusca" accesskey="2">
+                 <div class="input-group-btn">
+                  <button type="submit" class="btn btn-primary"><i class="material-icons single md">&#xE8B6;</i><span class="sr-only">Buscar</span></button>
+                 </div>
+               </div>
+              </div>
+             </form>
+            </li>
+            {% for nav in site.data.menu %}
+
+                {% if nav.sub != null %}
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Abrir ou Fechar SubMenu</span> {{ nav.title }} <span class="caret last"></span></a>
+
+                        <ul class="dropdown-menu">
+                            <!-- 2nd level -->
+                            
+                            <!--with items group-->
+                            {% for sub in nav.sub %}
+                              
+                               {% if nav.sub.group != null %}
+                                   
+                                    {% for sub in nav.sub.group %}
+                                        <li class="dropdown-header">{{ nav.group.title }}</li>   
+                                        <li>
+                                            <a href="{{ relative }}{{ nav.group.href }}">
+                                                {{ nav.group.title }} 
+                                            </a>
+                                        </li>
+                                    {% endfor %}
+                                    
+                               {% endif %}
+                               
+                                <li>
+                                    <a href="{{ relative }}{{ sub.href }}">
+                                    {{ sub.title }} 
+                                    </a>
+                                </li>
+                            {% endfor %}
+                                <li class="sr-only">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Fechar Submenu</a>
+                                </li>
+
+                        </ul>
+
+                    </li>
+                    {% else %}
+
+                    <li>
+                        <a href="{{ relative }}{{ nav.href }}">{{ nav.title }}</a>
+                    </li>
+
+                {% endif %}
+
+            {% endfor %}
+        </ul>
+        <a href="#fimnavegacao" id="fimnavegacao" name="fimnavegacao" class="sr-only">Fim da Navegação</a>
+
+    </div><!--/.nav-collapse -->
+</nav>
+

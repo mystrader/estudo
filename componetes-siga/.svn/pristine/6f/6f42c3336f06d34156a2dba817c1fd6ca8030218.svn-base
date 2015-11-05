@@ -1,0 +1,373 @@
+---
+layout: default
+title:  "Licitação 0103/2013"
+date:   2015-08-21 14:48:00
+breadcrumb:  Licitação 0103/2013
+---
+<div class="viewbar col-md-2">
+    <div id="viewbar" class="navbar-collapse collapse" aria-expanded="false" role="menu">
+            <a href="#irvisualizacao" id="irvisualizacao" name="irvisualizacao" class="sr-only" accesskey="5">Início da Barra de Visualizações</a>
+        <ul class="nav navbar-nav nav-stacked" role="menu">
+
+            <li><a href="#">Dados Gerais</a></li>
+            <li><a href="#">Documentos</a></li>
+            <li><a href="#">Lances</a></li>
+            <li><a href="#">Classificação de Lances</a></li>
+            <li><a href="#">Negociação</a></li>
+            <li><a href="#">Equalização</a></li>
+            <li><a href="#">Habilitação</a></li>
+            <li><a href="#">Vencedor</a></li>
+            <li><a href="#">Recurso</a></li>
+            <li><a href="#">Adjudicação</a></li>
+            <li><a href="#">Homologação</a></li>
+            <li><a href="#">Histórico</a></li>
+            
+        </ul>
+            <a href="#fimvisualizacao" id="fimvisualizacao" name="fimvisualizacao" class="sr-only">Fim da Barra de Visualizações</a>
+
+    </div><!--/.nav-collapse -->
+</div>
+
+<div class="col-md-offset-2 col-md-8">
+  <div class="row">
+   <form action="#" class="form-group detalhamento">
+
+    <div class="col-md-12">
+       <h3 class="view-title" role="heading">Dados Gerais</h3>
+    </div>
+  
+   <div class="col-md-6">
+    
+    <div class="panel panel-default">
+     <header class="panel-heading" role="heading">
+        <a href="#infoBasica" data-toggle="collapse" aria-expanded="true">
+        <h4 class="panel-title">Informações Básicas</h4>
+        <i class="material-icons last md"> &#xE5CD; </i>
+        </a>
+    </header>
+ 
+    <div id="infoBasica" class="form-group panel-body collapse in" aria-expanded="true">
+         
+      <div class="row">
+         
+         <div class="col-md-6">
+          <div class="input-group required">
+           <label for="tipoEdital">Tipo do Edital <small>Campo Obrigatório</small></label>
+           <div class="alert alert-warning alert-sm" role="alert"><i class="material-icons md first">&#xE001;</i> Preencha o campo Perfil</div>
+           <input class="form-control" name="tipoEdital" id="tipoEdital" placeholder="Nome do Perfil" value="Licitação" readonly required>
+          </div><!-- /input-group -->
+
+         </div><!-- /col-md-* -->
+
+         <div class="col-md-6">
+            
+          <div class="input-group required">
+           <label for="responsavel">Responsável <small>Campo Obrigatório</small></label>
+           <div class="alert alert-warning alert-sm" role="alert"><i class="material-icons md first">&#xE001;</i> Preencha o campo Perfil</div>
+           <input class="form-control" name="responsavel" id="responsavel" placeholder="Nome do Perfil" value="Pedro Henrique André Emanuel Cardoso" readonly required>
+          </div><!-- /input-group -->
+         
+         </div><!-- /col-md-* -->
+         
+         <div class="col-md-12">
+             
+          <div class="input-group required">
+           <label for="resumo">Resumo do Objeto <small>Campo Obrigatório</small></label>
+           <input class="form-control" name="resumo" id="resumo" placeholder="Nome do Perfil" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean felis felis, scelerisque ac posuere." readonly required>
+          </div><!-- /input-group -->
+
+         </div>
+         
+         <div class="col-md-6">
+             
+          <div class="input-group">
+           <label for="tipoLicitacao">Tipo de Licitação</label>
+           <input class="form-control" name="tipoLicitacao" readonly id="tipoLicitacao" value="Preço">
+          </div><!-- /input-group -->
+
+         </div>
+         
+         <div class="col-md-6">
+             
+          <div class="input-group">
+           <label for="lancesProposta">Lances ou Propostas</label>
+           <input class="form-control" name="lancesProposta" readonly id="lancesProposta" value="Por Item">
+          </div><!-- /input-group -->
+
+         </div>
+         
+         <div class="col-sm-6">
+             
+          <div class="input-group badge">
+           <label for="SRP">Edital para SRP</label>
+           <input type="checkbox" class="checkbox" id="SRP" name="SRP" value="SRP" disabled>
+          </div><!-- /input-group -->
+
+         </div>
+         
+         <div class="col-sm-6">
+             
+          <div class="input-group badge">
+           <label for="valorGlobal">Lances por valor Global</label>
+           <input type="checkbox" class="checkbox" id="valorGlobal" name="valorGlobal" value="valorGlobal" disabled>
+          </div><!-- /input-group -->
+
+         </div>
+         
+         <div class="col-md-12">
+             
+          <div class="input-group">
+           <label for="unidade">Unidade Promotora</label>
+           <select class="form-control" name="unidade" disabled id="unidade" value="unidade">
+           <option value="00">Selecione</option>
+           <option value="01" selected>120200 - SEPLAG - SUB. RECURSOS LOGÍSTICOS - SUBSECRETARIA DE RECURSOS LOGÍSTICOS</option>
+           <option value="02"></option>
+           <option value="03"></option>
+           </select>
+          </div><!-- /input-group -->
+
+         </div>
+          
+      </div>
+      
+    </div>
+  </div>
+
+    </div><!-- /.col-md-6-->
+    
+   <div class="col-md-6">
+    
+    <div class="panel panel-default">
+     <header class="panel-heading" role="heading">
+        <a href="#comissao" data-toggle="collapse" aria-expanded="true">
+        <h4 class="panel-title">Comissão de Licitação</h4>
+        <i class="material-icons last md"> &#xE5CD; </i>
+        </a>
+    </header>
+ 
+    <div id="comissao" class="form-group panel-body collapse in" aria-expanded="true">
+         
+      <div class="row">
+         
+         <div class="col-md-12">
+          <div class="input-group required">
+           <label for="presidente">
+               Presidente da Comissão <small>Campo Obrigatório</small>
+           </label>
+           <div class="alert alert-warning alert-sm" role="alert"><i class="material-icons md first">&#xE001;</i> Preencha o campo Perfil</div>
+           <input class="form-control input-lg" name="presidente" id="presidente" placeholder="Nome do Perfil" value="Murilo Matheus Freitas" readonly required>
+          </div><!-- /input-group -->
+
+         </div><!-- /col-md-* -->
+
+         <div class="col-md-12">
+            
+          <div class="input-group required">
+           <label for="integrantes">Integrantes da comissão <small>Campo Obrigatório</small></label>
+           <div class="alert alert-warning alert-sm" role="alert"><i class="material-icons md first">&#xE001;</i> Preencha o campo Perfil</div>
+           <input class="form-control input-lg" name="integrantes" id="integrantes" placeholder="Nome do Perfil" value="Murilo Matheus Freitas" readonly required>
+           <input class="form-control input-lg" name="integrantes" id="integrantes" placeholder="Nome do Perfil" value="Theo André Tomás Cardoso" readonly required>
+           <input class="form-control input-lg" name="integrantes" id="integrantes" placeholder="Nome do Perfil" value="Kevin César da Silva" readonly required>
+          </div><!-- /input-group -->
+         
+         </div><!-- /col-md-* -->
+         
+      </div>
+      
+    </div>
+  </div>
+
+    <div class="panel panel-default">
+     <header class="panel-heading" role="heading">
+        <a href="#anexos" data-toggle="collapse" aria-expanded="true">
+        <h4 class="panel-title">Arquivos Anexos</h4>
+        <i class="material-icons last md"> &#xE5CD; </i>
+        </a>
+    </header>
+ 
+    <div id="anexos" class="form-group panel-body collapse in" aria-expanded="true">
+         
+      <div class="row">
+         
+         <div class="col-md-12">
+              <ul>
+                  <li><a href="#">Arquivo01.txt</a></li>
+                  <li><a href="#">Arquivo02.txt</a></li>
+                  <li><a href="#">Arquivo03.txt</a></li>
+              </ul>
+
+              
+         </div><!-- /col-md-* -->
+         
+      </div>
+      
+    </div>
+  </div>
+
+    </div><!-- /.col-md-6-->
+    
+  </form>
+  </div> <!-- /.row-->
+</div> <!-- /. col-md-offset-2.col-md-8-->
+
+       <a href="#fimconteudo" id="fimconteudo" name="fimconteudo" class="sr-only">Fim do conteúdo</a>
+    </div>
+
+    <div class="actionbar col-md-2">
+        <div class="actionbar-header">
+    <button type="button" class="btn actionbar-toggle collapsed" data-toggle="collapse" data-target="#actionbar" aria-expanded="false" aria-controls="actionbar">
+        <span class="sr-only-right">Expandir Menu de Ações</span>
+        <i class="material-icons first">&#xE5D4;</i> Ações
+    </button>
+</div>
+<div id="actionbar" class="navbar-collapse collapse" aria-expanded="false" role="menu">
+    <a href="#iracoes" id="iracoes" name="iracoes" class="sr-only-right" accesskey="4">Início da Barra de Ações</a>
+<ul class="nav navbar-nav nav-stacked" role="menu">
+   <li>
+       <button type="button" class="btn actionbar-toggle collapsed" data-toggle="collapse" data-target="#actionbar" aria-expanded="false" aria-controls="actionbar">
+            <span class="sr-only-right">Expandir Menu de Ações</span>
+            <i class="material-icons first">&#xE5D4;</i> Ações
+        </button>
+   </li>
+    <li><a href="#nogo"><i class="material-icons first md">&#xE3C9;</i>Editar</a></li>
+
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="material-icons first md">&#xE8DD;</i>Negociação <span class="caret last"></span><span class="sr-only-right">Abrir Submenu</span></a>
+
+      <ul class="dropdown-menu">
+            <!-- 2nd level -->
+
+        <li>
+            <a href="#">
+            <i class="material-icons first md"></i>
+            Abrir Negociação
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+            <i class="material-icons first md"></i>
+            Fechar Negociação
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+            <i class="material-icons first md"></i>
+            Reabrir Fase
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+            <i class="material-icons first md"></i>
+            Anular/Revogar Lote
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+            <i class="material-icons first md"></i>
+            Cancelar Anular/Revogar
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+            <i class="material-icons first md"></i>
+            Fracassar
+            </a>
+        </li>
+
+        <li class="sr-only-right"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Fechar Submenu</a></li>
+      </ul>
+    </li>
+
+    <!-- 1st level -->
+    <li><a href="#nogo"><i class="material-icons first md">&#xE8AD;</i>Imprimir</a></li>
+
+    <li>
+     <a href="#nogo">
+      <i class="material-icons first md">&#xE85A;</i>
+      Avisos/Adendos
+     </a>
+    </li>
+
+    <li>
+     <a href="#nogo">
+      <i class="material-icons first md">&#xE7F4;</i>
+      Retirada de Editais
+     </a>
+    </li>
+
+    <li>
+     <a href="#nogo">
+      <i class="material-icons first md">&#xE7FE;</i>
+      Solicitar Anulação/Revogação
+     </a>
+    </li>
+
+    <li>
+     <a href="#nogo">
+      <i class="material-icons first md">&#xE255;</i>
+      Suspender Licitação
+     </a>
+    </li>
+
+    <li>
+     <a href="#nogo">
+      <i class="material-icons first md">&#xE255;</i>
+      Retomar Licitação
+     </a>
+    </li>
+
+    <li>
+     <a href="#nogo">
+      <i class="material-icons first md">&#xE255;</i>
+      Mapa de Lance
+     </a>
+    </li>
+
+    <li>
+     <a href="#nogo">
+      <i class="material-icons first md">&#xE255;</i>
+      Histórico de Lances
+     </a>
+    </li>
+
+    <li>
+     <a href="#nogo">
+      <i class="material-icons first md">&#xE255;</i>
+      Suspender Sessão
+     </a>
+    </li>
+
+    <li>
+     <a href="#nogo">
+      <i class="material-icons first md">&#xE255;</i>
+      Reabrir Licitação
+     </a>
+    </li>
+
+</ul>
+    <a href="#fimacoes" id="fimacoes" name="fimacoes" class="sr-only-right">Fim da Barra de Ações</a>
+
+</div><!--/.nav-collapse -->
+
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="saveModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content success">
+      <div class="modal-body text-center">
+                <i class="material-icons lg stamp bevel">&#xE86C;</i>
+                <span class="h3">Salvo com Sucesso</span>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="material-icons first md">&#xE5CD;</i>Fechar</button>
+        <button type="button" class="btn btn-primary"><i class="material-icons first md">&#xE5CA;</i>Confirmar</button>
+      </div>
+    </div>
+  </div>
+</div>

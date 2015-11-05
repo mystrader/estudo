@@ -1,0 +1,165 @@
+---
+layout: default
+title:  "Criar Família"
+breadcrumb:  Criar Família
+---
+
+<div class="viewbar col-md-2">
+    <div id="viewbar" class="navbar-collapse collapse" aria-expanded="false" role="menu">
+            <a href="#irvisualizacao" id="irvisualizacao" name="irvisualizacao" class="sr-only" accesskey="5">Início da Barra de Visualizações</a>
+        <ul class="nav navbar-nav nav-stacked" role="menu">
+
+            <li><a href="index.html">Criar Família</a></li>
+            <li><a href="#">Associar Itens</a></li>
+
+        </ul>
+            <a href="#fimvisualizacao" id="fimvisualizacao" name="fimvisualizacao" class="sr-only">Fim da Barra de Visualizações</a>
+
+    </div><!--/.nav-collapse -->
+</div>
+
+<div id="content" class="col-md-offset-2 col-md-8" role="main">
+
+       <div class="row">
+           <div class="col-md-12">
+                <h3 class="view-title">Associar Itens</h3>
+           </div>
+       </div>
+ 
+<div class="panel panel-default">
+    
+    <div class="panel-body">
+    
+    
+    <div class="row">
+       <div class="col-md-12">
+        <h4>Associação de Itens por Código</h4>
+        <p>Para associar um ou mais itens à familia, insira seus códigos no campo abaixo separados por espaços.</p>
+       </div>
+        <div class="col-md-12">
+         <form action="#" class="form-group">
+                                       
+            <div class="input-group">
+              <label for="codigoItem">Código dos Itens <small>Separados por espaços</small></label>
+               <div class="fake-form-control tagbox">
+                <input id="itemCode" name="itemCode" type="text" class="form-control" placeholder="Entre com os códigos dos itens separados por espaços">
+               </div>
+            </div><!-- /input-group -->
+            
+                <button class="btn btn-primary pull-right has-tagbox">Associar <i class="material-icons md last">&#xE86C;</i></button>
+          </form>
+            
+        </div>
+            <div class="col-md-12"><hr></div>
+
+    </div>
+    
+        <div class="row">
+        
+           <form action="#" class="form-group form-group-lg">
+                
+            <div class="col-md-4 col-sm-12">
+                   
+                    <div class="input-group">
+                      <label for="grupo">Grupo</label>
+                       <select class="form-control relation-filter" name="grupo" id="grupo" data-relation="associacaoItens">
+                           <option selected disabled>Selecione</option>
+                           <option value="01">01</option>
+                           <option value="02">02</option>
+                           <option value="03">03</option>
+                           <option value="04">04</option>
+                           <option value="05">05</option>
+                           <option value="06">06</option>
+                           <option value="07">07</option>
+                           <option value="08">08</option>
+                       </select>
+                     </div><!-- /input-group -->
+                   
+                    <div class="input-group">
+                      <label for="classe">Classe</label>
+                       <select class="form-control relation-filter" name="classe" id="classe" data-relation="associacaoItens">
+                           <option selected disabled>Selecione</option>
+                           <option value="01">01</option>
+                           <option value="02">02</option>
+                           <option value="03">03</option>
+                           <option value="04">04</option>
+                           <option value="05">05</option>
+                           <option value="06">06</option>
+                           <option value="07">07</option>
+                           <option value="08">08</option>
+                       </select>
+                     </div><!-- /input-group -->
+                   
+                    <div class="input-group">
+                      <label for="grupo">Artigo</label>
+                       <select class="form-control relation-filter" name="artigo" id="artigo" data-relation="associacaoItens">
+                           <option selected disabled>Selecione</option>
+                           <option value="01">01</option>
+                           <option value="02">02</option>
+                           <option value="03">03</option>
+                           <option value="04">04</option>
+                           <option value="05">05</option>
+                           <option value="06">06</option>
+                           <option value="07">07</option>
+                           <option value="08">08</option>
+                       </select>
+                     </div><!-- /input-group -->
+                     
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                   
+                    <div class="input-group">
+                      <label for="itens">Itens Disponíveis</label>
+                       <select id="selectOrigem" class="form-control library" name="itens" data-relation="associacaoItens" multiple>
+                           <option value="00001" data-relation="03"> 00001 - Descrição do item: Completa ...</option>
+                           <option value="00002" data-relation="03"> 00002 - Descrição do item: Completa ...</option>
+                           <option value="00003" data-relation="04"> 00003 - Descrição do item: Completa ...</option>
+                           <option value="00004" data-relation="04"> 00004 - Descrição do item: Completa ...</option>
+                           <option value="00005" data-relation="05"> 00005 - Descrição do item: Completa ...</option>
+                           <option value="00006" data-relation="05"> 00006 - Descrição do item: Completa ...</option>
+                           <option value="00007" data-relation="06"> 00007 - Descrição do item: Completa ...</option>
+                           <option value="10000" data-relation="06"> 10000 - Descrição do item: Completa ...</option>
+                       </select>
+                     
+                     <div class="row">
+                       <div class="col-md-12">
+                        <span class="btn btn-default pull-right" data-relation="associacaoItens" data-action="select-all"> Adicionar Todos <i class="material-icons last md">&#xE01F;</i> </span>
+                       </div>
+                     </div>
+                     </div><!-- /input-group -->
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                   
+                    <div class="input-group">
+                      <label for="itens">Itens Associados</label>
+
+                        <select id="selectDestino" class="form-control selected" name="itens" data-relation="associacaoItens" multiple></select>
+
+
+                     <div class="row">
+                       <div class="col-md-12">
+                       <span class="btn btn-link undo undo-remove pull-right" data-relation="associacaoItens"> Desfazer <i class="material-icons first md">&#xE166;</i> </span>
+                       <span class="btn btn-default" data-relation="associacaoItens" data-action="remove-all"> Remover Todos <i class="material-icons first md">&#xE020;</i> </span>
+
+                       </div>
+                     </div>
+                       
+                     </div><!-- /input-group -->
+                     
+                </div>
+                
+                <div class="col-md-12">
+                    <button class="btn btn-primary pull-right">Salvar <i class="material-icons md last">&#xE161;</i></button>
+                </div>
+                
+            </form>
+            
+        </div><!-- / .row -->
+   
+    </div><!-- / .panel-body -->
+      
+    </div> <!-- / .panel -->
+
+</div>

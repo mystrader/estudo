@@ -1,0 +1,7 @@
+// Icon
+
+@mixin icon-position($margin-left, $margin-right) {
+    display: inline-block;
+    margin-left: $margin-left;
+    margin-right: $margin-right;
+}

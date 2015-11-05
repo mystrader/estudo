@@ -1,0 +1,6 @@
+/*!
+ * CSS PARA OS PLUGINS UTILIZADOS 
+ */
+
+// Core variables and mixins
+@import "plugins/datetimepicker";

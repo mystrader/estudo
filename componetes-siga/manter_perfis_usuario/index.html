@@ -1,0 +1,74 @@
+---
+layout: default
+title:  "Perfis de Usuário"
+date:   2015-08-21 14:48:00
+breadcrumb:  Perfis de Usuário
+---
+
+<div class="col-md-offset-2 col-md-8">
+    <div class="panel panel-default">
+     <header class="panel-heading" role="heading">
+        <h4 class="panel-title">Consultar Perfis de usuário</h4>
+    </header>
+ 
+    <form class="form-group panel-body" action="#">
+         
+         <div class="row">
+         
+         <div class="col-md-12">
+        <div class="input-group">
+         <label for="perfil">Perfil</label>
+          <input class="form-control" name="perfil" id="perfil" placeholder="Nome do Perfil">
+        </div><!-- /input-group -->
+             
+         </div>
+
+         <div class="col-md-12">
+             
+        <div class="input-group">
+         <label for="status">Status</label>
+          <select class="form-control" name="status" id="status">
+              <option selected disabled>Selecione</option>
+              <option value="ativo">Ativo</option>
+              <option value="bloqueado">Bloqueado</option>
+          </select>
+        </div><!-- /input-group -->
+
+         </div>
+         <div class="col-md-12">
+             
+        <div class="input-group">
+         <label for="tipoPerfil">Tipo Perfil</label>
+          <select class="form-control" name="tipoPerfil" id="tipoPerfil">
+              <option selected disabled>Selecione</option>
+              <option value="Comum">Comum</option>
+              <option value="Administrativo">Administrativo</option>
+              <option value="Especial">Especial</option>
+          </select>
+        </div><!-- /input-group -->
+
+         </div>
+         <div class="col-md-12">
+
+            <div class="input-group">
+        <label for="tipoUsuario">Tipo de Usuário</label>
+          <select class="form-control" name="tipoUsuario" id="tipoUsuario">
+              <option selected disabled>Selecione</option>
+              <option value="Comum">Fornecedor</option>
+              <option value="Administrativo">Governo</option>
+              <option value="Especial">Outros Entes</option>
+          </select>
+            </div>
+             
+         </div>
+
+            <div class="col-md-12">
+                <button type="button" class="btn btn-primary pull-right">Consultar <i class="material-icons first md">&#xE8B6;</i></button>
+                <a href="#" class="btn btn-default pull-right">Ver Todos <i class="material-icons first md">&#xE896;</i></a>
+                <a href="#" class="btn btn-default pull-right">Criar Perfil <i class="material-icons first md">&#xE147;</i></a>
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Limpar <i class="material-icons first md"><i class="material-icons">&#xE14C;</i></i></button>
+            </div>
+             
+      </form>
+</div>
+</div>

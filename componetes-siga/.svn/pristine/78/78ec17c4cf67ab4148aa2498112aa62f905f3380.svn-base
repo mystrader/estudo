@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+    <div class="support-nav">
+                    
+          
+        {% include page-header.html %}
+           
+    </div>
+    <div class="content">
+        <div class="row">
+
+        {{ content }}
+
+        </div>   
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

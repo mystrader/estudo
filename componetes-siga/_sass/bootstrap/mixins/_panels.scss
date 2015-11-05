@@ -1,0 +1,76 @@
+// Panels
+
+@mixin panel-variant($border, $heading-text-color, $heading-bg-color, $heading-border) {
+  border-color: $border;
+  padding: $panel-body-padding;
+  
+    .col-md-12 > & {
+        margin-left: $panel-body-padding;
+        margin-right: $panel-body-padding;
+    }
+    
+  & .panel-heading {
+    color: $heading-text-color;
+    background-color: $heading-bg-color;
+    border: none;
+    margin: 0;
+    display: block;
+    
+    + .panel-collapse > .panel-body {
+      border-top-color: $border;
+    }
+
+    + .collapse > .panel-body, + .collapsing > .panel-body, + .panel-body {
+          padding-top: $panel-body-padding;
+          @include transition(all ease-in-out 0.15s);
+      }
+
+    .badge {
+      color: $heading-bg-color;
+      background-color: $heading-text-color;
+    }
+    
+    a {
+        float: left;
+        width: 100%;
+        
+        .caret {
+            margin-top: $padding-base-vertical;
+        }
+    }
+      
+  }
+    
+    &.panel-select {
+        
+        
+        &.selected {
+            @include transition(all ease-in-out 0.15s);
+            @include box-shadow(0 3px 10px rgba(0, 0, 0, .6));
+            //background-color: lighten($gray-lighter, 15%);
+            //outline: 2px solid $gray-light;
+            //background-color: $info-lighter;
+        }
+        
+        .panel-heading {
+            .icon-span {
+                padding-top: $padding-small-vertical - 2;
+                color: $gray-dark;
+
+                .material-icons {
+                    cursor: default;
+                }
+            }
+                
+            a {
+                width: 96%;
+            }
+        }
+    }
+    
+  & .panel-footer {
+    + .panel-collapse > .panel-body {
+      border-bottom-color: $border;
+    }
+  }
+}

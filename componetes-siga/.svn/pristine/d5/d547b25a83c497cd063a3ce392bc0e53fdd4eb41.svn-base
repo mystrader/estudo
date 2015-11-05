@@ -1,0 +1,204 @@
+.actionbar {
+    overflow: visible;
+    bottom: 0;
+    position: absolute;
+    top: 0;
+    right: -15px;
+
+.actionbar-header {    
+    
+    display: block;
+    
+    .actionbar-toggle {
+        @extend .h3;
+        text-transform: none;
+        margin: 0;
+        color: $light;
+        cursor: default;
+    }
+
+} //.actionbar-header
+
+
+#actionbar {
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: $info-dark;
+    
+    &.navbar-collapse.collapse {
+     
+        @media (min-width: $grid-float-breakpoint) {
+            
+            float: right;
+            height: 90%;
+
+        }   
+    }
+    
+    &::-webkit-scrollbar {
+        width: 5px;
+        background-color: $gray-darker;
+        @include transition(all ease-in-out 0.15s);
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+    }
+    
+//    &:hover {
+//        &::-webkit-scrollbar {
+//            width: 15px;
+//            @include transition(all ease-in-out 0.15s);
+//        }
+//        
+//    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $light;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+    }
+
+    
+    .navbar-nav{
+        margin: 0;
+        box-shadow: none;
+        
+        > li {
+            &:first-child {
+                display: none;
+                
+                @media (max-width: $grid-float-breakpoint) {
+
+                    display: block;
+
+                }   
+            }
+        }
+    }
+        
+    
+    li {
+        background: $info-dark;
+        width: 100%;
+
+            > a {
+                background: $info-dark;
+                color: $light;
+                
+            } 
+
+        &:hover > a, > a:focus {
+                background: $info-lighter;
+                color: $info-dark;
+                outline: 0;
+            } 
+    }
+    
+.caret {
+      border-right:   $caret-width-large dashed;
+      border-right:   $caret-width-large solid \9; // IE8
+      border-top: $caret-width-large solid transparent;
+      border-bottom:  $caret-width-large solid transparent;
+      border-left: 0;
+    
+    &.last {
+        float: right;
+        margin-top: 7px;
+    }
+    
+    }
+
+        
+.open .caret {
+    -moz-transform: rotate(540deg);
+    -webkit-transform: rotate(540deg);
+    -o-transform: rotate(540deg);
+    -ms-transform: rotate(540deg);
+    transform: rotate(540deg);
+    }
+
+    // Dropdown menus
+
+    // Menu position and menu carets
+    .navbar-nav > .dropdown {
+
+        > .dropdown-menu { 
+            @include hide (initial, -999em);
+            width: 100%;
+            height: 0;
+            position: inherit;
+            }
+
+        &.open {
+             > .dropdown-menu  {
+                left: 0;
+                border: 0;
+                width: 100%;
+                height: auto;
+                box-shadow: none;
+
+                   > li {
+                        background: $light;
+                        width: 100%;
+
+                            > a {
+                                background:  $info-darker;
+                                color: $light;
+                            } 
+
+                        &:hover > a, > a:focus {
+                                background: $info-lighter;
+                                color: $info-dark;
+                                outline: 0;
+                            } 
+                    }
+                }
+        }
+    }
+
+} //#actionbar
+
+    
+// Menu position and menu caret support for dropups via extra dropup class
+.navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
+  margin-bottom: 0;
+}
+    
+}// /.actionbar
+
+.actionbar-toggle, .viewbar-toggle {
+    
+      text-transform: uppercase;
+      position: static;
+      float: left;
+      margin-right: 0;
+      box-sizing: border-box;
+      background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+      background-color: $info-dark;
+      color: $light;
+      border: none;
+      width: 100%;
+      text-align: left;
+      // We remove the `outline` here, but later compensate by attaching `:hover`
+      // styles to `:focus`.
+      &:focus {
+        outline: 0;
+        background: $info-lighter;
+        color: $info-dark;
+      }
+
+      // Bars
+      .icon-bar {
+        display: block;
+        width: 22px;
+        height: 2px;
+        border-radius: 1px;
+        float: left;
+        clear: both;
+        margin-right: $padding-base-horizontal;
+      }
+      .icon-bar + .icon-bar {
+        margin-top: 4px;
+      }
+        
+
+}// /.actionbar-toggle

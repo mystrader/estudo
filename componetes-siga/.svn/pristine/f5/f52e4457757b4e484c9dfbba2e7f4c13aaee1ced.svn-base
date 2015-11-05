@@ -1,0 +1,95 @@
+---
+layout: default
+title:  "Família"
+date:   2015-08-21 14:48:00
+breadcrumb:  Família
+---
+
+<div class="viewbar col-md-2">
+    <div id="viewbar" class="navbar-collapse collapse" aria-expanded="false" role="menu">
+            <a href="#irvisualizacao" id="irvisualizacao" name="irvisualizacao" class="sr-only" accesskey="5">Início da Barra de Visualizações</a>
+        <ul class="nav navbar-nav nav-stacked" role="menu">
+
+            <li><a href="#">Dados Gerais</a></li>
+            <li><a href="#">Processos</a></li>
+            <li><a href="#">Item / Lote</a></li>
+            <li class="dropdown open">
+              <a href="#history-dropdown" role="button" aria-expanded="false">
+                Históricos
+                <span class="caret last"></span>
+                <span class="sr-only">Abrir Submenu</span>
+              </a>
+
+              <ul id="history-dropdown" class="dropdown-menu" aria-labelledby="dLabel">
+                <li><a href="#">Avisos</a></li>
+                <li><a href="#">Avulsos & Adendos</a></li>
+                <li><a href="#">Pareceres</a></li>
+                <li><a href="#">Aprovação</a></li>
+                <li><a href="#">Retiradas</a></li>
+                <li><a href="#">Ações</a></li>
+                <li class="sr-only">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Fechar Submenu</a>
+                </li>
+
+              </ul>
+            </li>
+
+        </ul>
+            <a href="#fimvisualizacao" id="fimvisualizacao" name="fimvisualizacao" class="sr-only">Fim da Barra de Visualizações</a>
+
+    </div><!--/.nav-collapse -->
+</div>
+
+<div id="content" class="col-md-offset-2 col-md-10" role="main">
+
+    <div class="panel panel-default">
+    
+     <header class="panel-heading" role="heading">
+        <h4 class="panel-title">Criar Família</h4>
+    </header>
+ 
+    <form class="form-group panel-body" action="#">
+         
+       <div class="row">
+         
+         <div class="col-md-12">
+             
+             <div class="row">
+                 
+        <div class="col-md-4">
+
+        <div class="input-group">
+         <label for="codigo">Código</label>
+          <input class="form-control" name="codigo" id="codigo" placeholder="Código da Família">
+        </div><!-- /input-group -->
+        </div>
+        
+        <div class="col-md-8">
+        <div class="input-group">
+         <label for="nome">Nome</label>
+          <input class="form-control" name="nome" id="nome" placeholder="Nome da Família">
+        </div><!-- /input-group -->
+                
+            </div>
+                            
+             </div>
+
+         </div>
+
+        </div> <!-- / .row -->
+        
+        <div class="row">
+
+         <div class="col-md-12">
+         </div>
+
+            <div class="col-md-12">
+                <a href="associar" type="button" class="btn btn-primary pull-right">Associar Itens <i class="material-icons last md">&#xE409;</i></a>
+            </div>
+             
+        </div>
+      </form>
+      
+    </div> <!-- / .panel -->
+
+</div>

@@ -1,0 +1,7 @@
+// ocultar elementos, mas mantê-los acessíveis aos leitores de tela
+
+@mixin hide ($left, $right) {
+    left: $left;
+    right: $right;
+}
+
