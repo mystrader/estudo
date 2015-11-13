@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+   <title>Licitação</title>
+    <meta name="description" content="Descrição do Sistema ou site">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="alternate" type="application/rss+xml" title="SIGA" href="/feed.xml" />
+    <script type="text/javascript" language="javascript" src="../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" language="javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" language="javascript" src="../js/main.js"></script>
+<!--<script type="text/javascript" language="javascript" src="../js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" language="javascript" src="../js/dataTables.bootstrap.js"></script>
+	<script type="text/javascript" language="javascript" src="../js/dataTables.responsive.min.js"></script>-->
+	<script type="text/javascript" language="javascript" src="../js/datatables.js"></script>
+	<script type="text/javascript" language="javascript" src="../js/data-table.min.js"></script>
+<!--
+        <script type="text/javascript" language="javascript" src="../js/jquery.hotkeys-0.7.9.js"></script>
+-->
+<script type="text/javascript" language="javascript" src="../js/jquery.datetimepicker.js"></script>
+    
+   
+
+  <body>
+
+    <header role="banner" class="site-header">
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-10 accessbar">
+               <a href="#iracessibilidade" id="iracessibilidade" name="iracessibilidade" class="sr-only">Início da Navegação de Acessibilidade</a>
+
+               <ul class="access">
+                <li><a href="#navbar"><span class="label label-access">enter</span>Ir para Navegação</a></li>
+                <li><a href="#irconteudo"><span class="label label-access">alt + 1</span> Ir para Conteúdo</a></li>
+                <li><a href="#irbusca"><span class="label label-access">alt + 2</span> Ir para Busca</a></li>
+                <li><a href="#iracoes"><span class="label label-access">alt + 3</span> Ir para Barra de Ações</a></li>
+                <li><a href="#irvisualizacao"><span class="label label-access">alt + 4</span> Ir para Barra de Visualização</a></li>
+                <li><a href="#iracessibilidade" accesskey="6"><span class="label label-access">alt + 5</span> Acessibilidade</a></li>
+                <li><a href="#irmapasite" accesskey="7"><span class="label label-access">alt + 6</span> Mapa do Site</a></li>
+               </ul>
+               <a href="#fimacessibilidade" id="fimacessibilidade" name="fimacessibilidade" class="sr-only">Fim da Navegação de Acessibilidade</a>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+           <div class="col-xs-2"><div class="row">
+    <div class="navbar-header col-xs-6">
+        <a href="#navbar" type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Abrir Menu de Navegação</span>
+         <i class="material-icons md first">&#xE5D2;</i> Menu
+        </a>
+    </div>
+    <div class="logo col-xs-6">
+        <a class="site-title" href="../">
+            <h1 class="sr-only">SIGA Sistema Integrado de Gestão de Aquisições - Versão 2.0</h1>
+            <img src="../images/logo-siga.png" alt="Logo do SIGA">
+        </a>
+    </div> 
+</div>
+<nav class="navbar" role="navigation">
+    <div id="navbar" class="navbar-collapse collapse" aria-expanded="false">
+     <!--accesskey="3" id="irnavegacao" name="irnavegacao"-->
+      <a href="#nogo" class="sr-only">Início da Navegação</a>
+        <ul class="nav navbar-nav nav-stacked">
+            <!-- 1st level -->
+            
+            <li>
+                <a href="#" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+                     <span class="sr-only">Fechar Menu de Navegação</span>
+                     <i class="material-icons first md">&#xE5D2;</i> Menu
+                     <i class="material-icons last md">&#xE5CD;</i>
+                </a>
+            </li>
+            <li>
+             <form role="search">
+              <div class="form-group">
+               <div class="input-group">
+                <input type="text" class="form-control" placeholder="Buscar no SIGA" id="irbusca" name="irbusca" accesskey="2">
+                 <div class="input-group-btn">
+                  <button type="submit" class="btn btn-primary"><i class="material-icons single md">&#xE8B6;</i><span class="sr-only">Buscar</span></button>
+                 </div>
+               </div>
+              </div>
+             </form>
+            </li>
+                <li>
+                    <a href="../documentacao/index.html">Biblioteca de Componentes</a>
+                </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Abrir ou Fechar SubMenu</span> Registro de Preço <span class="caret last"></span></a>
+
+                        <ul class="dropdown-menu">
+                            <!-- 2nd level -->
+                            <!--with items group-->
+                                <li>
+                                    <a href="#">
+                                    PLS 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    Ata 
+                                    </a>
+                                </li>
+                                <li class="sr-only">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Fechar Submenu</a>
+                                </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Abrir ou Fechar SubMenu</span> Requisição <span class="caret last"></span></a>
+                        <ul class="dropdown-menu">
+                            <!-- 2nd level -->
+                            <!--with items group-->
+                                <li>
+                                    <a href="#">
+                                    Carrinho de Compras 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    Consulta de itens 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    Requisitar 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    Acompanhar Solicitação de Catalogação 
+                                    </a>
+                                </li>
+                                <li class="sr-only">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Fechar Submenu</a>
+                                </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Abrir ou Fechar SubMenu</span> Processo <span class="caret last"></span></a>
+                        <ul class="dropdown-menu">
+                            <!-- 2nd level -->
+                                <li>
+                                    <a href="../processo/carrinho-compra/index.html">
+                                    Definição 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    Planejamento 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    Pesquisa de Mercado 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    PED 
+                                    </a>
+                                </li>
+                                <li class="sr-only">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Fechar Submenu</a>
+                                </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Licitação</a>
+                    </li>
+                    <li>
+                        <a href="#">Contratação</a>
+                    </li>
+                    <li>
+                        <a href="#">Recebimento</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Abrir ou Fechar SubMenu</span>
+                        Almoxarifado <span class="caret last"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- 2nd level -->
+                               <ul class="dropdown-group">
+                                    <li class="dropdown-header">Operação</li>
+                                    <li>
+                                        <a href="#">
+                                        Armazenamento 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        Atendimento 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        Ressuprimento 
+                                        </a>
+                                    </li>
+                               </ul><!--/ .dropdown-group-->
+                               <ul class="dropdown-group">
+                                    <li class="dropdown-header">Gestão</li>
+                                    <li>
+                                        <a href="#">
+                                        Disponibilidade 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        Inventário 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        Relatórios 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        Parametrizar Itens 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        Parametrizar Almoxarifado 
+                                        </a>
+                                    </li>
+                               </ul> <!--/ .dropdown-group-->
+                                <li class="sr-only">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Fechar Submenu</a>
+                                </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Gestão</a>
+                    </li>
+                    <li>
+                        <a href="#">Minutas</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Abrir ou Fechar SubMenu</span>
+                        Administração <span class="caret last"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- 2nd level -->
+                                  
+                                   <li class="dropdown sub-dropdown">
+                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only">Abrir ou Fechar SubMenu</span>
+                                    Parâmetro <span class="caret last"></span>
+                                    </a>
+                                   <ul class="dropdown-menu">
+                                         <li>
+                                           <a href="#">
+                                           Sistema 
+                                           </a>
+                                         </li>
+                                         <li>
+                                           <a href="#">
+                                           Compras 
+                                           </a>
+                                         </li>
+                                       </ul><!--/ .dropdown-menu-->
+                                   </li>
+                                   
+                                <li class="sr-only">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Fechar Submenu</a>
+                                </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Cadastro</a>
+                    </li>
+        </ul>        <a href="#fimnavegacao" id="fimnavegacao" name="fimnavegacao" class="sr-only">Fim da Navegação</a>
+
+    </div><!--/.nav-collapse -->
+</nav></div>
+           <div class="col-xs-8">
+               <h2 class="page-title" role="heading">Licitação</h2>
+           </div>
+           <div class="col-sm-2">
+               <span class="userbar userbar-nav">
+                   <a href="#" class="btn btn-default" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Olá, Victor Santos<i class="material-icons lg first">&#xE853;</i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Ajuda</a></li>
+                        <li><a href="#">Suporte</a></li>
+                        <li><a href="#">Sair</a></li>
+                    </ul>
+               </span>
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+  
+
+    <div class="support-nav">
+                    
+          
+        <div class="row">
+    <div class="col-xs-6 col-md-2 col-sm-2">
+        <a href="javascript:history.back(1)" class="btn"><i class="material-icons first md">arrow_back</i>Voltar</a>
+    </div>
+
+    <div class="hidden-xs col-md-10">
+       <ol class="breadcrumb">
+<li><a href="../"><i class="material-icons md">&#xE88A;</i></a></li>
+
+
+
+
+    
+    
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <li >
+                
+                <a href="/licitacao/">Licitação</a>            </li>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+</ol>
+
+    </div>
+
+</div>
+           
+    </div>
+    <div class="content">
+        <div class="row">
+
+        <div id="content" class="col-md-offset-2 col-md-8" role="main">
+
+    <div class="panel panel-default">
+     <header class="panel-heading" role="heading">
+        <h4 class="panel-title">Buscar</h4>
+    </header>
+ 
+    <form class="form-group panel-body" action="#">
+         
+         <div class="row">
+         
+         <div class="col-md-12">
+            <div class="input-group">
+             <label for="licitacao">Licitação</label>
+              <input class="form-control" name="licitacao" id="licitacao" placeholder="Número ou descrição da Licitação">
+            </div><!-- /input-group -->
+         </div>
+         
+         <div class="col-md-12">
+             <hr>
+             <h5>Filtros</h5>
+         </div>
+
+         <div class="col-md-12">
+        <div class="input-group">
+         <label for="modalidade">Modalidade</label>
+          <select class="form-control" name="modalidade" id="modalidade">
+              <option selected disabled>Selecione</option>
+              <option value="concorrencia">Concorrência</option>
+              <option value="preco">Tomada de Preço</option>
+              <option value="convite">Convite</option>
+          </select>
+        </div><!-- /input-group -->
+         </div>
+
+         <div class="col-md-12">
+        <div class="input-group">
+         <label for="tipo">Tipo</label>
+          <select class="form-control" name="tipo" id="tipo">
+              <option selected disabled>Selecione</option>
+              <option value="preco">Preço</option>
+              <option value="tecnica">Técnica</option>
+              <option value="tecnicaPreco">Técnica e Preço</option>
+          </select>
+        </div><!-- /input-group -->
+         </div>
+
+         <div class="col-md-12">
+        <div class="input-group">
+         <label for="forma">Forma</label>
+          <select class="form-control" name="forma" id="forma">
+              <option selected disabled>Selecione</option>
+              <option value="0">Processo Normal</option>
+              <option value="1">Maior Desconto Percentual</option>
+              <option value="2">Menor Taxa Administrativa Percentual</option>
+              <option value="3">Menor Valor de Taxa de Transação</option>
+          </select>
+        </div><!-- /input-group -->
+         </div>
+
+         <div class="col-md-12">
+            <fieldset>
+            <legend>Autorização de Lances ou Propostas</legend>
+                <div class="alert alert-warning alert-sm" role="alert">
+                    <i class="material-icons">&#xE001;</i> É necessário associar ao menos uma Funcionalidade
+                </div>
+
+                  <div class="input-group"><!-- .input-group -->
+                    <div class="checkbox-inline col-lg-6">
+                     <input type="radio" id="consultar" name="consultar" value="Consultar">
+                     <label for="consultar">
+                      Por Lote (Lances por valor global)
+                     </label>
+                    </div>
+
+                    <div class="checkbox-inline col-lg-6">
+                     <input type="radio" id="consultar" name="consultar" value="Consultar">
+                     <label for="consultar">
+                      Por Item
+                     </label>
+                    </div>
+                  </div><!-- /.input-group -->
+            </fieldset>
+         </div>
+         
+         <div class="col-md-12">
+          <div class="input-group">
+            <div class="checkbox-inline col-md-12">
+             <input type="checkbox" id="licitSustentavel" name="licitSustentavel" value="Consultar">
+             <label for="licitSustentavel">
+              Licitação Sustentável
+             </label>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <div class="checkbox-inline col-md-12">
+             <input type="checkbox" id="homolParcial" name="homolParcial" value="Consultar">
+             <label for="homolParcial">
+              Licitação com Homologação Parcial
+             </label>
+            </div>
+          </div>
+         </div>
+         
+         <div class="col-md-12">
+          <fieldset>
+           <legend>Período</legend>
+            <div class="input-group">
+               <div class="col-lg-6">
+                <label for="dataInicial">Data Inicial</label>
+                <input id="dataInicial" name="dataInicial" class="form-control datepicker" type="text" placeholder="__/__/____"/>
+               </div>
+               <div class="col-lg-6">
+                <label for="dataFinal">Data Final</label>
+                <input id="dataFinal" name="dataFinal" class="form-control datepicker" type="text" placeholder="__/__/____"/>
+               </div>
+            </div>
+          </fieldset>
+                    <script>
+                    </script>
+
+         </div>
+         
+
+            <div class="col-md-12">
+                <button type="button" class="btn btn-primary pull-right">Consultar <i class="material-icons first md">&#xE8B6;</i></button>
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Limpar <i class="material-icons first md"><i class="material-icons">&#xE14C;</i></i></button>
+            </div>
+             
+      </form>
+</div>
+</div>
+
+        </div>   
+    </div>
+
+    <footer class="container-fluid" role="contentinfo">
+   <div class="row">
+       <div class="col-sm-10">
+        <img src="../images/logo_min_footer.png" alt="SIGA versão 2.0" class="pull-left">
+        <p>Copyright 2013 SIGA - Sistema Integrado de Gestão de Aquisições - Versão 2.0 - Todos os direitos reservados.</p>
+       </div>
+       <div class="col-sm-2">
+        <p class="pull-right"><a id="backToTop" href="#">Ir para o topo</a></p>
+       </div>
+   </div>
+</footer>
+
+
+  </body>
+
+</html>

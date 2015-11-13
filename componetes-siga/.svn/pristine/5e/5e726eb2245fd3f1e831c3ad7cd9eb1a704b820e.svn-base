@@ -1,0 +1,694 @@
+---
+layout: default
+title:  "Pregão Eletrônico SEPLAG-0001/2014-Automóveis"
+date:   2015-08-21 14:48:00
+breadcrumb:  PE SEPLAG-0001/2014-Automóveis
+---
+<div class="col-lg-offset-2 col-md-offset-3 col-lg-8 col-md-6">
+  <div class="row">
+      <div class="col-lg-12">
+          <h3 class="view-title">Recurso</h3>
+          
+          <section role="section">
+              <div class="panel panel-default">
+    <header class="panel-heading" role="heading">
+        <h4 class="panel-title">Manifestação Recursal</h4>
+    </header>
+        <div id="panelId" class="panel-body">
+            <div class="row data-table">
+                <div class="col-lg-12">
+                    <table class="table listagem-curta table-bordered table-striped responsive" cellspacing="0" width="100%" summary="Lista de Recursos">
+                       <caption>Lista de Recursos</caption>
+
+                       <thead><!--Cabeçalho-->
+                          <tr><!-- Primeira Linha -->
+                            <th></th> <!-- Nessa célula ela deve ter um checkbox para marcar todos, ou ficar vazia se o modo de seleção for radiobuttons-->
+                            <th id="coluna1"> <!-- Demais Colunas: em cada célula dessa linha deve haver o título da coluna, e os ícones de ordenação -->
+                              Proponente<!-- Título da coluna -->
+                              <i class="material-icons unordered">&#xE8D5;</i><!-- ícones de ordenação -->
+                              <i class="material-icons ordered">&#xE037;</i><!-- ícones de ordenação -->
+                              </th>
+                            <th id="coluna4">
+                              Status
+                              <i class="material-icons unordered">&#xE8D5;</i>
+                              <i class="material-icons ordered">&#xE037;</i>
+                            </th>
+                            <th id="coluna4">
+                              Motivação
+                              <i class="material-icons unordered">&#xE8D5;</i>
+                              <i class="material-icons ordered">&#xE037;</i>
+                            </th>
+                            <th id="coluna4">
+                              Justificativa
+                              <i class="material-icons unordered">&#xE8D5;</i>
+                              <i class="material-icons ordered">&#xE037;</i>
+                            </th>
+                          </tr>
+                        </thead>
+
+                       <tbody><!--Corpo-->
+
+                         <tr>
+                          <td><!-- Primeira Coluna -->
+                           <input type="radio" name="selectButton" value="Fornecedor"/><!-- Checkbox ou radiobutton para a seleção de item. -->
+                          </td>
+                          <td id="linha1 fornecedor"> <!-- Segunda Coluna, aqui além da infomação primária sobre os itens listados, como nome ou descrição, deve haver uma toolbar com atalhos para as três principais ações que possam ser aplicadas em um único item -->
+                           Xxxxxx Xxxxxxxxxxxxxx Xxxxxxx
+                           </td>
+                          <td headers="linha1 coluna4">Acatado</td> <!-- Demais Colunas -->
+                             <td headers="linha1 coluna4">
+                               <a href="#" data-toggle="modal" data-target="#motivacao">
+                                 <i class="material-icons md">&#xE873;</i>
+                               </a>
+                             </td> <!-- Demais Colunas -->
+                          <td headers="linha1 coluna4">
+                            <a href="#" data-toggle="modal" data-target="#justificativa">
+                              <i class="material-icons md">&#xE873;</i>
+                            </a>
+                          </td> <!-- Demais Colunas -->
+                         </tr>
+
+                         <tr>
+                          <td><!-- Primeira Coluna -->
+                           <input type="radio" name="selectButton" value="Fornecedor"/><!-- Checkbox ou radiobutton para a seleção de item. -->
+                          </td>
+                          <td id="linha1 fornecedor"> <!-- Segunda Coluna, aqui além da infomação primária sobre os itens listados, como nome ou descrição, deve haver uma toolbar com atalhos para as três principais ações que possam ser aplicadas em um único item -->
+                           Xxxxxx Xxxxxxxxxxxxxx Xxxxxxx
+                           </td>
+                          <td headers="linha1 coluna4">Não Acatado</td> <!-- Demais Colunas -->
+                             <td headers="linha1 coluna4">
+                               <a href="#" data-toggle="modal" data-target="#motivacao">
+                                 <i class="material-icons md">&#xE873;</i>
+                               </a>
+                             </td> <!-- Demais Colunas -->
+                          <td headers="linha1 coluna4">
+                            <a href="#" data-toggle="modal" data-target="#justificativa">
+                              <i class="material-icons md">&#xE873;</i>
+                            </a>
+                          </td> <!-- Demais Colunas -->
+                         </tr>
+
+                         <tr>
+                          <td><!-- Primeira Coluna -->
+                           <input type="radio" name="selectButton" value="Fornecedor"/><!-- Checkbox ou radiobutton para a seleção de item. -->
+                          </td>
+                          <td id="linha1 fornecedor"> <!-- Segunda Coluna, aqui além da infomação primária sobre os itens listados, como nome ou descrição, deve haver uma toolbar com atalhos para as três principais ações que possam ser aplicadas em um único item -->
+                           Xxxxxx Xxxxxxxxxxxxxx Xxxxxxx
+                           </td>
+                          <td headers="linha1 coluna4"></td> <!-- Demais Colunas -->
+                             <td headers="linha1 coluna4">
+                               <a href="#" data-toggle="modal" data-target="#motivacao">
+                                 <i class="material-icons md">&#xE873;</i>
+                               </a>
+                             </td> <!-- Demais Colunas -->
+                          <td headers="linha1 coluna4">
+                            <a href="#" data-toggle="modal" data-target="#justificativa">
+                              <i class="material-icons md">&#xE873;</i>
+                            </a>
+                          </td> <!-- Demais Colunas -->
+                         </tr>
+
+                         <tr>
+                          <td><!-- Primeira Coluna -->
+                           <input type="radio" name="selectButton" value="Fornecedor"/><!-- Checkbox ou radiobutton para a seleção de item. -->
+                          </td>
+                          <td id="linha1 fornecedor"> <!-- Segunda Coluna, aqui além da infomação primária sobre os itens listados, como nome ou descrição, deve haver uma toolbar com atalhos para as três principais ações que possam ser aplicadas em um único item -->
+                           Xxxxxx Xxxxxxxxxxxxxx Xxxxxxx
+                           </td>
+                          <td headers="linha1 coluna4">Não Acatado</td> <!-- Demais Colunas -->
+                             <td headers="linha1 coluna4">
+                               <a href="#" data-toggle="modal" data-target="#motivacao">
+                                 <i class="material-icons md">&#xE873;</i>
+                               </a>
+                             </td> <!-- Demais Colunas -->
+                          <td headers="linha1 coluna4">
+                            <a href="#" data-toggle="modal" data-target="#justificativa">
+                              <i class="material-icons md">&#xE873;</i>
+                            </a>
+                          </td> <!-- Demais Colunas -->
+                         </tr>
+
+                         <tr>
+                          <td><!-- Primeira Coluna -->
+                           <input type="radio" name="selectButton" value="Fornecedor"/><!-- Checkbox ou radiobutton para a seleção de item. -->
+                          </td>
+                          <td id="linha1 fornecedor"> <!-- Segunda Coluna, aqui além da infomação primária sobre os itens listados, como nome ou descrição, deve haver uma toolbar com atalhos para as três principais ações que possam ser aplicadas em um único item -->
+                           Xxxxxx Xxxxxxxxxxxxxx Xxxxxxx
+                           </td>
+                          <td headers="linha1 coluna4"></td> <!-- Demais Colunas -->
+                             <td headers="linha1 coluna4">
+                               <a href="#" data-toggle="modal" data-target="#motivacao">
+                                 <i class="material-icons md">&#xE873;</i>
+                               </a>
+                             </td> <!-- Demais Colunas -->
+                          <td headers="linha1 coluna4">
+                            <a href="#" data-toggle="modal" data-target="#justificativa">
+                              <i class="material-icons md">&#xE873;</i>
+                            </a>
+                          </td> <!-- Demais Colunas -->
+                         </tr>
+
+                         <tr>
+                          <td><!-- Primeira Coluna -->
+                           <input type="radio" name="selectButton" value="Fornecedor"/><!-- Checkbox ou radiobutton para a seleção de item. -->
+                          </td>
+                          <td id="linha1 fornecedor"> <!-- Segunda Coluna, aqui além da infomação primária sobre os itens listados, como nome ou descrição, deve haver uma toolbar com atalhos para as três principais ações que possam ser aplicadas em um único item -->
+                           Xxxxxx Xxxxxxxxxxxxxx Xxxxxxx
+                           </td>
+                          <td headers="linha1 coluna4">Acatado</td> <!-- Demais Colunas -->
+                             <td headers="linha1 coluna4">
+                               <a href="#" data-toggle="modal" data-target="#motivacao">
+                                 <i class="material-icons md">&#xE873;</i>
+                               </a>
+                             </td> <!-- Demais Colunas -->
+                          <td headers="linha1 coluna4">
+                            <a href="#" data-toggle="modal" data-target="#justificativa">
+                              <i class="material-icons md">&#xE873;</i>
+                            </a>
+                          </td> <!-- Demais Colunas -->
+                         </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+</div>
+          </section>
+          
+      </div>
+  </div>
+</div> <!-- /. col-md-offset-2.col-md-8-->
+
+<div class="viewbar col-lg-2 col-md-3">
+<div class="viewbar-header">
+    <button type="button" class="btn viewbar-toggle collapsed" data-toggle="collapse" data-target="#viewbar" aria-expanded="false" aria-controls="viewbar">
+        <span class="sr-only-right">Expandir Menu de visualizações</span>
+        <i class="material-icons first">&#xE5D4;</i> visualizações
+    </button>
+</div>    <div id="viewbar" class="navbar-collapse collapse" aria-expanded="false" role="menu">
+            <a href="#irvisualizacao" id="irvisualizacao" name="irvisualizacao" class="sr-only" accesskey="5">Início da Barra de Visualizações</a>
+        <ul class="nav navbar-nav nav-stacked" role="menu">
+   <li>
+       <button type="button" class="btn viewbar-toggle collapsed" data-toggle="collapse" data-target="#viewbar" aria-expanded="false" aria-controls="viewbar">
+            <span class="sr-only-right">Expandir Menu de Visualizações</span>
+            <i class="material-icons first">&#xE5D4;</i> Visualizações
+        </button>
+   </li>
+            <li><a href="#">Dados Gerais</a></li>
+            <li><a href="#">Documentos</a></li>
+            <li><a href="#">Lances</a></li>
+            <li><a href="#">Classificação de Lances</a></li>
+            <li><a href="#">Negociação</a></li>
+            <li><a href="#">Equalização</a></li>
+            <li><a href="#">Habilitação</a></li>
+            <li><a href="#">Vencedor</a></li>
+            <li><a href="#">Recurso</a></li>
+            <li><a href="#">Adjudicação</a></li>
+            <li><a href="#">Homologação</a></li>
+            <li><a href="#">Histórico</a></li>
+            
+        </ul>
+            <a href="#fimvisualizacao" id="fimvisualizacao" name="fimvisualizacao" class="sr-only">Fim da Barra de Visualizações</a>
+
+    </div><!--/.nav-collapse -->
+</div>
+
+       <a href="#fimconteudo" id="fimconteudo" name="fimconteudo" class="sr-only">Fim do conteúdo</a>
+    </div>
+<div class="row">
+<div class="actionbar col-lg-2 col-md-3">
+        <div class="actionbar-header">
+    <button type="button" class="btn actionbar-toggle collapsed" data-toggle="collapse" data-target="#actionbar" aria-expanded="false" aria-controls="actionbar">
+        <span class="sr-only-right">Expandir Menu de Ações</span>
+        <i class="material-icons first">&#xE5D4;</i> Ações
+    </button>
+</div>
+<div id="actionbar" class="navbar-collapse collapse" aria-expanded="false" role="menu">
+    <a href="#iracoes" id="iracoes" name="iracoes" class="sr-only-right" accesskey="4">Início da Barra de Ações</a>
+<ul class="nav navbar-nav nav-stacked" role="menu">
+<li>
+   <button type="button" class="btn actionbar-toggle collapsed" data-toggle="collapse" data-target="#actionbar" aria-expanded="false" aria-controls="actionbar">
+        <span class="sr-only-right">Expandir Menu de Ações</span>
+        <i class="material-icons first">&#xE5D4;</i> Ações
+    </button>
+</li>
+<li><a href="#" data-toggle="modal" data-target="#justificar"><i class="material-icons first md">&#xE425;</i> Acatar</a></li>
+<li><a href="#" data-toggle="modal" data-target="#justificar"><i class="material-icons first md">&#xE880;</i> Não Acatar</a></li>
+</ul>
+    <a href="#fimacoes" id="fimacoes" name="fimacoes" class="sr-only-right">Fim da Barra de Ações</a>
+
+</div><!--/.nav-collapse -->
+
+</div>
+
+
+</div>
+    <!-- Modal -->
+<div class="modal fade" id="motivacao" tabindex="-1" role="dialog" aria-labelledby="detalhaMotivacao">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="material-icons">&#xE5CD;</i></button>
+        <h4 class="modal-title" id="detalhaMotivacao">Motivação</h4>
+      </div>
+      <div class="modal-body">
+       <form class="form-group" action="#">
+         <div class="col-md-12">
+           <div class="input-group required">
+             <textarea class="form-control sm" name="inputJustificativa" id="inputJustificativa" readonly>Lorem Ipsum praesent congue erat at massa. Etiam rhoncus. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui.</textarea>
+            </div><!-- /input-group -->
+         </div>
+       </form>
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary pull-left" data-dismiss="modal" data-toggle="modal" data-target="#documentos"><i class="material-icons first md">&#xE24D;</i>Documento</button>
+        <button type="button" class="btn btn-primary pull-left" data-dismiss="modal" data-toggle="modal" data-target="#itemLote"><i class="material-icons first md">&#xE2C7;</i>Lote</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="material-icons first md">&#xE5CD;</i>Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="justificativa" tabindex="-1" role="dialog" aria-labelledby="detalhaJustifica">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="material-icons">&#xE5CD;</i></button>
+        <h4 class="modal-title" id="detalhaJustifica">Justificativa</h4>
+      </div>
+       <div class="modal-body">
+        <form class="form-group" action="#">
+         <div class="col-md-12">
+           <div class="input-group">
+             <textarea class="form-control sm" name="inputJustificativa" id="inputJustificativa" readonly>Lorem Ipsum praesent congue erat at massa. Etiam rhoncus. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui.</textarea>
+            </div><!-- /input-group -->
+         </div>
+        </form>
+       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="material-icons first md">&#xE5CD;</i>Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="justificar" tabindex="-1" role="dialog" aria-labelledby="detalhaJustifica">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="material-icons">&#xE5CD;</i></button>
+        <h4 class="modal-title" id="detalhaJustifica">Justificar</h4>
+      </div>
+       <div class="modal-body">
+        <form class="form-group" action="#">
+         <div class="col-md-12">
+           <div class="input-group">
+             <textarea class="form-control sm" name="inputJustificar" id="inputJustificar"></textarea>
+            </div><!-- /input-group -->
+         </div>
+        </form>
+       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="material-icons first md">&#xE5CD;</i>Fechar</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="material-icons first md">&#xE163;</i>Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="documentos" tabindex="-1" role="dialog" aria-labelledby="listaDocumentos">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="material-icons">&#xE5CD;</i></button>
+        <h4 class="modal-title" id="listaDocumentos">Lista de Documentos</h4>
+      </div>
+       <div class="modal-body">
+        <div class="row data-table">
+            <table class="table listagem-dados table-bordered table-striped responsive" cellspacing="0" width="100%" summary="Lista de Documentos">
+
+               <thead><!--Cabeçalho-->
+                  <tr><!-- Primeira Linha -->
+                    <th id="coluna1"> <!-- Demais Colunas: em cada célula dessa linha deve haver o título da coluna, e os ícones de ordenação -->
+                      Documento<!-- Título da coluna -->
+                      <i class="material-icons unordered">&#xE8D5;</i><!-- ícones de ordenação -->
+                      <i class="material-icons ordered">&#xE037;</i><!-- ícones de ordenação -->
+                      </th>
+                    <th id="coluna4">
+                      Anexo
+                      <i class="material-icons unordered">&#xE8D5;</i>
+                      <i class="material-icons ordered">&#xE037;</i>
+                    </th>
+                  </tr>
+                </thead>
+
+               <tbody><!--Corpo-->
+                 <tr>
+                  <td id="linha1 fornecedor"> <!-- Segunda Coluna, aqui além da infomação primária sobre os itens listados, como nome ou descrição, deve haver uma toolbar com atalhos para as três principais ações que possam ser aplicadas em um único item -->
+                   motivacao.doc
+                    
+                   </td>
+                  <td headers="linha1 coluna4">
+                      <a href="#nogo"><i class="material-icons md">&#xE873;</i></a>
+                  </td> <!-- Demais Colunas -->
+                 </tr>
+                 <tr>
+                  <td id="linha1 fornecedor"> <!-- Segunda Coluna, aqui além da infomação primária sobre os itens listados, como nome ou descrição, deve haver uma toolbar com atalhos para as três principais ações que possam ser aplicadas em um único item -->
+                   motivacao.doc
+                    
+                   </td>
+                  <td headers="linha1 coluna4">
+                      <a href="#nogo"><i class="material-icons md">&#xE873;</i></a>
+                  </td> <!-- Demais Colunas -->
+                 </tr>
+                 <tr>
+                  <td id="linha1 fornecedor"> <!-- Segunda Coluna, aqui além da infomação primária sobre os itens listados, como nome ou descrição, deve haver uma toolbar com atalhos para as três principais ações que possam ser aplicadas em um único item -->
+                   motivacao.doc
+                    
+                   </td>
+                  <td headers="linha1 coluna4">
+                      <a href="#nogo"><i class="material-icons md">&#xE873;</i></a>
+                  </td> <!-- Demais Colunas -->
+                 </tr>
+                 <tr>
+                  <td id="linha1 fornecedor"> <!-- Segunda Coluna, aqui além da infomação primária sobre os itens listados, como nome ou descrição, deve haver uma toolbar com atalhos para as três principais ações que possam ser aplicadas em um único item -->
+                   motivacao.doc
+                    
+                   </td>
+                  <td headers="linha1 coluna4">
+                      <a href="#nogo"><i class="material-icons md">&#xE873;</i></a>
+                  </td> <!-- Demais Colunas -->
+                 </tr>
+                 <tr>
+                  <td id="linha1 fornecedor"> <!-- Segunda Coluna, aqui além da infomação primária sobre os itens listados, como nome ou descrição, deve haver uma toolbar com atalhos para as três principais ações que possam ser aplicadas em um único item -->
+                   motivacao.doc
+                    
+                   </td>
+                  <td headers="linha1 coluna4">
+                      <a href="#nogo"><i class="material-icons md">&#xE873;</i></a>
+                  </td> <!-- Demais Colunas -->
+                 </tr>
+                 <tr>
+                  <td id="linha1 fornecedor"> <!-- Segunda Coluna, aqui além da infomação primária sobre os itens listados, como nome ou descrição, deve haver uma toolbar com atalhos para as três principais ações que possam ser aplicadas em um único item -->
+                   motivacao.doc
+                    
+                   </td>
+                  <td headers="linha1 coluna4">
+                      <a href="#nogo"><i class="material-icons md">&#xE873;</i></a>
+                  </td> <!-- Demais Colunas -->
+                 </tr>
+                 <tr>
+                  <td id="linha1 fornecedor"> <!-- Segunda Coluna, aqui além da infomação primária sobre os itens listados, como nome ou descrição, deve haver uma toolbar com atalhos para as três principais ações que possam ser aplicadas em um único item -->
+                   motivacao.doc
+                    
+                   </td>
+                  <td headers="linha1 coluna4">
+                      <a href="#nogo"><i class="material-icons md">&#xE873;</i></a>
+                  </td> <!-- Demais Colunas -->
+                 </tr>
+                 <tr>
+                  <td id="linha1 fornecedor"> <!-- Segunda Coluna, aqui além da infomação primária sobre os itens listados, como nome ou descrição, deve haver uma toolbar com atalhos para as três principais ações que possam ser aplicadas em um único item -->
+                   motivacao.doc
+                    
+                   </td>
+                  <td headers="linha1 coluna4">
+                      <a href="#nogo"><i class="material-icons md">&#xE873;</i></a>
+                  </td> <!-- Demais Colunas -->
+                 </tr>
+                 <tr>
+                  <td id="linha1 fornecedor"> <!-- Segunda Coluna, aqui além da infomação primária sobre os itens listados, como nome ou descrição, deve haver uma toolbar com atalhos para as três principais ações que possam ser aplicadas em um único item -->
+                   motivacao.doc
+                    
+                   </td>
+                  <td headers="linha1 coluna4">
+                      <a href="#nogo"><i class="material-icons md">&#xE873;</i></a>
+                  </td> <!-- Demais Colunas -->
+                 </tr>
+                 <tr>
+                  <td id="linha1 fornecedor"> <!-- Segunda Coluna, aqui além da infomação primária sobre os itens listados, como nome ou descrição, deve haver uma toolbar com atalhos para as três principais ações que possam ser aplicadas em um único item -->
+                   motivacao.doc
+                    
+                   </td>
+                  <td headers="linha1 coluna4">
+                      <a href="#nogo"><i class="material-icons md">&#xE873;</i></a>
+                  </td> <!-- Demais Colunas -->
+                 </tr>
+                 <tr>
+                  <td id="linha1 fornecedor"> <!-- Segunda Coluna, aqui além da infomação primária sobre os itens listados, como nome ou descrição, deve haver uma toolbar com atalhos para as três principais ações que possam ser aplicadas em um único item -->
+                   motivacao.doc
+                    
+                   </td>
+                  <td headers="linha1 coluna4">
+                      <a href="#nogo"><i class="material-icons md">&#xE873;</i></a>
+                  </td> <!-- Demais Colunas -->
+                 </tr>
+                 <tr>
+                  <td id="linha1 fornecedor"> <!-- Segunda Coluna, aqui além da infomação primária sobre os itens listados, como nome ou descrição, deve haver uma toolbar com atalhos para as três principais ações que possam ser aplicadas em um único item -->
+                   motivacao.doc
+                    
+                   </td>
+                  <td headers="linha1 coluna4">
+                      <a href="#nogo"><i class="material-icons md">&#xE873;</i></a>
+                  </td> <!-- Demais Colunas -->
+                 </tr>
+                 <tr>
+                  <td id="linha1 fornecedor"> <!-- Segunda Coluna, aqui além da infomação primária sobre os itens listados, como nome ou descrição, deve haver uma toolbar com atalhos para as três principais ações que possam ser aplicadas em um único item -->
+                   motivacao.doc
+                    
+                   </td>
+                  <td headers="linha1 coluna4">
+                      <a href="#nogo"><i class="material-icons md">&#xE873;</i></a>
+                  </td> <!-- Demais Colunas -->
+                 </tr>
+                 <tr>
+                  <td id="linha1 fornecedor"> <!-- Segunda Coluna, aqui além da infomação primária sobre os itens listados, como nome ou descrição, deve haver uma toolbar com atalhos para as três principais ações que possam ser aplicadas em um único item -->
+                   motivacao.doc
+                    
+                   </td>
+                  <td headers="linha1 coluna4">
+                      <a href="#nogo"><i class="material-icons md">&#xE873;</i></a>
+                  </td> <!-- Demais Colunas -->
+                 </tr>
+                 <tr>
+                  <td id="linha1 fornecedor"> <!-- Segunda Coluna, aqui além da infomação primária sobre os itens listados, como nome ou descrição, deve haver uma toolbar com atalhos para as três principais ações que possam ser aplicadas em um único item -->
+                   motivacao.doc
+                    
+                   </td>
+                  <td headers="linha1 coluna4">
+                      <a href="#nogo"><i class="material-icons md">&#xE873;</i></a>
+                  </td> <!-- Demais Colunas -->
+                 </tr>
+                 <tr>
+                  <td id="linha1 fornecedor"> <!-- Segunda Coluna, aqui além da infomação primária sobre os itens listados, como nome ou descrição, deve haver uma toolbar com atalhos para as três principais ações que possam ser aplicadas em um único item -->
+                   motivacao.doc
+                    
+                   </td>
+                  <td headers="linha1 coluna4">
+                      <a href="#nogo"><i class="material-icons md">&#xE873;</i></a>
+                  </td> <!-- Demais Colunas -->
+                 </tr>
+                 <tr>
+                  <td id="linha1 fornecedor"> <!-- Segunda Coluna, aqui além da infomação primária sobre os itens listados, como nome ou descrição, deve haver uma toolbar com atalhos para as três principais ações que possam ser aplicadas em um único item -->
+                   motivacao.doc
+                    
+                   </td>
+                  <td headers="linha1 coluna4">
+                      <a href="#nogo"><i class="material-icons md">&#xE873;</i></a>
+                  </td> <!-- Demais Colunas -->
+                 </tr>
+                 <tr>
+                  <td id="linha1 fornecedor"> <!-- Segunda Coluna, aqui além da infomação primária sobre os itens listados, como nome ou descrição, deve haver uma toolbar com atalhos para as três principais ações que possam ser aplicadas em um único item -->
+                   motivacao.doc
+                    
+                   </td>
+                  <td headers="linha1 coluna4">
+                      <a href="#nogo"><i class="material-icons md">&#xE873;</i></a>
+                  </td> <!-- Demais Colunas -->
+                 </tr>
+                 <tr>
+                  <td id="linha1 fornecedor"> <!-- Segunda Coluna, aqui além da infomação primária sobre os itens listados, como nome ou descrição, deve haver uma toolbar com atalhos para as três principais ações que possam ser aplicadas em um único item -->
+                   motivacao.doc
+                    
+                   </td>
+                  <td headers="linha1 coluna4">
+                      <a href="#nogo"><i class="material-icons md">&#xE873;</i></a>
+                  </td> <!-- Demais Colunas -->
+                 </tr>
+                 <tr>
+                  <td id="linha1 fornecedor"> <!-- Segunda Coluna, aqui além da infomação primária sobre os itens listados, como nome ou descrição, deve haver uma toolbar com atalhos para as três principais ações que possam ser aplicadas em um único item -->
+                   motivacao.doc
+                    
+                   </td>
+                  <td headers="linha1 coluna4">
+                      <a href="#nogo"><i class="material-icons md">&#xE873;</i></a>
+                  </td> <!-- Demais Colunas -->
+                 </tr>
+                 <tr>
+                  <td id="linha1 fornecedor"> <!-- Segunda Coluna, aqui além da infomação primária sobre os itens listados, como nome ou descrição, deve haver uma toolbar com atalhos para as três principais ações que possam ser aplicadas em um único item -->
+                   motivacao.doc
+                    
+                   </td>
+                  <td headers="linha1 coluna4">
+                      <a href="#nogo"><i class="material-icons md">&#xE873;</i></a>
+                  </td> <!-- Demais Colunas -->
+                 </tr>
+
+                </tbody>
+
+            </table>
+        </div>
+       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="material-icons first md">&#xE5CD;</i>Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="itemLote" tabindex="-1" role="dialog" aria-labelledby="listaItemLote">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="material-icons">&#xE5CD;</i></button>
+        <h4 class="modal-title" id="listaItemLote">Lista de Item/Lote</h4>
+      </div>
+       <div class="modal-body">
+        <div class="row data-table">
+            <table class="table listagem-dados table-bordered table-striped responsive" cellspacing="0" width="100%" summary="Lista de Item/Lote">
+
+               <thead><!--Cabeçalho-->
+                  <tr><!-- Primeira Linha -->
+                    <th id="coluna4">
+                      Objeto
+                      <i class="material-icons unordered">&#xE8D5;</i>
+                      <i class="material-icons ordered">&#xE037;</i>
+                    </th>
+                  </tr>
+                </thead>
+
+               <tbody><!--Corpo-->
+                 <tr>
+                  <td id="linha1 objeto">
+                  Caneta Esferográfica, Material Corpo: Plástico Rígido, Cor Corpo: Prata, Formato do Corpo Redondo, Tipo Escrita: Média, Cor Escrita: Azul, Carga: Removível, Material
+                  </td>
+                 </tr>
+
+                 <tr>
+                  <td id="linha2 objeto">
+                  Lapiseira, Funcionamento: click superior material corpo: plástico rígido, cor corpo: azul, Grafite: 0,5mm, Extremidade: com borracha, Material Ponta: Metal, Acabamento Ponta: Cromado, Mecanismo Mina: Metálico 
+                  </td>
+                 </tr>
+
+                 <tr>
+                  <td id="linha1 objeto">
+                  Caneta Esferográfica, Material Corpo: Plástico Rígido, Cor Corpo: Prata, Formato do Corpo Redondo, Tipo Escrita: Média, Cor Escrita: Azul, Carga: Removível, Material
+                  </td>
+                 </tr>
+
+                 <tr>
+                  <td id="linha2 objeto">
+                  Lapiseira, Funcionamento: click superior material corpo: plástico rígido, cor corpo: azul, Grafite: 0,5mm, Extremidade: com borracha, Material Ponta: Metal, Acabamento Ponta: Cromado, Mecanismo Mina: Metálico 
+                  </td>
+                 </tr>
+
+                 <tr>
+                  <td id="linha1 objeto">
+                  Caneta Esferográfica, Material Corpo: Plástico Rígido, Cor Corpo: Prata, Formato do Corpo Redondo, Tipo Escrita: Média, Cor Escrita: Azul, Carga: Removível, Material
+                  </td>
+                 </tr>
+
+                 <tr>
+                  <td id="linha2 objeto">
+                  Lapiseira, Funcionamento: click superior material corpo: plástico rígido, cor corpo: azul, Grafite: 0,5mm, Extremidade: com borracha, Material Ponta: Metal, Acabamento Ponta: Cromado, Mecanismo Mina: Metálico 
+                  </td>
+                 </tr>
+
+                 <tr>
+                  <td id="linha1 objeto">
+                  Caneta Esferográfica, Material Corpo: Plástico Rígido, Cor Corpo: Prata, Formato do Corpo Redondo, Tipo Escrita: Média, Cor Escrita: Azul, Carga: Removível, Material
+                  </td>
+                 </tr>
+
+                 <tr>
+                  <td id="linha2 objeto">
+                  Lapiseira, Funcionamento: click superior material corpo: plástico rígido, cor corpo: azul, Grafite: 0,5mm, Extremidade: com borracha, Material Ponta: Metal, Acabamento Ponta: Cromado, Mecanismo Mina: Metálico 
+                  </td>
+                 </tr>
+
+                 <tr>
+                  <td id="linha1 objeto">
+                  Caneta Esferográfica, Material Corpo: Plástico Rígido, Cor Corpo: Prata, Formato do Corpo Redondo, Tipo Escrita: Média, Cor Escrita: Azul, Carga: Removível, Material
+                  </td>
+                 </tr>
+
+                 <tr>
+                  <td id="linha2 objeto">
+                  Lapiseira, Funcionamento: click superior material corpo: plástico rígido, cor corpo: azul, Grafite: 0,5mm, Extremidade: com borracha, Material Ponta: Metal, Acabamento Ponta: Cromado, Mecanismo Mina: Metálico 
+                  </td>
+                 </tr>
+
+                 <tr>
+                  <td id="linha1 objeto">
+                  Caneta Esferográfica, Material Corpo: Plástico Rígido, Cor Corpo: Prata, Formato do Corpo Redondo, Tipo Escrita: Média, Cor Escrita: Azul, Carga: Removível, Material
+                  </td>
+                 </tr>
+
+                 <tr>
+                  <td id="linha2 objeto">
+                  Lapiseira, Funcionamento: click superior material corpo: plástico rígido, cor corpo: azul, Grafite: 0,5mm, Extremidade: com borracha, Material Ponta: Metal, Acabamento Ponta: Cromado, Mecanismo Mina: Metálico 
+                  </td>
+                 </tr>
+
+                 <tr>
+                  <td id="linha1 objeto">
+                  Caneta Esferográfica, Material Corpo: Plástico Rígido, Cor Corpo: Prata, Formato do Corpo Redondo, Tipo Escrita: Média, Cor Escrita: Azul, Carga: Removível, Material
+                  </td>
+                 </tr>
+
+                 <tr>
+                  <td id="linha2 objeto">
+                  Lapiseira, Funcionamento: click superior material corpo: plástico rígido, cor corpo: azul, Grafite: 0,5mm, Extremidade: com borracha, Material Ponta: Metal, Acabamento Ponta: Cromado, Mecanismo Mina: Metálico 
+                  </td>
+                 </tr>
+
+                 <tr>
+                  <td id="linha1 objeto">
+                  Caneta Esferográfica, Material Corpo: Plástico Rígido, Cor Corpo: Prata, Formato do Corpo Redondo, Tipo Escrita: Média, Cor Escrita: Azul, Carga: Removível, Material
+                  </td>
+                 </tr>
+
+                 <tr>
+                  <td id="linha2 objeto">
+                  Lapiseira, Funcionamento: click superior material corpo: plástico rígido, cor corpo: azul, Grafite: 0,5mm, Extremidade: com borracha, Material Ponta: Metal, Acabamento Ponta: Cromado, Mecanismo Mina: Metálico 
+                  </td>
+                 </tr>
+
+                </tbody>
+
+            </table>
+        </div>
+       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="material-icons first md">&#xE5CD;</i>Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--<div class="btn-toolbar btn-micro" role="toolbar" aria-label="actions"><!-- Toolbar, limite-se a apenas 3 botões --
+                    <button type="button" class="btn btn-primary" title="Editar"><!-- Botão --
+                     <i class="material-icons" aria-label="editar" >&#xE254;</i> <!-- Ícone --
+                     <span>Editar</span> <!-- Descrição do botão --
+                    </button>
+                    <button type="button" class="btn btn-default" title="Bloquear"><!-- Botão --
+                     <i class="material-icons" aria-label="bloquear">&#xE898;</i> <!-- Ícone --
+                     <span>Desbloquear</span> <!-- Descrição do botão --
+                    </button>
+                    <button type="button" class="btn btn-danger" title="Excluir"><!-- Botão --
+                     <i class="material-icons" aria-label="excluir">&#xE872;</i> <!-- Ícone --
+                     <span>Excluir</span> <!-- Descrição do botão --
+                    </button>
+                   </div> -->

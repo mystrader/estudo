@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+   <title>Perfis de Usuário</title>
+    <meta name="description" content="Descrição do Sistema ou site">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="alternate" type="application/rss+xml" title="SIGA" href="/feed.xml" />
+    <script type="text/javascript" language="javascript" src="../../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" language="javascript" src="../../js/bootstrap.js"></script>
+    <script type="text/javascript" language="javascript" src="../../js/main.js"></script>
+<!--<script type="text/javascript" language="javascript" src="../../js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" language="javascript" src="../../js/dataTables.bootstrap.js"></script>
+	<script type="text/javascript" language="javascript" src="../../js/dataTables.responsive.min.js"></script>-->
+	<script type="text/javascript" language="javascript" src="../../js/datatables.js"></script>
+	<script type="text/javascript" language="javascript" src="../../js/data-table.min.js"></script>
+<!--
+        <script type="text/javascript" language="javascript" src="../../js/jquery.hotkeys-0.7.9.js"></script>
+-->
+<script type="text/javascript" language="javascript" src="../../js/jquery.datetimepicker.js"></script>
+    
+   
+
+  <body>
+
+    <header role="banner" class="site-header">
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-10 accessbar">
+               <a href="#iracessibilidade" id="iracessibilidade" name="iracessibilidade" class="sr-only">Início da Navegação de Acessibilidade</a>
+
+               <ul class="access">
+                <li><a href="#navbar"><span class="label label-access">enter</span>Ir para Navegação</a></li>
+                <li><a href="#irconteudo"><span class="label label-access">alt + 1</span> Ir para Conteúdo</a></li>
+                <li><a href="#irbusca"><span class="label label-access">alt + 2</span> Ir para Busca</a></li>
+                <li><a href="#iracoes"><span class="label label-access">alt + 3</span> Ir para Barra de Ações</a></li>
+                <li><a href="#irvisualizacao"><span class="label label-access">alt + 4</span> Ir para Barra de Visualização</a></li>
+                <li><a href="#iracessibilidade" accesskey="6"><span class="label label-access">alt + 5</span> Acessibilidade</a></li>
+                <li><a href="#irmapasite" accesskey="7"><span class="label label-access">alt + 6</span> Mapa do Site</a></li>
+               </ul>
+               <a href="#fimacessibilidade" id="fimacessibilidade" name="fimacessibilidade" class="sr-only">Fim da Navegação de Acessibilidade</a>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+           <div class="col-xs-2"><div class="row">
+    <div class="navbar-header col-xs-6">
+        <a href="#navbar" type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Abrir Menu de Navegação</span>
+         <i class="material-icons md first">&#xE5D2;</i> Menu
+        </a>
+    </div>
+    <div class="logo col-xs-6">
+        <a class="site-title" href="../../">
+            <h1 class="sr-only">SIGA Sistema Integrado de Gestão de Aquisições - Versão 2.0</h1>
+            <img src="../../images/logo-siga.png" alt="Logo do SIGA">
+        </a>
+    </div> 
+</div>
+<nav class="navbar" role="navigation">
+    <div id="navbar" class="navbar-collapse collapse" aria-expanded="false">
+     <!--accesskey="3" id="irnavegacao" name="irnavegacao"-->
+      <a href="#nogo" class="sr-only">Início da Navegação</a>
+        <ul class="nav navbar-nav nav-stacked">
+            <!-- 1st level -->
+            
+            <li>
+                <a href="#" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+                     <span class="sr-only">Fechar Menu de Navegação</span>
+                     <i class="material-icons first md">&#xE5D2;</i> Menu
+                     <i class="material-icons last md">&#xE5CD;</i>
+                </a>
+            </li>
+            <li>
+             <form role="search">
+              <div class="form-group">
+               <div class="input-group">
+                <input type="text" class="form-control" placeholder="Buscar no SIGA" id="irbusca" name="irbusca" accesskey="2">
+                 <div class="input-group-btn">
+                  <button type="submit" class="btn btn-primary"><i class="material-icons single md">&#xE8B6;</i><span class="sr-only">Buscar</span></button>
+                 </div>
+               </div>
+              </div>
+             </form>
+            </li>
+                <li>
+                    <a href="../documentacao/index.html">Biblioteca de Componentes</a>
+                </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Abrir ou Fechar SubMenu</span> Registro de Preço <span class="caret last"></span></a>
+
+                        <ul class="dropdown-menu">
+                            <!-- 2nd level -->
+                            <!--with items group-->
+                                <li>
+                                    <a href="#">
+                                    PLS 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    Ata 
+                                    </a>
+                                </li>
+                                <li class="sr-only">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Fechar Submenu</a>
+                                </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Abrir ou Fechar SubMenu</span> Requisição <span class="caret last"></span></a>
+                        <ul class="dropdown-menu">
+                            <!-- 2nd level -->
+                            <!--with items group-->
+                                <li>
+                                    <a href="#">
+                                    Carrinho de Compras 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    Consulta de itens 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    Requisitar 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    Acompanhar Solicitação de Catalogação 
+                                    </a>
+                                </li>
+                                <li class="sr-only">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Fechar Submenu</a>
+                                </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Abrir ou Fechar SubMenu</span> Processo <span class="caret last"></span></a>
+                        <ul class="dropdown-menu">
+                            <!-- 2nd level -->
+                                <li>
+                                    <a href="../processo/carrinho-compra/index.html">
+                                    Definição 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    Planejamento 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    Pesquisa de Mercado 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    PED 
+                                    </a>
+                                </li>
+                                <li class="sr-only">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Fechar Submenu</a>
+                                </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Licitação</a>
+                    </li>
+                    <li>
+                        <a href="#">Contratação</a>
+                    </li>
+                    <li>
+                        <a href="#">Recebimento</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Abrir ou Fechar SubMenu</span>
+                        Almoxarifado <span class="caret last"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- 2nd level -->
+                               <ul class="dropdown-group">
+                                    <li class="dropdown-header">Operação</li>
+                                    <li>
+                                        <a href="#">
+                                        Armazenamento 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        Atendimento 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        Ressuprimento 
+                                        </a>
+                                    </li>
+                               </ul><!--/ .dropdown-group-->
+                               <ul class="dropdown-group">
+                                    <li class="dropdown-header">Gestão</li>
+                                    <li>
+                                        <a href="#">
+                                        Disponibilidade 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        Inventário 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        Relatórios 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        Parametrizar Itens 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        Parametrizar Almoxarifado 
+                                        </a>
+                                    </li>
+                               </ul> <!--/ .dropdown-group-->
+                                <li class="sr-only">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Fechar Submenu</a>
+                                </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Gestão</a>
+                    </li>
+                    <li>
+                        <a href="#">Minutas</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Abrir ou Fechar SubMenu</span>
+                        Administração <span class="caret last"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- 2nd level -->
+                                  
+                                   <li class="dropdown sub-dropdown">
+                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only">Abrir ou Fechar SubMenu</span>
+                                    Parâmetro <span class="caret last"></span>
+                                    </a>
+                                   <ul class="dropdown-menu">
+                                         <li>
+                                           <a href="#">
+                                           Sistema 
+                                           </a>
+                                         </li>
+                                         <li>
+                                           <a href="#">
+                                           Compras 
+                                           </a>
+                                         </li>
+                                       </ul><!--/ .dropdown-menu-->
+                                   </li>
+                                   
+                                <li class="sr-only">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Fechar Submenu</a>
+                                </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Cadastro</a>
+                    </li>
+        </ul>        <a href="#fimnavegacao" id="fimnavegacao" name="fimnavegacao" class="sr-only">Fim da Navegação</a>
+
+    </div><!--/.nav-collapse -->
+</nav></div>
+           <div class="col-xs-8">
+               <h2 class="page-title" role="heading">Perfis de Usuário</h2>
+           </div>
+           <div class="col-sm-2">
+               <span class="userbar userbar-nav">
+                   <a href="#" class="btn btn-default" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Olá, Victor Santos<i class="material-icons lg first">&#xE853;</i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Ajuda</a></li>
+                        <li><a href="#">Suporte</a></li>
+                        <li><a href="#">Sair</a></li>
+                    </ul>
+               </span>
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+  
+
+    <div class="support-nav">
+                    
+          
+        <div class="row">
+    <div class="col-xs-6 col-md-2 col-sm-2">
+        <a href="javascript:history.back(1)" class="btn"><i class="material-icons first md">arrow_back</i>Voltar</a>
+    </div>
+
+    <div class="hidden-xs col-md-10">
+       <ol class="breadcrumb">
+<li><a href="../../"><i class="material-icons md">&#xE88A;</i></a></li>
+
+
+
+
+    
+    
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <li >
+                
+                <a href="/licitacao/">Licitação</a>            </li>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <li >
+                
+                <a href="/licitacao/listagem/">Resultado de Busca</a>            </li>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+</ol>
+
+    </div>
+
+</div>
+           
+    </div>
+    <div class="content">
+        <div class="row">
+
+            <div id="content" class="col-md-10" role="main">
+       <a href="#irconteudo" class="sr-only" id="irconteudo" name="irconteudo" accesskey="1">Início do conteúdo</a>
+<!--Aqui vai o conteúdo-->
+
+<h3 class="view-title" role="heading">Resultado de Busca</h3>
+        <div class="panel panel-default">
+            <div id="panelId" class="panel-body">
+                <div class="row data-table">
+                    <div class="col-md-12">
+<table class="table listagem-dados filtering-col table-bordered table-striped responsive" cellspacing="0" width="100%" summary="Esta tabela exibe os perfis de usuários existentes e os relaciona com tipos de usuário, tipos de perfil e seus respectivos status.">
+    <thead>
+        <tr>
+            <th></th>
+            <th id="coluna1">
+                Licitação
+                <i class="material-icons unordered">&#xE8D5;</i>
+                <i class="material-icons ordered">&#xE037;</i>
+                </th>
+            <th id="coluna2">
+                Status
+                <i class="material-icons unordered">&#xE8D5;</i>
+                <i class="material-icons ordered">&#xE037;</i>
+                </th>
+            <th id="coluna3">
+                Data
+                <i class="material-icons unordered">&#xE8D5;</i>
+                <i class="material-icons ordered">&#xE037;</i>
+                </th>
+            
+        <tr class="filterrow">
+            <th><i class="material-icons md">&#xE8B6;</i></th>
+            <th class="input-filter">
+                <input type="text" class="form-control" placeholder="Buscar por Licitação">
+            </th>
+            <th class="input-filter">
+                <input type="text" class="form-control" placeholder="Buscar por Status">
+            </th>
+            <th class="input-filter">
+                <input type="text" class="form-control datepicker" placeholder="Buscar por Data">
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+         <td>
+          <input type="checkbox" name="selectButton" value="Fornecedor"/>
+         </td>
+         <td id="linha1 fornecedor"><a href="#nogo">0103/2013</a>
+         <div class="btn-toolbar btn-micro" role="toolbar" aria-label="actions">
+           <button type="button" class="btn btn-primary" title="Editar">
+            <i class="material-icons" aria-label="editar" >&#xE254;</i>
+            <span>Editar</span>
+           </button>
+           <button type="button" class="btn btn-default" title="Bloquear">
+            <i class="material-icons" aria-label="bloquear">&#xE898;</i>
+            <span>Desbloquear</span>
+           </button>
+           <button type="button" class="btn btn-danger" title="Excluir">
+            <i class="material-icons" aria-label="excluir">&#xE872;</i>
+            <span>Excluir</span>
+           </button>
+          </div>
+          </td>
+         <td headers="linha1 coluna2">Em Elaboração</td>
+         <td headers="linha1 coluna3">05/12/2013</td>
+        </tr>
+        <tr>
+         <td>
+          <input type="checkbox" name="selectButton" value="Fornecedor"/>
+         </td>
+         <td id="linha2 sisAdm"><a href="#nogo">0104/2013</a>
+          <div class="btn-toolbar btn-micro" role="toolbar" aria-label="actions">
+           <button type="button" class="btn btn-primary" title="Editar">
+            <i class="material-icons" aria-label="editar" >&#xE254;</i>
+            <span>Editar</span>
+           </button>
+           <button type="button" class="btn btn-default" title="Bloquear">
+            <i class="material-icons" aria-label="bloquear">&#xE899;</i>
+            <span>Bloquear</span>
+           </button>
+           <button type="button" class="btn btn-danger" title="Excluir">
+            <i class="material-icons" aria-label="excluir">&#xE872;</i>
+            <span>Excluir</span>
+           </button>
+          </div>
+         </td>
+         <td headers="linha2 coluna2">Em Elaboração</td>
+         <td headers="linha2 coluna3">06/12/2013</td>
+        </tr>
+        <tr>
+         <td>
+          <input type="checkbox" name="selectButton" value="Fornecedor"/>
+         </td>
+         <td id="linha2 sisAdm"><a href="#nogo">0105/2013</a>
+          <div class="btn-toolbar btn-micro" role="toolbar" aria-label="actions">
+           <button type="button" class="btn btn-primary" title="Editar">
+            <i class="material-icons" aria-label="editar" >&#xE254;</i>
+            <span>Editar</span>
+           </button>
+           <button type="button" class="btn btn-default" title="Bloquear">
+            <i class="material-icons" aria-label="bloquear">&#xE899;</i>
+            <span>Bloquear</span>
+           </button>
+           <button type="button" class="btn btn-danger" title="Excluir">
+            <i class="material-icons" aria-label="excluir">&#xE872;</i>
+            <span>Excluir</span>
+           </button>
+          </div>
+         </td>
+         <td headers="linha2 coluna2">Em Elaboração</td>
+         <td headers="linha2 coluna3">07/12/2013</td>
+        </tr>
+        <tr>
+         <td>
+          <input type="checkbox" name="selectButton" value="Fornecedor"/>
+         </td>
+         <td id="linha1 fornecedor"><a href="#nogo">0103/2013</a>
+         <div class="btn-toolbar btn-micro" role="toolbar" aria-label="actions">
+           <button type="button" class="btn btn-primary" title="Editar">
+            <i class="material-icons" aria-label="editar" >&#xE254;</i>
+            <span>Editar</span>
+           </button>
+           <button type="button" class="btn btn-default" title="Bloquear">
+            <i class="material-icons" aria-label="bloquear">&#xE898;</i>
+            <span>Desbloquear</span>
+           </button>
+           <button type="button" class="btn btn-danger" title="Excluir">
+            <i class="material-icons" aria-label="excluir">&#xE872;</i>
+            <span>Excluir</span>
+           </button>
+          </div>
+          </td>
+         <td headers="linha1 coluna2">Em Elaboração</td>
+         <td headers="linha1 coluna3">05/12/2013</td>
+        </tr>
+        <tr>
+         <td>
+          <input type="checkbox" name="selectButton" value="Fornecedor"/>
+         </td>
+         <td id="linha2 sisAdm"><a href="#nogo">0104/2013</a>
+          <div class="btn-toolbar btn-micro" role="toolbar" aria-label="actions">
+           <button type="button" class="btn btn-primary" title="Editar">
+            <i class="material-icons" aria-label="editar" >&#xE254;</i>
+            <span>Editar</span>
+           </button>
+           <button type="button" class="btn btn-default" title="Bloquear">
+            <i class="material-icons" aria-label="bloquear">&#xE899;</i>
+            <span>Bloquear</span>
+           </button>
+           <button type="button" class="btn btn-danger" title="Excluir">
+            <i class="material-icons" aria-label="excluir">&#xE872;</i>
+            <span>Excluir</span>
+           </button>
+          </div>
+         </td>
+         <td headers="linha2 coluna2">Em Elaboração</td>
+         <td headers="linha2 coluna3">06/12/2013</td>
+        </tr>
+        <tr>
+         <td>
+          <input type="checkbox" name="selectButton" value="Fornecedor"/>
+         </td>
+         <td id="linha2 sisAdm"><a href="#nogo">0105/2013</a>
+          <div class="btn-toolbar btn-micro" role="toolbar" aria-label="actions">
+           <button type="button" class="btn btn-primary" title="Editar">
+            <i class="material-icons" aria-label="editar" >&#xE254;</i>
+            <span>Editar</span>
+           </button>
+           <button type="button" class="btn btn-default" title="Bloquear">
+            <i class="material-icons" aria-label="bloquear">&#xE899;</i>
+            <span>Bloquear</span>
+           </button>
+           <button type="button" class="btn btn-danger" title="Excluir">
+            <i class="material-icons" aria-label="excluir">&#xE872;</i>
+            <span>Excluir</span>
+           </button>
+          </div>
+         </td>
+         <td headers="linha2 coluna2">Em Elaboração</td>
+         <td headers="linha2 coluna3">07/12/2013</td>
+        </tr>
+        <tr>
+         <td>
+          <input type="checkbox" name="selectButton" value="Fornecedor"/>
+         </td>
+         <td id="linha1 fornecedor"><a href="#nogo">0103/2013</a>
+         <div class="btn-toolbar btn-micro" role="toolbar" aria-label="actions">
+           <button type="button" class="btn btn-primary" title="Editar">
+            <i class="material-icons" aria-label="editar" >&#xE254;</i>
+            <span>Editar</span>
+           </button>
+           <button type="button" class="btn btn-default" title="Bloquear">
+            <i class="material-icons" aria-label="bloquear">&#xE898;</i>
+            <span>Desbloquear</span>
+           </button>
+           <button type="button" class="btn btn-danger" title="Excluir">
+            <i class="material-icons" aria-label="excluir">&#xE872;</i>
+            <span>Excluir</span>
+           </button>
+          </div>
+          </td>
+         <td headers="linha1 coluna2">Em Elaboração</td>
+         <td headers="linha1 coluna3">05/12/2013</td>
+        </tr>
+        <tr>
+         <td>
+          <input type="checkbox" name="selectButton" value="Fornecedor"/>
+         </td>
+         <td id="linha2 sisAdm"><a href="#nogo">0104/2013</a>
+          <div class="btn-toolbar btn-micro" role="toolbar" aria-label="actions">
+           <button type="button" class="btn btn-primary" title="Editar">
+            <i class="material-icons" aria-label="editar" >&#xE254;</i>
+            <span>Editar</span>
+           </button>
+           <button type="button" class="btn btn-default" title="Bloquear">
+            <i class="material-icons" aria-label="bloquear">&#xE899;</i>
+            <span>Bloquear</span>
+           </button>
+           <button type="button" class="btn btn-danger" title="Excluir">
+            <i class="material-icons" aria-label="excluir">&#xE872;</i>
+            <span>Excluir</span>
+           </button>
+          </div>
+         </td>
+         <td headers="linha2 coluna2">Em Elaboração</td>
+         <td headers="linha2 coluna3">06/12/2013</td>
+        </tr>
+        <tr>
+         <td>
+          <input type="checkbox" name="selectButton" value="Fornecedor"/>
+         </td>
+         <td id="linha2 sisAdm"><a href="#nogo">0105/2013</a>
+          <div class="btn-toolbar btn-micro" role="toolbar" aria-label="actions">
+           <button type="button" class="btn btn-primary" title="Editar">
+            <i class="material-icons" aria-label="editar" >&#xE254;</i>
+            <span>Editar</span>
+           </button>
+           <button type="button" class="btn btn-default" title="Bloquear">
+            <i class="material-icons" aria-label="bloquear">&#xE899;</i>
+            <span>Bloquear</span>
+           </button>
+           <button type="button" class="btn btn-danger" title="Excluir">
+            <i class="material-icons" aria-label="excluir">&#xE872;</i>
+            <span>Excluir</span>
+           </button>
+          </div>
+         </td>
+         <td headers="linha2 coluna2">Em Elaboração</td>
+         <td headers="linha2 coluna3">07/12/2013</td>
+        </tr>
+        <tr>
+         <td>
+          <input type="checkbox" name="selectButton" value="Fornecedor"/>
+         </td>
+         <td id="linha1 fornecedor"><a href="#nogo">0103/2013</a>
+         <div class="btn-toolbar btn-micro" role="toolbar" aria-label="actions">
+           <button type="button" class="btn btn-primary" title="Editar">
+            <i class="material-icons" aria-label="editar" >&#xE254;</i>
+            <span>Editar</span>
+           </button>
+           <button type="button" class="btn btn-default" title="Bloquear">
+            <i class="material-icons" aria-label="bloquear">&#xE898;</i>
+            <span>Desbloquear</span>
+           </button>
+           <button type="button" class="btn btn-danger" title="Excluir">
+            <i class="material-icons" aria-label="excluir">&#xE872;</i>
+            <span>Excluir</span>
+           </button>
+          </div>
+          </td>
+         <td headers="linha1 coluna2">Em Elaboração</td>
+         <td headers="linha1 coluna3">05/12/2013</td>
+        </tr>
+        <tr>
+         <td>
+          <input type="checkbox" name="selectButton" value="Fornecedor"/>
+         </td>
+         <td id="linha2 sisAdm"><a href="#nogo">0104/2013</a>
+          <div class="btn-toolbar btn-micro" role="toolbar" aria-label="actions">
+           <button type="button" class="btn btn-primary" title="Editar">
+            <i class="material-icons" aria-label="editar" >&#xE254;</i>
+            <span>Editar</span>
+           </button>
+           <button type="button" class="btn btn-default" title="Bloquear">
+            <i class="material-icons" aria-label="bloquear">&#xE899;</i>
+            <span>Bloquear</span>
+           </button>
+           <button type="button" class="btn btn-danger" title="Excluir">
+            <i class="material-icons" aria-label="excluir">&#xE872;</i>
+            <span>Excluir</span>
+           </button>
+          </div>
+         </td>
+         <td headers="linha2 coluna2">Em Elaboração</td>
+         <td headers="linha2 coluna3">06/12/2013</td>
+        </tr>
+        <tr>
+         <td>
+          <input type="checkbox" name="selectButton" value="Fornecedor"/>
+         </td>
+         <td id="linha2 sisAdm"><a href="#nogo">0105/2013</a>
+          <div class="btn-toolbar btn-micro" role="toolbar" aria-label="actions">
+           <button type="button" class="btn btn-primary" title="Editar">
+            <i class="material-icons" aria-label="editar" >&#xE254;</i>
+            <span>Editar</span>
+           </button>
+           <button type="button" class="btn btn-default" title="Bloquear">
+            <i class="material-icons" aria-label="bloquear">&#xE899;</i>
+            <span>Bloquear</span>
+           </button>
+           <button type="button" class="btn btn-danger" title="Excluir">
+            <i class="material-icons" aria-label="excluir">&#xE872;</i>
+            <span>Excluir</span>
+           </button>
+          </div>
+         </td>
+         <td headers="linha2 coluna2">Em Elaboração</td>
+         <td headers="linha2 coluna3">07/12/2013</td>
+        </tr>
+        <tr>
+         <td>
+          <input type="checkbox" name="selectButton" value="Fornecedor"/>
+         </td>
+         <td id="linha1 fornecedor"><a href="#nogo">0103/2013</a>
+         <div class="btn-toolbar btn-micro" role="toolbar" aria-label="actions">
+           <button type="button" class="btn btn-primary" title="Editar">
+            <i class="material-icons" aria-label="editar" >&#xE254;</i>
+            <span>Editar</span>
+           </button>
+           <button type="button" class="btn btn-default" title="Bloquear">
+            <i class="material-icons" aria-label="bloquear">&#xE898;</i>
+            <span>Desbloquear</span>
+           </button>
+           <button type="button" class="btn btn-danger" title="Excluir">
+            <i class="material-icons" aria-label="excluir">&#xE872;</i>
+            <span>Excluir</span>
+           </button>
+          </div>
+          </td>
+         <td headers="linha1 coluna2">Em Elaboração</td>
+         <td headers="linha1 coluna3">05/12/2013</td>
+        </tr>
+        <tr>
+         <td>
+          <input type="checkbox" name="selectButton" value="Fornecedor"/>
+         </td>
+         <td id="linha2 sisAdm"><a href="#nogo">0104/2013</a>
+          <div class="btn-toolbar btn-micro" role="toolbar" aria-label="actions">
+           <button type="button" class="btn btn-primary" title="Editar">
+            <i class="material-icons" aria-label="editar" >&#xE254;</i>
+            <span>Editar</span>
+           </button>
+           <button type="button" class="btn btn-default" title="Bloquear">
+            <i class="material-icons" aria-label="bloquear">&#xE899;</i>
+            <span>Bloquear</span>
+           </button>
+           <button type="button" class="btn btn-danger" title="Excluir">
+            <i class="material-icons" aria-label="excluir">&#xE872;</i>
+            <span>Excluir</span>
+           </button>
+          </div>
+         </td>
+         <td headers="linha2 coluna2">Em Elaboração</td>
+         <td headers="linha2 coluna3">06/12/2013</td>
+        </tr>
+        <tr>
+         <td>
+          <input type="checkbox" name="selectButton" value="Fornecedor"/>
+         </td>
+         <td id="linha2 sisAdm"><a href="#nogo">0105/2013</a>
+          <div class="btn-toolbar btn-micro" role="toolbar" aria-label="actions">
+           <button type="button" class="btn btn-primary" title="Editar">
+            <i class="material-icons" aria-label="editar" >&#xE254;</i>
+            <span>Editar</span>
+           </button>
+           <button type="button" class="btn btn-default" title="Bloquear">
+            <i class="material-icons" aria-label="bloquear">&#xE899;</i>
+            <span>Bloquear</span>
+           </button>
+           <button type="button" class="btn btn-danger" title="Excluir">
+            <i class="material-icons" aria-label="excluir">&#xE872;</i>
+            <span>Excluir</span>
+           </button>
+          </div>
+         </td>
+         <td headers="linha2 coluna2">Em Elaboração</td>
+         <td headers="linha2 coluna3">07/12/2013</td>
+        </tr>
+    </tbody>
+</table>
+                    </div>
+                </div>
+            </div>
+            <script>
+            
+            </script>
+        </div>
+        
+<!--Fim do conteúdo-->
+       <a href="#fimconteudo" id="fimconteudo" name="fimconteudo" class="sr-only">Fim do conteúdo</a>
+    </div>
+
+    <div class="actionbar col-md-2">
+        <div class="actionbar-header">
+    <button type="button" class="btn actionbar-toggle collapsed" data-toggle="collapse" data-target="#actionbar" aria-expanded="false" aria-controls="actionbar">
+        <span class="sr-only-right">Expandir Menu de Ações</span>
+        <i class="material-icons first">&#xE5D4;</i> Ações
+    </button>
+</div>
+<div id="actionbar" class="navbar-collapse collapse" aria-expanded="false" role="menu">
+    <a href="#iracoes" id="iracoes" name="iracoes" class="sr-only-right" accesskey="4">Início da Barra de Ações</a>
+<ul class="nav navbar-nav nav-stacked" role="menu">
+   <li>
+       <button type="button" class="btn actionbar-toggle collapsed" data-toggle="collapse" data-target="#actionbar" aria-expanded="false" aria-controls="actionbar">
+            <span class="sr-only-right">Expandir Menu de Ações</span>
+            <i class="material-icons first">&#xE5D4;</i> Ações
+        </button>
+   </li>
+    <!-- 1st level -->
+    <li><a href=""><i class="material-icons first md">&#xE8AD;</i>Imprimir</a></li>
+    <li><a href=""><i class="material-icons first md">&#xE254;</i>Editar</a></li>
+    <li><a href=""><i class="material-icons first md">&#xE872;</i>Excluir</a></li>
+            
+</ul>
+    <a href="#fimacoes" id="fimacoes" name="fimacoes" class="sr-only-right">Fim da Barra de Ações</a>
+
+</div><!--/.nav-collapse -->
+
+</div>
+
+        </div>   
+    </div>
+
+    <footer class="container-fluid" role="contentinfo">
+   <div class="row">
+       <div class="col-sm-10">
+        <img src="../../images/logo_min_footer.png" alt="SIGA versão 2.0" class="pull-left">
+        <p>Copyright 2013 SIGA - Sistema Integrado de Gestão de Aquisições - Versão 2.0 - Todos os direitos reservados.</p>
+       </div>
+       <div class="col-sm-2">
+        <p class="pull-right"><a id="backToTop" href="#">Ir para o topo</a></p>
+       </div>
+   </div>
+</footer>
+
+
+  </body>
+
+</html>

@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+   <title>Pregão Eletrônico SEPLAG-0001/2014-Automóveis</title>
+    <meta name="description" content="Descrição do Sistema ou site">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="alternate" type="application/rss+xml" title="SIGA" href="/feed.xml" />
+    <script type="text/javascript" language="javascript" src="../../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" language="javascript" src="../../js/bootstrap.js"></script>
+    <script type="text/javascript" language="javascript" src="../../js/main.js"></script>
+<!--<script type="text/javascript" language="javascript" src="../../js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" language="javascript" src="../../js/dataTables.bootstrap.js"></script>
+	<script type="text/javascript" language="javascript" src="../../js/dataTables.responsive.min.js"></script>-->
+	<script type="text/javascript" language="javascript" src="../../js/datatables.js"></script>
+	<script type="text/javascript" language="javascript" src="../../js/data-table.min.js"></script>
+<!--
+        <script type="text/javascript" language="javascript" src="../../js/jquery.hotkeys-0.7.9.js"></script>
+-->
+<script type="text/javascript" language="javascript" src="../../js/jquery.datetimepicker.js"></script>
+    
+   
+
+  <body>
+
+    <header role="banner" class="site-header">
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-10 accessbar">
+               <a href="#iracessibilidade" id="iracessibilidade" name="iracessibilidade" class="sr-only">Início da Navegação de Acessibilidade</a>
+
+               <ul class="access">
+                <li><a href="#navbar"><span class="label label-access">enter</span>Ir para Navegação</a></li>
+                <li><a href="#irconteudo"><span class="label label-access">alt + 1</span> Ir para Conteúdo</a></li>
+                <li><a href="#irbusca"><span class="label label-access">alt + 2</span> Ir para Busca</a></li>
+                <li><a href="#iracoes"><span class="label label-access">alt + 3</span> Ir para Barra de Ações</a></li>
+                <li><a href="#irvisualizacao"><span class="label label-access">alt + 4</span> Ir para Barra de Visualização</a></li>
+                <li><a href="#iracessibilidade" accesskey="6"><span class="label label-access">alt + 5</span> Acessibilidade</a></li>
+                <li><a href="#irmapasite" accesskey="7"><span class="label label-access">alt + 6</span> Mapa do Site</a></li>
+               </ul>
+               <a href="#fimacessibilidade" id="fimacessibilidade" name="fimacessibilidade" class="sr-only">Fim da Navegação de Acessibilidade</a>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+           <div class="col-xs-2"><div class="row">
+    <div class="navbar-header col-xs-6">
+        <a href="#navbar" type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Abrir Menu de Navegação</span>
+         <i class="material-icons md first">&#xE5D2;</i> Menu
+        </a>
+    </div>
+    <div class="logo col-xs-6">
+        <a class="site-title" href="../../">
+            <h1 class="sr-only">SIGA Sistema Integrado de Gestão de Aquisições - Versão 2.0</h1>
+            <img src="../../images/logo-siga.png" alt="Logo do SIGA">
+        </a>
+    </div> 
+</div>
+<nav class="navbar" role="navigation">
+    <div id="navbar" class="navbar-collapse collapse" aria-expanded="false">
+     <!--accesskey="3" id="irnavegacao" name="irnavegacao"-->
+      <a href="#nogo" class="sr-only">Início da Navegação</a>
+        <ul class="nav navbar-nav nav-stacked">
+            <!-- 1st level -->
+            
+            <li>
+                <a href="#" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+                     <span class="sr-only">Fechar Menu de Navegação</span>
+                     <i class="material-icons first md">&#xE5D2;</i> Menu
+                     <i class="material-icons last md">&#xE5CD;</i>
+                </a>
+            </li>
+            <li>
+             <form role="search">
+              <div class="form-group">
+               <div class="input-group">
+                <input type="text" class="form-control" placeholder="Buscar no SIGA" id="irbusca" name="irbusca" accesskey="2">
+                 <div class="input-group-btn">
+                  <button type="submit" class="btn btn-primary"><i class="material-icons single md">&#xE8B6;</i><span class="sr-only">Buscar</span></button>
+                 </div>
+               </div>
+              </div>
+             </form>
+            </li>
+                <li>
+                    <a href="../documentacao/index.html">Biblioteca de Componentes</a>
+                </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Abrir ou Fechar SubMenu</span> Registro de Preço <span class="caret last"></span></a>
+
+                        <ul class="dropdown-menu">
+                            <!-- 2nd level -->
+                            <!--with items group-->
+                                <li>
+                                    <a href="#">
+                                    PLS 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    Ata 
+                                    </a>
+                                </li>
+                                <li class="sr-only">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Fechar Submenu</a>
+                                </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Abrir ou Fechar SubMenu</span> Requisição <span class="caret last"></span></a>
+                        <ul class="dropdown-menu">
+                            <!-- 2nd level -->
+                            <!--with items group-->
+                                <li>
+                                    <a href="#">
+                                    Carrinho de Compras 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    Consulta de itens 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    Requisitar 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    Acompanhar Solicitação de Catalogação 
+                                    </a>
+                                </li>
+                                <li class="sr-only">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Fechar Submenu</a>
+                                </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Abrir ou Fechar SubMenu</span> Processo <span class="caret last"></span></a>
+                        <ul class="dropdown-menu">
+                            <!-- 2nd level -->
+                                <li>
+                                    <a href="../processo/carrinho-compra/index.html">
+                                    Definição 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    Planejamento 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    Pesquisa de Mercado 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    PED 
+                                    </a>
+                                </li>
+                                <li class="sr-only">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Fechar Submenu</a>
+                                </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Licitação</a>
+                    </li>
+                    <li>
+                        <a href="#">Contratação</a>
+                    </li>
+                    <li>
+                        <a href="#">Recebimento</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Abrir ou Fechar SubMenu</span>
+                        Almoxarifado <span class="caret last"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- 2nd level -->
+                               <ul class="dropdown-group">
+                                    <li class="dropdown-header">Operação</li>
+                                    <li>
+                                        <a href="#">
+                                        Armazenamento 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        Atendimento 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        Ressuprimento 
+                                        </a>
+                                    </li>
+                               </ul><!--/ .dropdown-group-->
+                               <ul class="dropdown-group">
+                                    <li class="dropdown-header">Gestão</li>
+                                    <li>
+                                        <a href="#">
+                                        Disponibilidade 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        Inventário 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        Relatórios 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        Parametrizar Itens 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        Parametrizar Almoxarifado 
+                                        </a>
+                                    </li>
+                               </ul> <!--/ .dropdown-group-->
+                                <li class="sr-only">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Fechar Submenu</a>
+                                </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Gestão</a>
+                    </li>
+                    <li>
+                        <a href="#">Minutas</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Abrir ou Fechar SubMenu</span>
+                        Administração <span class="caret last"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- 2nd level -->
+                                  
+                                   <li class="dropdown sub-dropdown">
+                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only">Abrir ou Fechar SubMenu</span>
+                                    Parâmetro <span class="caret last"></span>
+                                    </a>
+                                   <ul class="dropdown-menu">
+                                         <li>
+                                           <a href="#">
+                                           Sistema 
+                                           </a>
+                                         </li>
+                                         <li>
+                                           <a href="#">
+                                           Compras 
+                                           </a>
+                                         </li>
+                                       </ul><!--/ .dropdown-menu-->
+                                   </li>
+                                   
+                                <li class="sr-only">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Fechar Submenu</a>
+                                </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Cadastro</a>
+                    </li>
+        </ul>        <a href="#fimnavegacao" id="fimnavegacao" name="fimnavegacao" class="sr-only">Fim da Navegação</a>
+
+    </div><!--/.nav-collapse -->
+</nav></div>
+           <div class="col-xs-8">
+               <h2 class="page-title" role="heading">Pregão Eletrônico SEPLAG-0001/2014-Automóveis</h2>
+           </div>
+           <div class="col-sm-2">
+               <span class="userbar userbar-nav">
+                   <a href="#" class="btn btn-default" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Olá, Victor Santos<i class="material-icons lg first">&#xE853;</i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Ajuda</a></li>
+                        <li><a href="#">Suporte</a></li>
+                        <li><a href="#">Sair</a></li>
+                    </ul>
+               </span>
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+  
+
+    <div class="support-nav">
+                    
+          
+        <div class="row">
+    <div class="col-xs-6 col-md-2 col-sm-2">
+        <a href="javascript:history.back(1)" class="btn"><i class="material-icons first md">arrow_back</i>Voltar</a>
+    </div>
+
+    <div class="hidden-xs col-md-10">
+       <ol class="breadcrumb">
+<li><a href="../../"><i class="material-icons md">&#xE88A;</i></a></li>
+
+
+
+
+    
+    
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <li >
+                
+                <a href="/licitacao/">Licitação</a>            </li>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <li >
+                
+                <a href="/licitacao/detalhamento/">Licitação 0103/2013</a>            </li>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    
+    
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+</ol>
+
+    </div>
+
+</div>
+           
+    </div>
+    <div class="content">
+        <div class="row">
+
+        <div class="col-lg-offset-2 col-md-offset-3 col-lg-8 col-md-6">
+  <div class="row">
+   <form action="#" class="form-group detalhamento">
+
+    <div class="col-lg-12">
+       <h3 class="view-title" role="heading">Recurso</h3>
+    </div>
+  
+   <div class="col-lg-12">
+   
+         <div class="row">
+             <div class="col-lg-3">
+              <form class="form-group" action="#">
+                 <div class="input-group">
+                  <label for="selecao">Exibir Item</label>
+                   <select class="form-control" name="selecao" id="selecao">
+                       <option selected disabled>Selecione</option>
+                       <option value="01">01</option>
+                       <option value="02">02</option>
+                       <option value="03">03</option>
+                   </select>
+                 </div><!-- /input-group -->
+              </form>
+             </div>
+             
+             <div class="col-md-3">
+                 <div class="btn btn-default fix-valign fix-xxl">
+                     <i class="material-icons md">&#xE8F4;</i> Exibir descrição resumida
+                 </div>
+             </div>
+             
+             <div class="col-lg-3 col-lg-offset-3">
+                <p class="h2 text-right"><small>Tempo restante</small> 00:00:00</p>
+             </div>
+         </div>
+    
+<div class="panel panel-default panel-select">
+     <header class="panel-heading" role="heading">
+         <span class="icon-span first"><i class="material-icons sm">&#xE835;</i></span>
+           <a href="#lote1" data-toggle="collapse" aria-expanded="true">
+           <h4 class="panel-title">Lote 1 (Critério de Julgamento)</h4> <span class="caret last"></span>
+           </a>
+           <a href="#detalhaLote" class="btn btn-default btn-sm" data-toggle="modal" data-target="#detalhaLote"><i class="material-icons md">&#xE8A0;</i> Detalhar</a>
+         <span class="h4 panel-title pull-right">Exclusivo para ME/EPP | <strong>Status</strong>: Em prazo Recursal</span>
+    </header>
+ 
+    <div id="lote3" class="form-group panel-body collapse in" aria-expanded="true">
+         
+      <div class="row data-table">
+       <div class="well well-sm">
+       <div class="row">
+        <div class="col-lg-6"><span class="h5"><strong>Preço Estimado</strong>: R$999.999,99</span></div>
+        <div class="col-lg-6"><span class="h5"><strong>Preço Estimado para Contratação</strong>: R$999.999,99</span></div>
+        </div>
+       </div>
+        <table class="table listagem-curta table-bordered table-striped responsive" cellspacing="0" width="100%" summary="Descrição do Item: Caneta Esferográfica, Material Corpo: Plástico Rígido, Cor Corpo: Prata, Formato do Corpo Redondo, Tipo Escrita: Média, Cor Escrita: Azul, Carga: Removível, Material. Complemento do Item: Teste Acondicionamento Cx 10">
+
+           <thead><!--Cabeçalho-->
+              <tr><!-- Primeira Linha -->
+                
+                <th id="coluna2">
+                  Proponente
+                  <i class="material-icons unordered">&#xE8D5;</i>
+                  <i class="material-icons ordered">&#xE037;</i>
+                </th>
+                <th id="coluna3">
+                  Proposta
+                  <i class="material-icons unordered">&#xE8D5;</i>
+                  <i class="material-icons ordered">&#xE037;</i>
+                </th>
+                <th id="coluna4">
+                  Lance
+                  <i class="material-icons unordered">&#xE8D5;</i>
+                  <i class="material-icons ordered">&#xE037;</i>
+                </th>
+                <th id="coluna5">
+                  Negociado
+                  <i class="material-icons unordered">&#xE8D5;</i>
+                  <i class="material-icons ordered">&#xE037;</i>
+                </th>
+                <th id="coluna6">
+                  Equalizado
+                  <i class="material-icons unordered">&#xE8D5;</i>
+                  <i class="material-icons ordered">&#xE037;</i>
+                </th>
+
+                <th id="coluna7">
+                  <i class="material-icons">&#xE227;</i>
+                </th>
+                <th id="coluna8">
+                  <i class="material-icons">&#xE63E;</i>
+                </th>
+                <th id="coluna9">
+                  <i class="material-icons">&#xE227;</i>
+                </th>
+                <th id="coluna10">
+                 <i class="material-icons">&#xE227;</i>
+                </th>
+              </tr>
+            </thead>
+
+            <tbody><!--Corpo-->
+             <tr>
+              
+              <td headers="linha1 coluna2">Nome - CPF/CNPJ - <i class="material-icons icon-status-blue">&#xE86C;</i> <i class="material-icons icon-status-yellow">&#xE000;</i> <i class="material-icons">&#xE8D0;</i> <i class="material-icons">&#xE566;</i> </td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna3">999.999.999,99</td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4">999.999.999,99</td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna5">999.999.999,99</td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna6">999.999.999,99</td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna7"><i class="material-icons icon-online">&#xE86C;</i></td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna8"><i class="material-icons icon-online">&#xE86C;</i></td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna9"><i class="material-icons icon-online">&#xE86C;</i></td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna10"><i class="material-icons icon-online">&#xE86C;</i></td> <!-- Demais Colunas -->
+             </tr>
+
+             <tr>
+              
+              <td headers="linha1 coluna4">Nome - CPF/CNPJ - <i class="material-icons icon-status-blue">&#xE86C;</i> <i class="material-icons icon-status-yellow">&#xE000;</i> <i class="material-icons">&#xE8D0;</i> <i class="material-icons">&#xE566;</i> </td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4">999.999.999,99</td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4">999.999.999,99</td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4">999.999.999,99</td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4">999.999.999,99</td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4"><i class="material-icons icon-online">&#xE86C;</i></td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4"><i class="material-icons icon-online">&#xE86C;</i></td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4"><i class="material-icons icon-online">&#xE86C;</i></td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4"><i class="material-icons icon-online">&#xE86C;</i></td> <!-- Demais Colunas -->
+             </tr>
+
+             <tr>
+              
+              <td headers="linha1 coluna4">Nome - CPF/CNPJ - <i class="material-icons icon-status-blue">&#xE86C;</i> <i class="material-icons icon-status-yellow">&#xE000;</i> <i class="material-icons">&#xE8D0;</i> <i class="material-icons">&#xE566;</i> </td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4">999.999.999,99</td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4">999.999.999,99</td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4">999.999.999,99</td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4">999.999.999,99</td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4"><i class="material-icons icon-online">&#xE86C;</i></td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4"><i class="material-icons icon-online">&#xE86C;</i></td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4"><i class="material-icons icon-online">&#xE86C;</i></td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4"><i class="material-icons icon-online">&#xE86C;</i></td> <!-- Demais Colunas -->
+             </tr>
+
+             <tr>
+              
+              <td headers="linha1 coluna4">Nome - CPF/CNPJ - <i class="material-icons icon-status-blue">&#xE86C;</i> <i class="material-icons icon-status-yellow">&#xE000;</i> <i class="material-icons">&#xE8D0;</i> <i class="material-icons">&#xE566;</i> </td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4">999.999.999,99</td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4">999.999.999,99</td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4">999.999.999,99</td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4">999.999.999,99</td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4"><i class="material-icons icon-online">&#xE86C;</i></td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4"><i class="material-icons icon-online">&#xE86C;</i></td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4"><i class="material-icons icon-online">&#xE86C;</i></td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4"><i class="material-icons icon-online">&#xE86C;</i></td> <!-- Demais Colunas -->
+             </tr>
+
+             <tr>
+              
+              <td headers="linha1 coluna4">Nome - CPF/CNPJ - <i class="material-icons icon-status-blue">&#xE86C;</i> <i class="material-icons icon-status-yellow">&#xE000;</i> <i class="material-icons">&#xE8D0;</i> <i class="material-icons">&#xE566;</i> </td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4">999.999.999,99</td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4">999.999.999,99</td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4">999.999.999,99</td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4">999.999.999,99</td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4"><i class="material-icons icon-online">&#xE86C;</i></td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4"><i class="material-icons icon-online">&#xE86C;</i></td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4"><i class="material-icons icon-online">&#xE86C;</i></td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4"><i class="material-icons icon-online">&#xE86C;</i></td> <!-- Demais Colunas -->
+             </tr>
+
+             <tr>
+              
+              <td headers="linha1 coluna4">Nome - CPF/CNPJ - <i class="material-icons icon-status-blue">&#xE86C;</i> <i class="material-icons icon-status-yellow">&#xE000;</i> <i class="material-icons">&#xE8D0;</i> <i class="material-icons">&#xE566;</i> </td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4">999.999.999,99</td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4">999.999.999,99</td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4">999.999.999,99</td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4">999.999.999,99</td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4"><i class="material-icons icon-online">&#xE86C;</i></td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4"><i class="material-icons icon-online">&#xE86C;</i></td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4"><i class="material-icons icon-online">&#xE86C;</i></td> <!-- Demais Colunas -->
+              <td headers="linha1 coluna4"><i class="material-icons icon-online">&#xE86C;</i></td> <!-- Demais Colunas -->
+             </tr>
+
+            </tbody>
+
+        </table>
+      </div>
+      
+    </div>
+  </div>
+    
+    <div class="panel panel-default">
+      <header class="panel-heading" role="heading">
+        <h4 class="panel-title">Mensagens</h4>
+      </header>
+  
+      <form id="mensagens" class="form-group panel-body" action="#">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="input-group">
+                  <label for="historico">Histórico</label>
+                   <div class="form-control chat chat-history" name="historico" id="historico">
+                       <div class="chat chat-msg">
+                           <div class="my-msg col-md-8">Lorem Ipsum Curabitur a felis in <br> <small class="pull-right">15:55:27</small> <span class="caret"></span></div>
+                           <div class="other-msg col-md-8"><strong>Outro Usuário:</strong><br>Lorem Ipsum Curabitur a felis in <br> <small class="pull-right">15:55:27</small> <span class="caret"></span></div>
+                       </div>
+                   </div>
+                 </div><!-- /input-group -->
+            </div>
+            <div class="col-md-12">
+                <div class="input-group">
+                  <label for="mensagem">Mensagem</label>
+                   <textarea class="form-control chat chat-write" name="mensagem" id="mensagem" placeholder="Digite a sua mensagem"></textarea>
+                 </div><!-- /input-group -->
+            </div>
+            <div class="col-md-6">
+                <button type="reset" class="btn btn-default"><i class="material-icons md first">&#xE14C;</i>Limpar</button>
+                <a href="#chatHistory" class="btn btn-default" data-toggle="modal" data-target="#chatHistory"><i class="material-icons md first">&#xE889;</i>Histórico do Chat</a>
+            </div>
+               <div class="col-lg-2">
+                   <label class="pull-right">Enviar para:</label>
+               </div>
+                <div class="col-lg-4">
+                  <div class="input-group">
+                    <select class="form-control" name="selecao" id="selecao">
+                       <option selected>Todos</option>
+                       <option value="01">01</option>
+                       <option value="02">02</option>
+                       <option value="03">03</option>
+                   </select>
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-primary pull-right chat-send disabled">Enviar <i class="material-icons md last">&#xE163;</i></button>
+                    </span>
+                  </div><!-- /input-group -->
+                </div><!-- /.col-lg-6 -->
+        </div>
+              </form>
+      </div>
+
+    </div><!-- /.col-md-6-->
+    
+  </form>
+  </div> <!-- /.row-->
+</div> <!-- /. col-md-offset-2.col-md-8-->
+
+<div class="viewbar col-lg-2 col-md-3">
+<div class="viewbar-header">
+    <button type="button" class="btn viewbar-toggle collapsed" data-toggle="collapse" data-target="#viewbar" aria-expanded="false" aria-controls="viewbar">
+        <span class="sr-only-right">Expandir Menu de visualizações</span>
+        <i class="material-icons first">&#xE5D4;</i> visualizações
+    </button>
+</div>    <div id="viewbar" class="navbar-collapse collapse" aria-expanded="false" role="menu">
+            <a href="#irvisualizacao" id="irvisualizacao" name="irvisualizacao" class="sr-only" accesskey="5">Início da Barra de Visualizações</a>
+        <ul class="nav navbar-nav nav-stacked" role="menu">
+   <li>
+       <button type="button" class="btn viewbar-toggle collapsed" data-toggle="collapse" data-target="#viewbar" aria-expanded="false" aria-controls="viewbar">
+            <span class="sr-only-right">Expandir Menu de Visualizações</span>
+            <i class="material-icons first">&#xE5D4;</i> Visualizações
+        </button>
+   </li>
+            <li><a href="#">Dados Gerais</a></li>
+            <li><a href="#">Documentos</a></li>
+            <li><a href="#">Lances</a></li>
+            <li><a href="#">Classificação de Lances</a></li>
+            <li><a href="#">Negociação</a></li>
+            <li><a href="#">Equalização</a></li>
+            <li><a href="#">Habilitação</a></li>
+            <li><a href="#">Vencedor</a></li>
+            <li><a href="#">Recurso</a></li>
+            <li><a href="#">Adjudicação</a></li>
+            <li><a href="#">Homologação</a></li>
+            <li><a href="#">Histórico</a></li>
+            
+        </ul>
+            <a href="#fimvisualizacao" id="fimvisualizacao" name="fimvisualizacao" class="sr-only">Fim da Barra de Visualizações</a>
+
+    </div><!--/.nav-collapse -->
+</div>
+
+       <a href="#fimconteudo" id="fimconteudo" name="fimconteudo" class="sr-only">Fim do conteúdo</a>
+    </div>
+<div class="row">
+<div class="actionbar col-lg-2 col-md-3">
+        <div class="actionbar-header">
+    <button type="button" class="btn actionbar-toggle collapsed" data-toggle="collapse" data-target="#actionbar" aria-expanded="false" aria-controls="actionbar">
+        <span class="sr-only-right">Expandir Menu de Ações</span>
+        <i class="material-icons first">&#xE5D4;</i> Ações
+    </button>
+</div>
+<div id="actionbar" class="navbar-collapse collapse" aria-expanded="false" role="menu">
+    <a href="#iracoes" id="iracoes" name="iracoes" class="sr-only-right" accesskey="4">Início da Barra de Ações</a>
+<ul class="nav navbar-nav nav-stacked" role="menu">
+   <li>
+       <button type="button" class="btn actionbar-toggle collapsed" data-toggle="collapse" data-target="#actionbar" aria-expanded="false" aria-controls="actionbar">
+            <span class="sr-only-right">Expandir Menu de Ações</span>
+            <i class="material-icons first">&#xE5D4;</i> Ações
+        </button>
+   </li>
+<li><a href="#"><i class="material-icons first md">&#xE8AF;</i> Negociar</a></li>
+<li><a href="#"><i class="material-icons first md">&#xE038;</i> Abrir Negociação</a></li>
+<li><a href="#"><i class="material-icons first md">&#xE047;</i> Fechar Negociação</a></li>
+<li><a href="#"><i class="material-icons first md">&#xE5D5;</i> Reabrir Item/Lote</a></li>
+<li><a href="#"><i class="material-icons first md">&#xE3AD;</i> Fracassar</a></li>
+<li><a href="#"><i class="material-icons first md">&#xE8FF;</i> Atribuir Cota</a></li>
+<li><a href="#" data-toggle="modal" data-target="#anularRevogar"><i class="material-icons first md">&#xE7FE;</i> Solicitar Anulação/Revogação</a></li>
+<li><a href="#nogo"><i class="material-icons first md">&#xE5C9;</i> Cancelar Solicitação Anulação/Revogação</a></li>
+
+</ul>
+    <a href="#fimacoes" id="fimacoes" name="fimacoes" class="sr-only-right">Fim da Barra de Ações</a>
+
+</div><!--/.nav-collapse -->
+
+</div>
+
+
+</div>
+    <!-- Modal -->
+<div class="modal fade" id="chatHistory" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="material-icons">&#xE5CD;</i></button>
+        <h4 class="modal-title" id="myModalLabel">Histórico do Chat</h4>
+      </div>
+      <div class="modal-body">
+        
+       <div class="row data-table">
+           <div class="col-lg-12">
+<table class="table listagem-dados table-bordered table-striped responsive" cellspacing="0" width="100%" summary="Histórico do Chat: Data, Hora e Descrição">
+
+       <thead><!--Cabeçalho-->
+          <tr><!-- Primeira Linha -->
+            <th id="coluna2">
+              Data e Hora
+              <i class="material-icons unordered">&#xE8D5;</i>
+              <i class="material-icons ordered">&#xE037;</i>
+            </th>
+            <th id="coluna3">
+              Descrição
+              <i class="material-icons unordered">&#xE8D5;</i>
+              <i class="material-icons ordered">&#xE037;</i>
+            </th>
+          </tr>
+        </thead>
+
+        <tbody><!--Corpo-->
+         <tr>
+          <td headers="linha1 coluna9">31/01/2015&nbsp;-&nbsp;17:59</td> <!-- Demais Colunas -->
+          <td headers="linha1 coluna10">Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Vestibulum volutpat pretium libero. Duis lobortis massa imperdiet quam. Maecenas vestibulum mollis diam. Vivamus quis mi.</td> <!-- Demais Colunas -->
+         </tr>
+
+         <tr>
+          <td headers="linha1 coluna4">31/01/2015&nbsp;-&nbsp;17:59</td> <!-- Demais Colunas -->
+          <td headers="linha1 coluna4">Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Vestibulum volutpat pretium libero. Duis lobortis massa imperdiet quam. Maecenas vestibulum mollis diam. Vivamus quis mi.</td> <!-- Demais Colunas -->
+         </tr>
+
+         <tr>
+          <td headers="linha1 coluna4">31/01/2015&nbsp;-&nbsp;17:59</td> <!-- Demais Colunas -->
+          <td headers="linha1 coluna4">Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Vestibulum volutpat pretium libero. Duis lobortis massa imperdiet quam. Maecenas vestibulum mollis diam. Vivamus quis mi.</td> <!-- Demais Colunas -->
+         </tr>
+
+         <tr>
+          <td headers="linha1 coluna4">31/01/2015&nbsp;-&nbsp;17:59</td> <!-- Demais Colunas -->
+          <td headers="linha1 coluna4">Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Vestibulum volutpat pretium libero. Duis lobortis massa imperdiet quam. Maecenas vestibulum mollis diam. Vivamus quis mi.</td> <!-- Demais Colunas -->
+         </tr>
+
+         <tr>
+          <td headers="linha1 coluna4">31/01/2015&nbsp;-&nbsp;17:59</td> <!-- Demais Colunas -->
+          <td headers="linha1 coluna4">Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Vestibulum volutpat pretium libero. Duis lobortis massa imperdiet quam. Maecenas vestibulum mollis diam. Vivamus quis mi.</td> <!-- Demais Colunas -->
+         </tr>
+
+         <tr>
+          <td headers="linha1 coluna4">31/01/2015&nbsp;-&nbsp;17:59</td> <!-- Demais Colunas -->
+          <td headers="linha1 coluna4">Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Vestibulum volutpat pretium libero. Duis lobortis massa imperdiet quam. Maecenas vestibulum mollis diam. Vivamus quis mi.</td> <!-- Demais Colunas -->
+         </tr>
+
+        </tbody>
+
+    </table>
+           </div>
+       </div>
+          
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="material-icons first md">&#xE5CD;</i>Fechar</button>
+        <button type="button" class="btn btn-primary"><i class="material-icons first md">&#xE8AD;</i>Imprimir</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="anularRevogar" tabindex="-1" role="dialog" aria-labelledby="solicitarAnulacaoRevogacao">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="material-icons">&#xE5CD;</i></button>
+        <h4 class="modal-title" id="solicitarAnulacaoRevogacao">Solicitar Anulação/Revogação</h4>
+      </div>
+      <div class="modal-body">
+       <form class="form-group" action="#">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="input-group required">
+                  <label for="selecao">Lista de Usuários <i class="material-icons required last">&#xE160;</i></label>
+                  <div class="alert alert-warning alert-sm" role="alert"><i class="material-icons md first">&#xE000;</i> Mensagem de erro</div>
+                  <select class="form-control" name="selecao" id="selecao" required>
+                       <option selected disabled>Todos</option>
+                       <option value="01">01</option>
+                       <option value="02">02</option>
+                       <option value="03">03</option>
+                   </select>
+                 </div><!-- /input-group -->
+            </div>
+            <div class="col-md-12">
+                <fieldset class="required" required>
+                <legend>Tipo de Solicitação</legend>
+                 <div class="alert alert-warning alert-sm" role="alert">
+                  <i class="material-icons">&#xE001;</i> É necessário escolher ao menos uma opção
+                 </div>
+                 <div class="input-group"><!-- .input-group -->
+                  <div class="radiobutton-inline col-lg-6">
+                   <input type="radio" id="relatedCheck01" name="relatedCheck01" value="relatedCheck01">
+                   <label for="relatedCheck01">
+                    Anulação
+                   </label>
+                  </div>
+                  <div class="radiobutton-inline col-lg-6">
+                   <input type="radio" id="relatedCheck02" name="relatedCheck01" value="relatedCheck02">
+                   <label for="relatedCheck02">
+                    Revogação
+                   </label>
+                  </div>
+                 </div><!-- /.input-group -->
+                </fieldset>
+            </div>
+            <div class="col-md-12">
+                <div class="input-group required">
+                  <label for="numero">Observação <i class="material-icons required last">&#xE160;</i></label>
+                    <textarea class="form-control sm" name="Observação" id="Observação" placeholder="Observação" required></textarea>
+                 </div><!-- /input-group -->
+            </div>
+        </div>
+          </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="material-icons first md">&#xE5CD;</i>Fechar</button>
+        
+        <button type="button" class="btn btn-primary"><i class="material-icons first md">&#xE163;</i>Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="detalhaLote" tabindex="-1" role="dialog" aria-labelledby="detalhamentoLote">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="material-icons">&#xE5CD;</i></button>
+        <h4 class="modal-title" id="detalhamentoLote">Lista de Itens Lote 1</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row data-table">
+           <div class="col-md-12">
+               <form class="form-group panel-body" action="#">
+                 <div class="input-group">
+                  <label for="proponentes">Proponentes</label>
+                   <select class="form-control" name="proponentes" id="proponentes">
+                     <option selected disabled>Todos</option>
+                     <option value="01">01</option>
+                     <option value="02">02</option>
+                     <option value="03">03</option>
+                   </select>
+                 </div><!-- /input-group -->
+               </form>
+           </div>
+            <div class="col-lg-12">
+                <table class="table listagem-curta table-bordered table-striped responsive" cellspacing="0" width="100%" summary="Proponente 1">
+                   <caption>Proponente 1</caption>
+
+                   <thead><!--Cabeçalho-->
+                      <tr><!-- Primeira Linha -->
+
+                        <th id="coluna2">
+                          Descrição do Item
+                          <i class="material-icons unordered">&#xE8D5;</i>
+                          <i class="material-icons ordered">&#xE037;</i>
+                        </th>
+                        <th id="coluna3">
+                          Quantidade
+                          <i class="material-icons unordered">&#xE8D5;</i>
+                          <i class="material-icons ordered">&#xE037;</i>
+                        </th>
+                        <th id="coluna4">
+                          Valor da Proposta Unitário
+                          <i class="material-icons unordered">&#xE8D5;</i>
+                          <i class="material-icons ordered">&#xE037;</i>
+                        </th>
+                        <th id="coluna5">
+                          Valor Total da Proposta
+                          <i class="material-icons unordered">&#xE8D5;</i>
+                          <i class="material-icons ordered">&#xE037;</i>
+                        </th>
+                        <th id="coluna6">
+                          Marca
+                          <i class="material-icons unordered">&#xE8D5;</i>
+                          <i class="material-icons ordered">&#xE037;</i>
+                        </th>
+
+                        <th id="coluna7">
+                         Modelo
+                          <i class="material-icons unordered">&#xE8D5;</i>
+                          <i class="material-icons ordered">&#xE037;</i>
+                        </th>
+                      </tr>
+                    </thead>
+
+                    <tbody><!--Corpo-->
+                     <tr>
+
+                      <td headers="linha1 coluna2">Caneta Esferográfica, Material Corpo: Plástico Rígido, Cor Corpo: Prata, Formato do Corpo Redondo, Tipo Escrita: Média, Cor Escrita: Azul, Carga: Removível, Material</td> <!-- Demais Colunas -->
+                      <td headers="linha1 coluna3">100000</td> <!-- Demais Colunas -->
+                      <td headers="linha1 coluna4">999.999.999,99</td> <!-- Demais Colunas -->
+                      <td headers="linha1 coluna5">999.999.999,99</td> <!-- Demais Colunas -->
+                      <td headers="linha1 coluna6">Xxxxxxx xxxxxx</td> <!-- Demais Colunas -->
+                      <td headers="linha1 coluna6">Xxxxxx</td> <!-- Demais Colunas -->
+                     </tr>
+
+                     <tr>
+
+                      <td headers="linha1 coluna4">Caneta Esferográfica, Material Corpo: Plástico Rígido, Cor Corpo: Prata, Formato do Corpo Redondo, Tipo Escrita: Média, Cor Escrita: Azul, Carga: Removível, Material</td> <!-- Demais Colunas -->
+                      <td headers="linha1 coluna4">100000</td> <!-- Demais Colunas -->
+                      <td headers="linha1 coluna4">999.999.999,99</td> <!-- Demais Colunas -->
+                      <td headers="linha1 coluna4">999.999.999,99</td> <!-- Demais Colunas -->
+                      <td headers="linha1 coluna4">Xxxxxxx xxxxxx</td> <!-- Demais Colunas -->
+                      <td headers="linha1 coluna4">Xxxxxx</td> <!-- Demais Colunas -->
+                     </tr>
+
+                     <tr>
+
+                      <td headers="linha1 coluna4">Caneta Esferográfica, Material Corpo: Plástico Rígido, Cor Corpo: Prata, Formato do Corpo Redondo, Tipo Escrita: Média, Cor Escrita: Azul, Carga: Removível, Material</td> <!-- Demais Colunas -->
+                      <td headers="linha1 coluna4">100000</td> <!-- Demais Colunas -->
+                      <td headers="linha1 coluna4">999.999.999,99</td> <!-- Demais Colunas -->
+                      <td headers="linha1 coluna4">999.999.999,99</td> <!-- Demais Colunas -->
+                      <td headers="linha1 coluna4">Xxxxxxx xxxxxx</td> <!-- Demais Colunas -->
+                      <td headers="linha1 coluna4">Xxxxxx</td> <!-- Demais Colunas -->
+                     </tr>
+
+                     <tr>
+
+                      <td headers="linha1 coluna4">Caneta Esferográfica, Material Corpo: Plástico Rígido, Cor Corpo: Prata, Formato do Corpo Redondo, Tipo Escrita: Média, Cor Escrita: Azul, Carga: Removível, Material</td> <!-- Demais Colunas -->
+                      <td headers="linha1 coluna4">100000</td> <!-- Demais Colunas -->
+                      <td headers="linha1 coluna4">999.999.999,99</td> <!-- Demais Colunas -->
+                      <td headers="linha1 coluna4">999.999.999,99</td> <!-- Demais Colunas -->
+                      <td headers="linha1 coluna4">Xxxxxxx xxxxxx</td> <!-- Demais Colunas -->
+                      <td headers="linha1 coluna4">Xxxxxx</td> <!-- Demais Colunas -->
+                     </tr>
+
+                     <tr>
+
+                      <td headers="linha1 coluna4">Caneta Esferográfica, Material Corpo: Plástico Rígido, Cor Corpo: Prata, Formato do Corpo Redondo, Tipo Escrita: Média, Cor Escrita: Azul, Carga: Removível, Material</td> <!-- Demais Colunas -->
+                      <td headers="linha1 coluna4">100000</td> <!-- Demais Colunas -->
+                      <td headers="linha1 coluna4">999.999.999,99</td> <!-- Demais Colunas -->
+                      <td headers="linha1 coluna4">999.999.999,99</td> <!-- Demais Colunas -->
+                      <td headers="linha1 coluna4">Xxxxxxx xxxxxx</td> <!-- Demais Colunas -->
+                      <td headers="linha1 coluna4">Xxxxxx</td> <!-- Demais Colunas -->
+                     </tr>
+
+                     <tr>
+
+                      <td headers="linha1 coluna4">Caneta Esferográfica, Material Corpo: Plástico Rígido, Cor Corpo: Prata, Formato do Corpo Redondo, Tipo Escrita: Média, Cor Escrita: Azul, Carga: Removível, Material</td> <!-- Demais Colunas -->
+                      <td headers="linha1 coluna4">100000</td> <!-- Demais Colunas -->
+                      <td headers="linha1 coluna4">999.999.999,99</td> <!-- Demais Colunas -->
+                      <td headers="linha1 coluna4">999.999.999,99</td> <!-- Demais Colunas -->
+                      <td headers="linha1 coluna4">Xxxxxxx xxxxxx</td> <!-- Demais Colunas -->
+                      <td headers="linha1 coluna4">Xxxxxx</td> <!-- Demais Colunas -->
+                     </tr>
+
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="material-icons first md">&#xE5CD;</i>Fechar</button>
+        <button type="button" class="btn btn-primary"><i class="material-icons first md">&#xE8AD;</i> Imprimir</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>   
+    </div>
+
+    <footer class="container-fluid" role="contentinfo">
+   <div class="row">
+       <div class="col-sm-10">
+        <img src="../../images/logo_min_footer.png" alt="SIGA versão 2.0" class="pull-left">
+        <p>Copyright 2013 SIGA - Sistema Integrado de Gestão de Aquisições - Versão 2.0 - Todos os direitos reservados.</p>
+       </div>
+       <div class="col-sm-2">
+        <p class="pull-right"><a id="backToTop" href="#">Ir para o topo</a></p>
+       </div>
+   </div>
+</footer>
+
+
+  </body>
+
+</html>
