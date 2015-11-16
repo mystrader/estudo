@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>INTRANET - SEPLAG</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/pages/dashboard.css" rel="stylesheet">
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container"> 
+                   <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span
+                    class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span> </a>
+                    <a class="brand" href="index.html" ><img src="img/logo_seplag.png" alt="Logo SEPLAG-RJ"></a>
+      <div class="nav-collapse">
+        <ul class="nav pull-right">
+<!--
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
+                            class="icon-cog"></i> Configuraç <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="javascript:;">Configurações</a></li>
+              <li><a href="javascript:;">Ajuda</a></li>
+            </ul>
+          </li>
+-->
+ 
+
+  <li style="margin: 39px 23px 0 0"> <i class="icon-bell-alt" style="color: #777;font-size: 14px"><span class="label label-warning">3</span></i></li>
+          <li class="dropdown dropdown-user" ><a href="#" class="dropdown-toggle" data-toggle="dropdown" style="margin-top: 20px">
+            <img src="img/message_avatar1.png">&nbsp;&nbsp;Cláudia Uchôa <b class="caret"></b></a>
+                           
+            <ul class="dropdown-menu">               
+				<li><a href="javascript:;"><i class="icon-bell-alt"></i> Notificação <span class="label label-warning">3</span></a></li>
+              <li><a href="javascript:;"><i class="icon-user"></i> Perfil</a></li>
+              <li><a href="javascript:;"><i class="icon-signout"></i> Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      
+      </div>
+    <i class="fa fa-bell"></i>
+      <!--/.nav-collapse --> 
+    </div>
+    <!-- /container --> 
+  </div>
+  <!-- /navbar-inner --> 
+</div>
+<!-- /navbar -->
+<div class="subnavbar">
+  <div class="subnavbar-inner">
+    <div class="container">
+      <ul class="mainnav">
+        <li class="active"><a href="index.html"><i class="icon-dashboard"></i><span>Dashboard</span> </a> </li>
+        <li><a href="reports.html"><i class="icon-list-alt"></i><span>Reports</span> </a> </li>
+        <li><a href="guidely.html"><i class="icon-facetime-video"></i><span>App</span> </a></li>
+        <li><a href="charts.html"><i class="icon-bar-chart"></i><span>Gráficos</span> </a> </li>
+        <li><a href="shortcodes.html"><i class="icon-code"></i><span>Atalhos</span> </a> </li>
+        <li class="dropdown"><a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-long-arrow-down"></i><span>Drops</span> <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="icons.html">Icons</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="pricing.html">Pricing Plans</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Signup</a></li>
+            <li><a href="error.html">404</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- /container --> 
+  </div>
+  <!-- /subnavbar-inner --> 
+</div>
+<!-- /subnavbar -->
+
+
+	
+	<div class="breadcontainer">
+	<div class="container">
+	<div class="row">
+       <div class="span7">
+       	<ul class="bc">
+			<li><a href="" class="firstitem" style="color: #666; ">/ INICIAL</a></li>
+
+		</ul>
+       </div>
+        <div class="pull-right span4">
+            <form id="custom-search-form" class="form-search form-horizontal pull-right">
+                <div class="input-append ">
+                    <input type="text" class="search-query" placeholder="Procurar">
+                    <button type="submit" class="btn"><i class="icon-search"></i></button>
+                </div>
+            </form>
+        </div>
+	</div>
+</div>
+</div>
+	
+	
+	<div class="container">
+	
+	<div class="controls">              
+		<div class="alert alert-success">
+			<button type="button" class="close" data-dismiss="alert">×</button>
+			<strong>Parabéns!</strong> Você está em seu primeiro login, explore seu novo portal.
+		</div>
+	</div>
+	
+	</div>
+	
+
+<div class="main">
+  <div class="main-inner">
+    <div class="container">
+      
+      <div class="row">
+        <div class="span6">
+          <div class="widget widget-nopad">
+            <div class="widget-header"> <i class="icon-list-alt"></i>
+              <h3> Status</h3>
+            </div>
+            <!-- /widget-header -->
+            <div class="widget-content">
+              <div class="widget big-stats-container">
+                <div class="widget-content">
+					<h6 class="bigstats">Tela de Andamento em porcentagem das atividades de atividade registrada. Veja <a noref>aqui</a> o andamento geral. </h6>
+                  <div id="big_stats" class="cf">
+                    <div class="stat"> <i class="icon-anchor"></i> <span class="value">851</span> </div>
+                    <!-- .stat -->
+                    
+                    <div class="stat"> <i class="icon-thumbs-up-alt"></i> <span class="value">423</span> </div>
+                    <!-- .stat -->
+                    
+                    <div class="stat"> <i class="icon-twitter-sign"></i> <span class="value">922</span> </div>
+                    <!-- .stat -->
+                    
+                    <div class="stat"> <i class="icon-bullhorn"></i> <span class="value">25%</span> </div>
+                    <!-- .stat --> 
+                  </div>
+                </div>
+                <!-- /widget-content --> 
+                
+              </div>
+            </div>
+          </div>
+          <!-- /widget -->
+          <div class="widget widget-nopad">
+            <div class="widget-header"> <i class="icon-list-alt"></i>
+              <h3> Notícias Recentes</h3>
+            </div>
+            <!-- /widget-header -->
+            <div class="widget-content">
+              <div id='calendar'>
+              </div>
+            </div>
+            <!-- /widget-content --> 
+          </div>
+          <!-- /widget -->
+          <div class="widget">
+            <div class="widget-header"> <i class="icon-file"></i>
+              <h3> Mensagens</h3>
+            </div>
+            <!-- /widget-header -->
+            <div class="widget-content">
+              <ul class="messages_layout">
+                <li class="from_user left"> <a href="#" class="avatar"><img src="img/message_avatar1.png"/></a>
+                  <div class="message_wrap"> <span class="arrow"></span>
+                    <div class="info"> <a class="name">Cláudia Uchôa Cavalcanti</a> <span class="time">1 hora atrás</span>
+                      <div class="options_arrow">
+                        <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"> <i class=" icon-caret-down"></i> </a>
+                          <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
+                            <li><a href="#"><i class=" icon-share-alt icon-large"></i> Responder</a></li>
+                            <li><a href="#"><i class=" icon-trash icon-large"></i> Deletar</a></li>
+                            <li><a href="#"><i class=" icon-share icon-large"></i> Compartilhar</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text"> . It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </div>
+                  </div>
+                </li>
+                <li class="by_myself right"> <a href="#" class="avatar"><img src="img/message_avatar2.png"/></a>
+                  <div class="message_wrap"> <span class="arrow"></span>
+                    <div class="info"> <a class="name">Cláudio Andrade </a> <span class="time">4 horas ago</span>
+                      <div class="options_arrow">
+                        <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"> <i class=" icon-caret-down"></i> </a>
+                          <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
+                            <li><a href="#"><i class=" icon-share-alt icon-large"></i> Responder</a></li>
+                            <li><a href="#"><i class=" icon-trash icon-large"></i> Deletar</a></li>
+                            <li><a href="#"><i class=" icon-share icon-large"></i> Compartilhar</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text"> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.  </div>
+                  </div>
+                </li>
+                <li class="from_user left"> <a href="#" class="avatar"><img src="img/message_avatar1.png"/></a>
+                  <div class="message_wrap"> <span class="arrow"></span>
+                    <div class="info"> <a class="name">Celeste Holm </a> <span class="time">1 Day ago</span>
+                      <div class="options_arrow">
+                        <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"> <i class=" icon-caret-down"></i> </a>
+                          <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
+                            <li><a href="#"><i class=" icon-share-alt icon-large"></i> Reply</a></li>
+                            <li><a href="#"><i class=" icon-trash icon-large"></i> Delete</a></li>
+                            <li><a href="#"><i class=" icon-share icon-large"></i> Share</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text"> This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. </div>
+                  </div>
+                </li>
+       
+                
+                          <li class="by_myself right"> <a href="#" class="avatar"><img src="img/message_avatar2.png"/></a>
+                  <div class="message_wrap"> <span class="arrow"></span>
+                    <div class="info"> <a class="name">Cláudio Andrade </a> <span class="time">4 horas ago</span>
+                      <div class="options_arrow">
+                        <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#"> <i class=" icon-caret-down"></i> </a>
+                          <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
+                            <li><a href="#"><i class=" icon-share-alt icon-large"></i> Responder</a></li>
+                            <li><a href="#"><i class=" icon-trash icon-large"></i> Deletar</a></li>
+                            <li><a href="#"><i class=" icon-share icon-large"></i> Compartilhar</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text">This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham. </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- /widget-content --> 
+          </div>
+          <!-- /widget --> 
+        </div><!-- /span6 -->
+        
+        
+        <div class="span6">
+          <div class="widget">
+            <div class="widget-header"> <i class="icon-bookmark"></i>
+              <h3>Atalhos Importantes</h3>
+            </div>
+            <!-- /widget-header -->
+            <div class="widget-content">
+              <div class="shortcuts"> <a href="javascript:;" class="shortcut"><i class="shortcut-icon icon-list-alt"></i><span
+                                        class="shortcut-label">Apps</span> </a><a href="javascript:;" class="shortcut"><i
+                                            class="shortcut-icon icon-bookmark"></i><span class="shortcut-label">Bookmarks</span> </a><a href="javascript:;" class="shortcut"><i class="shortcut-icon icon-signal"></i> <span class="shortcut-label">Reports</span> </a><a href="javascript:;" class="shortcut"> <i class="shortcut-icon icon-comment"></i><span class="shortcut-label">Comments</span> </a><a href="javascript:;" class="shortcut"><i class="shortcut-icon icon-user"></i><span
+                                                class="shortcut-label">Usuário</span> </a><a href="javascript:;" class="shortcut"><i
+                                                    class="shortcut-icon icon-file"></i><span class="shortcut-label">Notas</span> </a><a href="javascript:;" class="shortcut"><i class="shortcut-icon icon-picture"></i> <span class="shortcut-label">Photos</span> </a><a href="javascript:;" class="shortcut"> <i class="shortcut-icon icon-tag"></i><span class="shortcut-label">Tags</span> </a> </div>
+              <!-- /shortcuts --> 
+            </div>
+            <!-- /widget-content --> 
+          </div>
+          <!-- /widget -->
+          <div class="widget">
+            <div class="widget-header"> <i class="icon-signal"></i>
+              <h3> Gráficos</h3>
+            </div>
+            <!-- /widget-header -->
+            <div class="widget-content">
+              <canvas id="area-chart" class="chart-holder" height="250" width="538"> </canvas>
+              <!-- /area-chart --> 
+            </div>
+            <!-- /widget-content --> 
+          </div>
+          
+          
+          
+          
+          
+          
+          <!-- /widget -->
+          <div class="widget widget-table action-table">
+            <div class="widget-header"> <i class="icon-th-list"></i>
+              <h3>Meus Arquivos</h3>
+            </div>
+            <!-- /widget-header -->
+            <div class="widget-content">
+              <table class="table table-striped table-bordered">
+                <thead>
+                  <tr>
+                    <th> Nome </th>
+                    <th> Caminho</th>
+                    <th class="td-actions"> </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td> Decreto_2479.txt </td>
+                    <td> http://intranet/arquivos/2015/08/ </td>
+                    <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
+                  </tr>
+                  <tr>
+                    <td> Decreto_546.txt  </td>
+                    <td> http://intranet/arquivos/2015/07/</td>
+                    <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
+                  </tr>
+                  <tr>
+                    <td> Decreto_7845.txt </td>
+                    <td> http://intranet/arquivos/2015/07 </td>
+                    <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
+                  </tr>
+                  <tr>
+                    <td> Decreto_6254.txt  </td>
+                    <td> http://intranet/arquivos/2015/07 </td>
+                    <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
+                  </tr>
+                  <tr>
+                    <td> Decreto_5456.txt </td>
+                    <td>  http://intranet/arquivos/2015/06 </td>
+                    <td class="td-actions"><a href="javascript:;" class="btn btn-small btn-success">
+                    <i class="btn-icon-only icon-ok"> </i></a><a href="javascript:;" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a></td>
+                  </tr>
+                
+                </tbody>
+              </table>
+            </div>
+            <!-- /widget-content --> 
+          </div>
+          <!-- /widget --> 
+          <div class="widget widget-nopad">
+            <div class="widget-header"> <i class="icon-list-alt"></i>
+              <h3> Notícias Recentes</h3>
+            </div>
+            <!-- /widget-header -->
+            <div class="widget-content">
+              <ul class="news-items">
+                <li>
+                  
+                  <div class="news-item-date"> <span class="news-item-day">29</span> <span class="news-item-month">Ago</span> </div>
+                  <div class="news-item-detail"> <a href="http://www.egrappler.com/thursday-roundup-40/" class="news-item-title" target="_blank">Exposição “Mitologias” se encerra nesta sexta-feira </a>
+                    <p class="news-item-preview"> Obras abordam o universo feminino e seus paradigmas de uma forma diferenciada. Evento é gratuito e ocorre na Fundação CEPERJ  </p>
+                  </div>
+                  
+                </li>
+                <li>
+                  
+                  <div class="news-item-date"> <span class="news-item-day">15</span> <span class="news-item-month">Nov</span> </div>
+                  <div class="news-item-detail"> <a href="http://www.egrappler.com/retina-ready-responsive-app-landing-page-website-template-app-landing/" class="news-item-title" target="_blank">Declaração dos Direitos do Homem e do Cidadão completa 226 anos</a>
+                    <p class="news-item-preview"> Documento define os direitos individuais dos homens como universais, sendo inspirado pelos pensamentos iluministas e pelos ideais de liberdade da Revolução Americana (1776)</p>
+                  </div>
+                  
+                </li>
+                <li>
+                  
+                  <div class="news-item-date"> <span class="news-item-day">29</span> <span class="news-item-month">Out</span> </div>
+                  <div class="news-item-detail"> <a href="http://www.egrappler.com/open-source-jquery-php-ajax-contact-form-templates-with-captcha-formify/" class="news-item-title" target="_blank">Votação para conselheiros tutelares ocorrerá em outubro </a>
+                    <p class="news-item-preview"> Todo cidadão maior de 16 anos e com título de eleitor pode participar do processo. Será a primeira vez que a eleição ocorrerá em data unificada em todo o país </p>
+                  </div>
+                    </li>
+                         <li>
+                  
+                             <div class="news-item-date"> <span class="news-item-day">15</span> <span class="news-item-month">Dez</span> </div>
+                  <div class="news-item-detail"> <a href="http://www.egrappler.com/open-source-jquery-php-ajax-contact-form-templates-with-captcha-formify/" class="news-item-title" target="_blank">Instituto do Cérebro conquista certificação internacional </a>
+                    <p class="news-item-preview"> Pós-graduação em Neurocirurgia ganhou reconhecimento da Federação Mundial de Sociedades de Neurocirurgia </p>
+                  </div>
+			   </li>
+				<li>
+                     <div class="news-item-date"> <span class="news-item-day">25</span> <span class="news-item-month">Dez</span> </div>
+                  <div class="news-item-detail"> <a href="http://www.egrappler.com/open-source-jquery-php-ajax-contact-form-templates-with-captcha-formify/" class="news-item-title" target="_blank">Conheça a Área do Participante da RJPrev  </a>
+                    <p class="news-item-preview">Serviço permite o acompanhamento diário da conta individual do participante e a fiscalização dos recursos investidos</p>
+                  </div>
+                    </li>
+                  
+                </li>
+              </ul>
+            </div>
+            <!-- /widget-content --> 
+          </div>
+          <!-- /widget -->
+        </div>
+        <!-- /span6 --> 
+      </div>
+      <!-- /row --> 
+    </div>
+    <!-- /container --> 
+  </div>
+  <!-- /main-inner --> 
+</div>
+<!-- /main -->
+<div class="extra">
+  <div class="extra-inner">
+    <div class="container">
+      <div class="row">
+                    <div class="span3">
+                        <h4>
+                            INSTITUCIONAL</h4>
+                        <ul>
+                            <li><a href="javascript:;">Vídeos</a></li>
+                            <li><a href="javascript:;">Imagem</a></li>
+                            <li><a href="javascript:;">Áudio</a></li>
+                            <li><a href="javascript:;">Públicações</a></li>
+                        </ul>
+                    </div>
+                    <!-- /span3 -->
+                    <div class="span3">
+                        <h4>
+                            CONTEÚDO</h4>
+                        <ul>
+                            <li><a href="javascript:;">Notícia</a></li>
+                            <li><a href="javascript:;">Conhecimento</a></li>
+                            <li><a href="javascript:;">Conteúdo</a></li>
+                            <li><a href="javascript:;">Feedback</a></li>
+                        </ul>
+                    </div>
+                    <!-- /span3 -->
+                    <div class="span3">
+                        <h4>
+                            FERRAMENTAS</h4>
+                        <ul>
+                            <li><a href="javascript:;">Gestão de Avisos</a></li>
+                            <li><a href="javascript:;">Tarefas Reuniões</a></li>
+                            <li><a href="javascript:;">Enquetes</a></li>
+                        </ul>
+                    </div>
+                    <!-- /span3 -->
+                    <div class="span3">                       
+                        <ul>
+                            <li><img src="images/logo_governorj.png" alt=""></li>
+                            <li><a noref> Mapa do Site</a></li>                            
+                        </ul><br />
+		<ul>
+			<li><h4>CONTATO</h4></li>
+         	<li>(21) 2332-7059</li>
+         	<li>(21) 2332-6994</li>
+         </ul>
+     
+                        
+
+
+
+                         
+                    </div>
+                    <!-- /span3 -->
+                </div>
+      <!-- /row --> 
+    </div>
+    <!-- /container --> 
+  </div>
+  <!-- /extra-inner --> 
+</div>
+<!-- /extra -->
+<div class="footer">
+  <div class="footer-inner">
+    <div class="container">
+      <div class="row">
+        <div class="span12"> &copy; 2013 <a href="http://www.servidor.rj.gov.br/portal-web/index">SECRETARIA DE ESTADO DE PLANEJAMENTO E GESTÃO - CNPJ:42.498.634/0001-66 - Av. Erasmo Braga, nº118 Centro, Rio de Janeiro - RJ - CEP 20020-000</a>. </div>
+        <!-- /span12 --> 
+      </div>
+      <!-- /row --> 
+    </div>
+    <!-- /container --> 
+  </div>
+  <!-- /footer-inner --> 
+</div>
+<!-- /footer --> 
+<!-- Le javascript
+================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="js/jquery-1.7.2.min.js"></script> 
+<script src="js/excanvas.min.js"></script> 
+<script src="js/chart.min.js" type="text/javascript"></script> 
+<script src="js/bootstrap.js"></script>
+<script language="javascript" type="text/javascript" src="js/full-calendar/fullcalendar.min.js"></script>
+ 
+<script src="js/base.js"></script> 
+<script>     
+
+        var lineChartData = {
+            labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho"],
+            datasets: [
+				{
+				    fillColor: "rgba(220,220,220,0.5)",
+				    strokeColor: "rgba(220,220,220,1)",
+				    pointColor: "rgba(220,220,220,1)",
+				    pointStrokeColor: "#fff",
+				    data: [65, 59, 90, 81, 56, 55, 40]
+				},
+				{
+				    fillColor: "rgba(151,187,205,0.5)",
+				    strokeColor: "rgba(151,187,205,1)",
+				    pointColor: "rgba(151,187,205,1)",
+				    pointStrokeColor: "#fff",
+				    data: [28, 48, 40, 19, 96, 27, 100]
+				}
+			]
+
+        }
+
+        var myLine = new Chart(document.getElementById("area-chart").getContext("2d")).Line(lineChartData);
+
+
+        var barChartData = {
+           labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho"],
+            datasets: [
+				{
+				    fillColor: "rgba(220,220,220,0.5)",
+				    strokeColor: "rgba(220,220,220,1)",
+				    data: [65, 59, 90, 81, 56, 55, 40]
+				},
+				{
+				    fillColor: "rgba(151,187,205,0.5)",
+				    strokeColor: "rgba(151,187,205,1)",
+				    data: [28, 48, 40, 19, 96, 27, 100]
+				}
+			]
+
+        }    
+
+        $(document).ready(function() {
+        var date = new Date();
+        var d = date.getDate();
+        var m = date.getMonth();
+        var y = date.getFullYear();
+        var calendar = $('#calendar').fullCalendar({
+          header: {
+            left: 'voltar,próximo hoje',
+            center: 'title',
+            right: 'month,agendaWeek,agendaDay'
+          },
+          selectable: true,
+          selectHelper: true,
+          select: function(start, end, allDay) {
+            var title = prompt('Event Title:');
+            if (title) {
+              calendar.fullCalendar('renderEvent',
+                {
+                  title: title,
+                  start: start,
+                  end: end,
+                  allDay: allDay
+                },
+                true // make the event "stick"
+              );
+            }
+            calendar.fullCalendar('unselect');
+          },
+          editable: true,
+          events: [
+            {
+              title: 'All Day Event',
+              start: new Date(y, m, 1)
+            },
+            {
+              title: 'Long Event',
+              start: new Date(y, m, d+5),
+              end: new Date(y, m, d+7)
+            },
+            {
+              id: 999,
+              title: 'Repeating Event',
+              start: new Date(y, m, d-3, 16, 0),
+              allDay: false
+            },
+            {
+              id: 999,
+              title: 'Repeating Event',
+              start: new Date(y, m, d+4, 16, 0),
+              allDay: false
+            },
+            {
+              title: 'Meeting',
+              start: new Date(y, m, d, 10, 30),
+              allDay: false
+            },
+            {
+              title: 'Lunch',
+              start: new Date(y, m, d, 12, 0),
+              end: new Date(y, m, d, 14, 0),
+              allDay: false
+            },
+            {
+              title: 'Birthday Party',
+              start: new Date(y, m, d+1, 19, 0),
+              end: new Date(y, m, d+1, 22, 30),
+              allDay: false
+            },
+            {
+              title: 'EGrappler.com',
+              start: new Date(y, m, 28),
+              end: new Date(y, m, 29),
+              url: 'http://EGrappler.com/'
+            }
+          ]
+        });
+      });
+    </script><!-- /Calendar -->
+</body>
+</html>
