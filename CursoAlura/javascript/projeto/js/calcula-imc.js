@@ -23,8 +23,8 @@
 
 var trsPacientes = document.getElementsByClassName('paciente'); //Array de trs
 
-var posicaoAtual = 0;
-while(posicaoAtual <= trsPacientes.length - 1){
+var ;
+for(var posicaoAtual = 0; posicaoAtual <= trsPacientes.length - 1; posicaoAtual++){
 
 	var pacienteTr = trsPacientes[posicaoAtual];
 
