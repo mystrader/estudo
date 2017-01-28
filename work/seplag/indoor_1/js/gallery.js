@@ -1,4 +1,5 @@
 $( function() {
+    var contador = 0;
     var pictures = [],
         $pointer = $( '#pointer' ),
         $thumbnails = $( '#thumbnails' ),
@@ -11,16 +12,16 @@ $( function() {
 
     buzz.defaults.formats = [ 'ogg', 'mp3' ];
 
-    var trafficSound = new buzz.sound( 'sounds/traffic' ),
-        clickSound = new buzz.sound( 'sounds/click' ),
-        focusSound = new buzz.sound( 'sounds/focus' ),
-        rewindSound = new buzz.sound( 'sounds/rewind' ),
+    var trafficSound = new buzz.sound( 'sounds/_traffic' ),
+        clickSound = new buzz.sound( 'sounds/_click' ),
+        focusSound = new buzz.sound( 'sounds/_focus' ),
+        rewindSound = new buzz.sound( 'sounds/_rewind' ),
         cameraSounds = new buzz.group( clickSound, focusSound, rewindSound );
 
     if ( !buzz.isSupported() ) {
-        $volume.hide();    
+        $volume.hide();
     }
-    
+
     trafficSound.loop().play().fadeIn( 5000 );
 
     // jScrollPane
@@ -45,32 +46,36 @@ $( function() {
 
     $thumbnails.find( 'a' ).each( function() {
         pictures.push({
-            src: $( this ).attr( 'href' ),    
+            src: $( this ).attr( 'href' ),
+			p: $( this ).attr( 'p' ),
             title: $( this ).find( 'img' ).attr( 'title' ),
-            valign: $( this ).find( 'img' ).data( 'valign' )
+            valign: $( this ).find( 'img' ).data( 'valign' ),
+			descricaoalt: $( this ).find( 'img' ).attr( 'alt' )
         });
     })
 
-    $.vegas( 'slideshow', { 
+    $.vegas( 'slideshow', {
         backgrounds: pictures,
-        delay: 4000
+        delay:24500,
      })( 'overlay' );
-    
+
     $( 'body' ).bind( 'vegasload', function( e, img ) {
         var src = $( img ).attr( 'src' ),
             idx = $( 'a[href="' + src + '"]' ).parent( 'li' ).index();
 
         focusSound.play();
-    
-        $title.fadeOut( function() {
+
+        $title.show( function() {
             $( this ).find( 'h1' ).text( pictures[ idx ].title );
+            $( this ).find( 'p' ).text(pictures[ idx ].descricaoalt);
             $( this ).fadeIn();
         });
 
-        $flash.show().fadeOut( 1000 );
+
+          // $flash.show().fadeOut( 1000 );
 
         var pointerPosition = $thumbnails.find( 'li' ).eq( idx ).position().left;
-            
+
         $pointer.animate({
             left: pointerPosition
         }, 500, 'easeInOutBack' );
@@ -90,17 +95,17 @@ $( function() {
         if ( $( this ).hasClass( 'all' ) ) {
             cameraSounds.unmute();
             trafficSound.mute();
-        
+
             $( this ).removeClass( 'all' ).addClass( 'some' );
         } else if ( $( this ).hasClass( 'some' ) ) {
             cameraSounds.mute();
             trafficSound.mute();
-        
+
             $( this ).removeClass( 'some' ).addClass( 'none' );
         } else {
             cameraSounds.unmute();
             trafficSound.unmute();
-        
+
             $( this ).removeClass( 'none' ).addClass( 'all' );
         }
         return false;
@@ -111,31 +116,35 @@ $( function() {
     $thumbnails.find( 'a' ).click( function() {
         $pause.show();
         $pointer.hide();
-    
+
         $volume.animate( { top: '20px' });
         $thumbnails.animate( { top: '-90px' });
-        $title.animate( { bottom: '-90px' });    
+        $title.animate( { bottom: '-90px' });
 
         var idx = $( this ).parent( 'li' ).index();
         $.vegas( 'slideshow', { step: idx } )( 'pause' );
 
         rewindSound.play();
-    
+
         return false;
     });
 
     $pause.click( function() {
         $pause.hide();
         $pointer.show();
-    
+
         $volume.animate( { top:'100px' });
         $title.animate( { bottom:'0px' });
         $thumbnails.animate( { top:'0px' });
 
-        $.vegas( 'slideshow' );
+
 
         clickSound.play();
 
         return false;
     });
+});
+
+$( document ).ready(function() {
+      $.vegas('slideshow');
 });
