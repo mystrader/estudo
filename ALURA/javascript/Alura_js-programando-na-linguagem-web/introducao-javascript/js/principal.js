@@ -1,4 +1,16 @@
-var titulo = document.querySelector(".titulo");
+// principal.js
 
 var paciente = document.querySelector("#primeiro-paciente");
-console.log(paciente);
+
+var tdPeso = paciente.querySelector(".info-peso");
+var peso = tdPeso.textContent;
+
+var tdAltura = paciente.querySelector(".info-altura");
+var altura = tdAltura.textContent;
+
+// selecionando a coluna do IMC
+var tdImc = paciente.querySelector(".info-imc");
+
+var imc = peso / (altura * altura);
+
+tdImc.textContent = imc;
