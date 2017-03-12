@@ -11,6 +11,15 @@ var altura = tdAltura.textContent;
 // selecionando a coluna do IMC
 var tdImc = paciente.querySelector(".info-imc");
 
+
+
+
+if (peso < 0 ){
+    console.log("peso inválido")
+}
+
+
+
 var imc = peso / (altura * altura);
 
 tdImc.textContent = imc;
