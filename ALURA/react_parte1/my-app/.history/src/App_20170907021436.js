@@ -64,7 +64,6 @@ class App extends Component {
                     <tr>
                       <th>Nome</th>
                       <th>email</th>
-                      <th>senha</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -74,7 +73,6 @@ class App extends Component {
                             <tr>
                               <td>{autor.nome}</td>
                               <td>{autor.email}</td>
-                              <td>{autor.senha}</td>
                             </tr>
                           );
                         })

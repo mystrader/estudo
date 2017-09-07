@@ -3,12 +3,6 @@ import './css/pure-min.css';
 import './css/side-menu.css';
 
 class App extends Component {
-
-  constructor(){
-    super();
-    this.state = {lista: [{nome: 'Marcus', email: 'mystrader@gmail.com', senha: '123456'}]}    
-  }
-
   render() {
     return (
 <div id="layout">
@@ -20,7 +14,7 @@ class App extends Component {
 
     <div id="menu">
         <div className="pure-menu">
-            <a className="pure-menu-heading" href="">Company</a>
+            <a className="pure-menu-heading" href="#">Company</a>
 
             <ul className="pure-menu-list">
                 <li className="pure-menu-item"><a href="" className="pure-menu-link">Home</a></li>
@@ -64,21 +58,13 @@ class App extends Component {
                     <tr>
                       <th>Nome</th>
                       <th>email</th>
-                      <th>senha</th>
                     </tr>
                   </thead>
                   <tbody>
-                      {
-                        this.state.lista.map(function(autor){
-                          return (
-                            <tr>
-                              <td>{autor.nome}</td>
-                              <td>{autor.email}</td>
-                              <td>{autor.senha}</td>
-                            </tr>
-                          );
-                        })
-                      }
+                    <tr>
+                      <td>Alberto</td>                
+                      <td>alberto.souza@caelum.com.br</td>                
+                    </tr>
                   </tbody>
                 </table> 
               </div>             

@@ -2,13 +2,11 @@ import React, { Component } from 'react';
 import './css/pure-min.css';
 import './css/side-menu.css';
 
+
+
+
+
 class App extends Component {
-
-  constructor(){
-    super();
-    this.state = {lista: [{nome: 'Marcus', email: 'mystrader@gmail.com', senha: '123456'}]}    
-  }
-
   render() {
     return (
 <div id="layout">
@@ -64,21 +62,13 @@ class App extends Component {
                     <tr>
                       <th>Nome</th>
                       <th>email</th>
-                      <th>senha</th>
                     </tr>
                   </thead>
                   <tbody>
-                      {
-                        this.state.lista.map(function(autor){
-                          return (
-                            <tr>
-                              <td>{autor.nome}</td>
-                              <td>{autor.email}</td>
-                              <td>{autor.senha}</td>
-                            </tr>
-                          );
-                        })
-                      }
+                    <tr>
+                      <td>Alberto</td>                
+                      <td>alberto.souza@caelum.com.br</td>                
+                    </tr>
                   </tbody>
                 </table> 
               </div>             

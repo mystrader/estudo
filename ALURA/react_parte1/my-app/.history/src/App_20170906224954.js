@@ -6,7 +6,7 @@ class App extends Component {
 
   constructor(){
     super();
-    this.state = {lista: [{nome: 'Marcus', email: 'mystrader@gmail.com', senha: '123456'}]}    
+    this.state = {lista: [{nome: 'Marcus', email: 'alberto.souza@caellum.com.br', senha: '123456'}]}    
   }
 
   render() {
@@ -64,7 +64,6 @@ class App extends Component {
                     <tr>
                       <th>Nome</th>
                       <th>email</th>
-                      <th>senha</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -72,9 +71,8 @@ class App extends Component {
                         this.state.lista.map(function(autor){
                           return (
                             <tr>
-                              <td>{autor.nome}</td>
-                              <td>{autor.email}</td>
-                              <td>{autor.senha}</td>
+                              <td></td>
+                              <td></td>
                             </tr>
                           );
                         })
