@@ -17,7 +17,7 @@ class App extends Component {
 
   componentDidMount(){  
     $.ajax({
-        url:"http://cdc-react.herokuapp.com/api/autores",
+        url:"http://www.mocky.io/v2/59b31de7120000930989250f",
         dataType: 'json',
         success:function(resposta){    
           this.setState({lista:resposta});
@@ -29,7 +29,7 @@ class App extends Component {
   enviaForm(evento){
     evento.preventDefault();    
     $.ajax({
-      url:'http://cdc-react.herokuapp.com/api/autores',
+      url:'http://www.mocky.io/v2/59b31de7120000930989250f',
       contentType:'application/json',
       dataType:'json',
       type:'post',
