@@ -15,9 +15,11 @@ class App extends Component {
     this.setSenha = this.setSenha.bind(this);
   }
 
+  //http://cdc-react.herokuapp.com/api/autores
+
   componentDidMount(){  
     $.ajax({
-        url:"http://cdc-react.herokuapp.com/api/autores",
+        url:"http://localhost:8080/api/autores",
         dataType: 'json',
         success:function(resposta){    
           this.setState({lista:resposta});
@@ -27,9 +29,10 @@ class App extends Component {
   }
 
   enviaForm(evento){
+    console.log("marcus");
     evento.preventDefault();    
     $.ajax({
-      url:'http://cdc-react.herokuapp.com/api/autores',
+      url:'http://localhost:8080/api/autores',
       contentType:'application/json',
       dataType:'json',
       type:'post',
