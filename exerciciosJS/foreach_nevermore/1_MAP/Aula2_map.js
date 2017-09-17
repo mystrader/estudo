@@ -20,7 +20,9 @@ Array.prototype.map  = function (modifierFunction) {
 
 const toPairsOfIdAndTitle = video =>  ({
 	id: video.id,
-	title: video.title, 
+	title: video.title,
+	rating: video.rating,
+	bookmark: video.bookmark
 });
 
 const videoWithIdAndTitle = videos.map(toPairsOfIdAndTitle);
