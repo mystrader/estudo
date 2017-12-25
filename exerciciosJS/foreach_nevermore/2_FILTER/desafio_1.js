@@ -1,4 +1,4 @@
-const {movies} = require ('./filter/filterData');
+const {movies} = require ('./filter/'filterData');
 const {log} = require ('./helpers');
 
 const topRatingMovies = movies
