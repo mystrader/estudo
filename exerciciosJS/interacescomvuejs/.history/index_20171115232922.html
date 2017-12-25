@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="vue-2.5.3.js" type="text/javascript"></script>
+    <title>Document</title>
+    <style>
+ nav, aside, main, section{
+     border: 1px solid #ccc;
+     padding: 1vw;
+ }
+ aside{float:left; 
+ width: 30vw}
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <my-nav></my-nav> 
+        <my-aside></my-aside>
+        <my-main></my-main>
+   
+ 
+    </div>
+  
+    <script type="text/javascript">
+
+         Vue.component('my-nav',{
+            template: '<nav> My Nav</nav>'            
+        })
+        Vue.component('my-aside',{
+            template: '<aside>My My aside</aside>'
+        })
+       Vue.component('my-main',{
+            template: '<main> My Main <my-section>My Section</my-section></main>'
+        })                     
+       Vue.component('my-section',{
+            template: '<section> My Section</section>'
+        })    
+   
+
+        new Vue({
+            el: '#app',        
+            data: {
+                message: 'mystrader'
+            }
+        })
+    </script>
+
+</body>
+
+</html>
